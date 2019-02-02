@@ -2,7 +2,12 @@
 
 /* main sty;es of site*/
 body{
-	background-color: blue; margin: 0px; padding: 0px;
+	margin: 0px; padding: 0px;
+}
+hr{
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(6, 106, 117, 0), rgba(6, 106, 117, 0.75), rgba(6, 106, 117, 0));
 }
 
 /* footer style */
@@ -15,8 +20,9 @@ footer div{
 
 /* header style */
  header{
- 	position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; background-color: rgba(0,0,0,.5); color: lightgrey;
- 	display: flex; align-items: center; background-image: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0, .5) 90%);
+ 	position: absolute; top: 0px; left: 0px; width: 100%; height: 60px;  color: lightgrey;
+ 	display: flex; align-items: center; background-color: rgb(61, 157, 179); 
+ 	background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0, .1) 90%);
  }
  header h1{
  	font-size: 1.6em; padding-left: 10px;
@@ -34,20 +40,58 @@ footer div{
  /* login modal window */
  .loginModalWindow{
  	height: 100%; width: 100%; top: 0px; position: absolute; z-index: 2001; background-color: rgba(200,200,200,.2);
- 	display: none;
+
+ 	/*display: none;*/
  }
  .loginArea{
- 	height: 50%; width: 50%; background-color: white; position: absolute; top: 25%; left:25%;
- 	border: 1px solid blue; padding: 5px;
+ 	height: 300px; width: 50%; background-color: rgb(247, 247, 247); position: absolute; top: 25%; left:25%;
+ 	    border: 1px solid rgba(147, 184, 189,0.8); border-radius: 5px;
+ 	    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.7) inset;
+ 	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.7) inset;
  }
+.loginCloseWrapper{
+	position: absolute; right: 5px; top: 5px; font-size: 27px; font-weight: bold; height: 22px; width: 22px;
+	display: flex; align-items: center; justify-content: center;
+ }
+.loginCloseWrapper:hover{
+ 	background-color: lightgrey; cursor: pointer; border-radius: 3px; 
+ }
+.loginHeader{
+	font-size: 2.2em;color: rgb(6, 106, 117);padding: 2px 0 10px 0;font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;text-align: center;
+}
+.loginForm{
+	text-align: center;
+}
+.loginForm input{
+	width: 80%;margin: 10px; height: 25px; border:1px solid rgb(178, 178, 178);
+	box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+}
+.loginButton{
+	height: 40px !important; font-weight: bold; font-size: 26px; cursor: pointer; background:rgb(61, 157, 179);
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+}
+.loginFooter{
+	display: flex;position: absolute;bottom: 0px;height: 35px;background: rgba(0,0,0, .2);width: 100%;
+}
 
+.loginFooterContent{
+	display: flex; position: absolute; right: 5px; height: 35px; align-items: center;
+}
+.loginFooterContent button{
+	margin-left: 20px; border-radius: 4px; border: 1px solid rgb(203, 213, 214); color: rgb(61, 157, 179);
+	cursor: pointer;
+}
+.loginFooterContent button:hover{
+	border: 1px solid rgb(61, 157, 179);
+}
  /* main content area styles */
  .mainContentArea{
- 	height: 100%; position: relative; top: 60px; padding: 10px
+ 	height: 100%; position: relative; top: 60px; padding: 10px;
  }
  .siteSettings{
- 	z-index: 2000; position: absolute; display: flex; top: 20px; right: 20px; height: 40px; width: 40px; 
- 	background-color: rgb(0,0,68); justify-content: center; align-items: center; border-radius: 10px;
+ 	z-index: 2000; position: absolute; display: flex; top: 20px; right: 20px; height: 30px; width: 30px; 
+ 	background-color: rgb(61, 157, 179); justify-content: center; align-items: center; border-radius: 10px;
  }
  .siteSettings:hover{
  	cursor: pointer;

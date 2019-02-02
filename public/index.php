@@ -18,7 +18,26 @@
 		<div class="loginModalWindow">
 
 			<div class="loginArea">
-				<div class="loginClose">Close</div>
+				<div class="loginCloseWrapper">
+					<div class="loginClose">&times;</div>
+				</div>
+				<div class="">
+					<div class="loginHeader">Member Sign In</div>
+					<hr>
+					<form class="loginForm">
+						<!-- <label for="email"><b>Your email or username</b></label><br> -->
+    					<input type="text" placeholder="Email Address" name="email" required>
+    					<br>
+    					<input type="text" placeholder="Password" name="password" required>
+    					<input class="loginButton" type="submit" name="login" value="Sign In">
+					</form>
+				</div>
+				<div class="loginFooter">
+					<div class="loginFooterContent">
+						<div>Not a member yet?</div>
+						<button>Sign Up</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -27,14 +46,13 @@
 			<h1>Severe Weather Explorer</h1>
 			<div class="headerOptions">
 				<div>About</div>
-				<div id="loginBtn">Create Account/Login</div>
+				<div id="loginBtn">Sign In</div>
 			</div>
 		</header>
 		<!-- Main content area -->
 		<div class="mainContentArea">
-			<div>Main body of the site</div>
 			<div class="siteSettings">
-				<img src="assets/settingCog.png" style="height: 30px;">
+				<img src="assets/settingCog.png" style="height: 24px;">
 			</div>
 		</div>
 		<!-- mapbox div -->
