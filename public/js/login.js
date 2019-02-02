@@ -6,7 +6,18 @@ $('#loginBtn').on('click', function(){
 })
 
 $('.loginClose').on('click', function(){
+	$('.signUpWrapper').hide()
+	$('.signInWrapper').show()
 	$('.loginModalWindow').hide();
 })
 
+$('.toSignUp').on('click', function(){
+	$('.signUpWrapper').show()
+	$('.signInWrapper').hide()
+})
+
+$('.toLogin').on('click', function(){
+	$('.signUpWrapper').hide()
+	$('.signInWrapper').show()
+})
 

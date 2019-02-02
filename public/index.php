@@ -16,28 +16,51 @@
 	<body>
 		<!--  login modal window -->
 		<div class="loginModalWindow">
-
 			<div class="loginArea">
 				<div class="loginCloseWrapper">
 					<div class="loginClose">&times;</div>
 				</div>
-				<div class="">
+				<!-- sign in wrapper //////////////////////////////////// -->
+				<div class="signInWrapper">
 					<div class="loginHeader">Member Sign In</div>
 					<hr>
 					<form class="loginForm">
-						<!-- <label for="email"><b>Your email or username</b></label><br> -->
     					<input type="text" placeholder="Email Address" name="email" required>
     					<br>
     					<input type="text" placeholder="Password" name="password" required>
     					<input class="loginButton" type="submit" name="login" value="Sign In">
 					</form>
-				</div>
-				<div class="loginFooter">
-					<div class="loginFooterContent">
-						<div>Not a member yet?</div>
-						<button>Sign Up</button>
+					<div class="loginFooter">
+						<div class="loginFooterContent">
+							<div>Not a member yet?</div>
+							<button class="toSignUp">Sign Up</button>
+						</div>
 					</div>
 				</div>
+				<!-- sign up wrapper ////////////////////// -->
+				<div class="signUpWrapper" style="display: none;">
+					<div class="loginHeader">Create Account</div>
+					<hr>
+					<form class="loginForm">
+						<div class="signupNameWrapper">
+							<input type="text" placeholder="First Name" name="first" required>
+							<input type="text" placeholder="Last Name" name="last" required>
+						</div>
+					
+    					<input type="text" placeholder="Email Address" name="email" required>
+    					<br>
+    					<input type="text" placeholder="Password" name="password" required>
+    					<input type="text" placeholder="Confirm Password" name="confPassword" required>
+    					<input class="loginButton" type="submit" name="login" value="Create Account">
+					</form>
+					<div class="loginFooter">
+						<div class="loginFooterContent">
+							<div>Already a member?</div>
+							<button class="toLogin">Log In</button>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 

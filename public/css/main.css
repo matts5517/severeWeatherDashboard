@@ -9,6 +9,12 @@ hr{
     height: 1px;
     background-image: linear-gradient(to right, rgba(6, 106, 117, 0), rgba(6, 106, 117, 0.75), rgba(6, 106, 117, 0));
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 /* footer style */
 footer{
@@ -41,10 +47,10 @@ footer div{
  .loginModalWindow{
  	height: 100%; width: 100%; top: 0px; position: absolute; z-index: 2001; background-color: rgba(200,200,200,.2);
 
- 	/*display: none;*/
+ 	display: none;
  }
  .loginArea{
- 	height: 300px; width: 50%; background-color: rgb(247, 247, 247); position: absolute; top: 25%; left:25%;
+ 	 width: 50%; background-color: rgb(247, 247, 247); position: absolute; top: 25%; left:25%;
  	    border: 1px solid rgba(147, 184, 189,0.8); border-radius: 5px;
  	    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.7) inset;
  	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.7) inset;
@@ -72,7 +78,7 @@ footer div{
 	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
 }
 .loginFooter{
-	display: flex;position: absolute;bottom: 0px;height: 35px;background: rgba(0,0,0, .2);width: 100%;
+	display: flex;bottom: 0px;height: 35px;background: rgba(0,0,0, .2);width: 100%;
 }
 
 .loginFooterContent{
@@ -80,10 +86,13 @@ footer div{
 }
 .loginFooterContent button{
 	margin-left: 20px; border-radius: 4px; border: 1px solid rgb(203, 213, 214); color: rgb(61, 157, 179);
-	cursor: pointer;
+	cursor: pointer; font-weight: bold;
 }
 .loginFooterContent button:hover{
 	border: 1px solid rgb(61, 157, 179);
+}
+.signupNameWrapper{
+	display: flex; width: 87%; margin: auto;
 }
  /* main content area styles */
  .mainContentArea{
