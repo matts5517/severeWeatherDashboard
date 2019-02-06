@@ -1,0 +1,1155 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"rg",
+				"rgb()\tbackground-color"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"hide",
+				"hideChosenRow"
+			],
+			[
+				"query",
+				"queryField"
+			],
+			[
+				"quer",
+				"queryField"
+			],
+			[
+				"pos",
+				"pos"
+			],
+			[
+				"mysqli",
+				"mysqli_query"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"new",
+				"new_id"
+			],
+			[
+				"subject",
+				"subject_set"
+			],
+			[
+				"msqli_conne",
+				"mysqli_connect_errno"
+			],
+			[
+				"su",
+				"subject_set"
+			],
+			[
+				"db",
+				"db_connect"
+			],
+			[
+				"msql_nu",
+				"msql_numrows"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"subj",
+				"subject_set"
+			],
+			[
+				"res",
+				"result_set"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"ero",
+				"error_404"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pag",
+				"page2"
+			],
+			[
+				"ur",
+				"url_for"
+			],
+			[
+				"is",
+				"isMobile"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"map",
+				"map1_v4"
+			],
+			[
+				"backgrou",
+				"background-repeat\tproperty"
+			],
+			[
+				"backgroun",
+				"background-position\tproperty"
+			],
+			[
+				"backgr",
+				"background-image\tproperty"
+			],
+			[
+				"over",
+				"overflow-x\tproperty"
+			],
+			[
+				"ov",
+				"overflow-y\tproperty"
+			],
+			[
+				"a",
+				"auto\theight"
+			],
+			[
+				"scr",
+				"scroll-invite"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"o",
+				"offset"
+			],
+			[
+				"ele",
+				"elem"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"hei",
+				"heightFromBtm"
+			],
+			[
+				"sm",
+				"sm-text1"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"r",
+				"rgba()\tbackground-color"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"i",
+				"initial\tposition"
+			],
+			[
+				"scre",
+				"screenWidth"
+			],
+			[
+				"sm-",
+				"sm-img1"
+			],
+			[
+				"m",
+				"margin-top\tproperty"
+			],
+			[
+				"in",
+				"initial\tright"
+			],
+			[
+				"em",
+				"embed\tTag"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"Ma",
+				"margin-bottom\tproperty"
+			],
+			[
+				"font",
+				"font-style\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"p",
+				"position\tproperty"
+			],
+			[
+				"sm-pan",
+				"sm-panel2Wrapper"
+			],
+			[
+				"sm-q",
+				"sm-quote"
+			],
+			[
+				"sm-st",
+				"sm-storyPanel2"
+			],
+			[
+				"font-st",
+				"font-style\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"ima",
+				"images"
+			],
+			[
+				"fl",
+				"file"
+			],
+			[
+				"loa",
+				"loadMapbox"
+			],
+			[
+				"mou",
+				"mountainLayer"
+			],
+			[
+				"moun",
+				"mountainLayer"
+			],
+			[
+				"mon",
+				"monsterAttack"
+			],
+			[
+				"start",
+				"startGame"
+			],
+			[
+				"f",
+				"false"
+			],
+			[
+				"s",
+				"startGame"
+			],
+			[
+				"daa",
+				"damage"
+			],
+			[
+				"game",
+				"gameIsRunning"
+			],
+			[
+				"js",
+				"jsonData"
+			],
+			[
+				"da",
+				"datalist\tTag"
+			],
+			[
+				"me",
+				"methods"
+			],
+			[
+				"inpu",
+				"inputVal"
+			],
+			[
+				"counter",
+				"counterUp"
+			],
+			[
+				"coun",
+				"counterUp"
+			],
+			[
+				"get",
+				"getRandomInt"
+			],
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"app",
+				"appWrapper"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"as",
+				"assets"
+			],
+			[
+				"form",
+				"formItem7"
+			],
+			[
+				"atts",
+				"atts"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"gra",
+				"graphics"
+			],
+			[
+				"lon",
+				"long"
+			],
+			[
+				"mp",
+				"mp2"
+			],
+			[
+				"ite",
+				"formItem6"
+			],
+			[
+				"fin",
+				"find"
+			],
+			[
+				"popupI",
+				"popupItemsWrapper"
+			],
+			[
+				"pol",
+				"polygonSymbol"
+			],
+			[
+				"poin",
+				"pointClick"
+			],
+			[
+				"be",
+				"before"
+			],
+			[
+				"qu",
+				"query2Execute"
+			],
+			[
+				"poi",
+				"pointClick"
+			],
+			[
+				"fu",
+				"fullScreenMedia"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"appP",
+				"sm-appPanelCover"
+			],
+			[
+				"pan",
+				"panel1"
+			],
+			[
+				"vide",
+				"videoSubText"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"layou",
+				"layoutOptions"
+			],
+			[
+				"prin",
+				"printer"
+			],
+			[
+				"tit",
+				"titleText"
+			],
+			[
+				"auth",
+				"authorText"
+			],
+			[
+				"cl",
+				"click"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/index.php",
+			"settings":
+			{
+				"buffer_size": 3318,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "private/initialize.php",
+			"settings":
+			{
+				"buffer_size": 946,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
+			"settings":
+			{
+				"buffer_size": 1789,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/main.js",
+			"settings":
+			{
+				"buffer_size": 10566,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "private/login.php",
+			"settings":
+			{
+				"buffer_size": 99,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "private/functions.php",
+			"settings":
+			{
+				"buffer_size": 729,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/main.js",
+			"settings":
+			{
+				"buffer_size": 356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/login.js",
+			"settings":
+			{
+				"buffer_size": 457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/main.css",
+			"settings":
+			{
+				"buffer_size": 3456,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public"
+	],
+	"file_history":
+	[
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/login.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/private/query_functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/public/staff/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/private/functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/database.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/private/db_credentials.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/private/database.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/public/staff/pages/edit.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/public/staff/pages/delete.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/public/staff/subjects/show.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/severeWeather.sublime-project",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_09/09_02/globe_bank/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_04/globe_bank/private/functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/index.php",
+		"/Library/WebServer/Documents/connecticut/plugins/regional-resilience-projects/js/clicks.js",
+		"/Library/WebServer/Documents/connecticut/plugins/regional-resilience-projects/obj.json",
+		"/Library/WebServer/Documents/connecticut/plugins/regional-resilience-projects/js/esriapi.js",
+		"/Library/WebServer/Documents/connecticut/region.json",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/subjects/edit.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/subjects/show.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/subjects/create.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/db_credentials.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/subjects/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/subjects/new.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_06/06_02/db_connect_guide.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/shared/staff_footer.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_06/06_03/globe_bank/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/private/shared/staff_header.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/pages/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_05/globe_bank/public/staff/subjects/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_05/globe_bank/private/functions.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_05/globe_bank/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_02/globe_bank/private/initialize.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_02/globe_bank/public/staff/subjects/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_02/globe_bank/public/staff/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_01/globe_bank/public/staff/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_02/globe_bank/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/exercise_files_original/Exercise Files/Chapter_02/02_06-challenge/globe_bank/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/severeData.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_7/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_7/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_7/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/mobileScrollTest/css/style.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/mobileScrollTest/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_6/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_6/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/mobileScrollTest/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_6/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/js/storyMapControls.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_3/js/storyMapControls.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_3/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_3/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_4/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_4/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/images/GDPC Logo_horz_transp.png",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_5/images/Indo_1.jpg",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_4/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_4/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_4/images/GDPC Logo_horz_transp.png",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_3/js/makevariables.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_2/js/makevariables.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_2/js/storyMapControls.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_2/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version_2/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/css/storyMap.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/js/makevariables.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/js/storyMapControls.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/pages/edit.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/stylesheets/staff.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/globe_bank/public/staff/stylesheets/staff.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/Exercise Files/Chapter_01/01_02/basic_php_project/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/appCode/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_Indo_version/appCode2/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/js/loadLayers.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/addLayer.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/simpleIndex.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/js/makevariables.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/The Monster Slayer Project/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/The Monster Slayer Project/main.js",
+		"/Users/Matts_Home/vue-webpack-project/index.html",
+		"/Users/Matts_Home/vue-webpack-project/src/main.js",
+		"/Users/Matts_Home/vue-webpack-project/src/App.vue",
+		"/Users/Matts_Home/Downloads/Exercise/app.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/assets/mountainFinal.json",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/data.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/js/mountainData.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/test.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/colorScale.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/currentObs.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/ui.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/MountainWeatherApp/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/test.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/cssStyling.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/counter.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/project1/vue.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/app1/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_v2/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app/index.html",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_v2/js/storyMapControls.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/StoryMap_v2/js/makevariables.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app/index_simple.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1106,
+								1106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "private/initialize.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1067,
+								1067
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1747,
+								1652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "private/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "private/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "public/js/login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/chrome.sublime-build",
+	"project": "severeWeather.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"globe_bank/private/database.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 801.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Library/WebServer/Documents/MattWebsite/PortfolioSite/index.sublime-workspace"
+			]
+		],
+		"width": 1030.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

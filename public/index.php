@@ -1,7 +1,8 @@
 
 <!-- index.php public facing site for  -->
 <!-- Bring in the init php functions -->
-<!-- <?php require_once('../private/initialize.php'); ?> -->
+<?php require_once('../private/initialize.php');?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
 	<link rel="stylesheet" media="all" href="css/main.css">
-	<title>Severe Weather Explorer</title>
+	<title><?php echo $page_title; ?></title>
 </head>
 	<body>
 		<!--  login modal window -->
@@ -24,7 +25,7 @@
 				<div class="signInWrapper">
 					<div class="loginHeader">Member Sign In</div>
 					<hr>
-					<form class="loginForm">
+					<form id="loginForm" action="" method="post" class="loginForm">
     					<input type="text" placeholder="Email Address" name="email" required>
     					<br>
     					<input type="text" placeholder="Password" name="password" required>
@@ -41,7 +42,7 @@
 				<div class="signUpWrapper" style="display: none;">
 					<div class="loginHeader">Create Account</div>
 					<hr>
-					<form class="loginForm">
+					<form id="createAccountForm" class="loginForm">
 						<div class="signupNameWrapper">
 							<input type="text" placeholder="First Name" name="first" required>
 							<input type="text" placeholder="Last Name" name="last" required>
@@ -60,13 +61,12 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 
 		<!-- header area -->
 		<header>
-			<h1>Severe Weather Explorer</h1>
+			<h1><?php echo $page_title; ?></h1>
 			<div class="headerOptions">
 				<div>About</div>
 				<div id="loginBtn">Sign In</div>
@@ -83,7 +83,7 @@
 
 		<!-- footer -->
 		<footer>
-			<div>&copy <?php echo date('Y');?> Severe Weather Explorer</div>
+			<div>&copy <?php echo date('Y');?> <?php echo $page_title; ?></div>
 		</footer>
 		<!-- Bring in JS files at end of DOM -->
 		<script

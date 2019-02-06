@@ -1,0 +1,21 @@
+
+
+
+// this creates a user table for severe weather app.
+
+CREATE TABLE users (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	email VARCHAR(255),
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	password VARCHAR(30),
+	PRIMARY KEY (id)
+);
+
+// insert a row into a table
+
+INSERT INTO users ( email, first_name, last_name, password) VALUES ( 'matthew.d.silveira@gmail.com', 'Matt', 'Silveira', 'testPassword');
+
+// update a row
+
+UPDATE users SET email='matt@gmail.com' WHERE id=1;
