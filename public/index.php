@@ -44,15 +44,15 @@
 					<hr>
 					<form id="createAccountForm" class="loginForm">
 						<div class="signupNameWrapper">
-							<input type="text" placeholder="First Name" name="first" required>
-							<input type="text" placeholder="Last Name" name="last" required>
+							<input  id="ca-firstName" type="text" minlength="2" maxlength="50" placeholder="First Name" name="first" required>
+							<input id="ca-lastName" type="text" minlength="2" maxlength="50"  placeholder="Last Name" name="last">
 						</div>
 					
-    					<input type="text" placeholder="Email Address" name="email" required>
+    					<input id="ca-email" type="text" placeholder="Email Address" name="email" required>
     					<br>
-    					<input type="text" placeholder="Password" name="password" required>
-    					<input type="text" placeholder="Confirm Password" name="confPassword" required>
-    					<input class="loginButton" type="submit" name="login" value="Create Account">
+    					<input id="ca-passOne" type="password" minlength="6" maxlength="25" placeholder="Password (must contain letters, numbers, and special chars and be 6 or more chars)" name="password" required>
+    					<input id="ca-passTwo" type="password" minlength="6" maxlength="25" placeholder="Confirm Password" name="confPassword" required>
+    					<input id="submitCreateAccount" class="loginButton" disabled="disabled" type="submit" name="login" value="Create Account">
 					</form>
 					<div class="loginFooter">
 						<div class="loginFooterContent">

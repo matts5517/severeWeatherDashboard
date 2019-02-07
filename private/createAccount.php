@@ -29,12 +29,12 @@
 	$password = $_POST['password'];
 
 	$sql = "INSERT INTO users (email, first_name, last_name, password) VALUES ("."'" . $email ."', '".$first."', '". $last ."', '" . $password ."')";
-	echo $sql;
+
 	$result = mysqli_query($db, $sql);
 	if($result){
-		echo "it worked";
+		echo 'True';
 	}else{
-		echo "it failed";
+		echo "False";
 	}
 
 	// ************** this code below works to update a record in the database *****************
@@ -42,9 +42,6 @@
 	// echo $sql;
 	// $result = mysqli_query($db, $sql);
 	
-
-
-
 
 	// echo "login PHP";
  // 	$email = $_POST['email'];
