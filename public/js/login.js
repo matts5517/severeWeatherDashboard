@@ -7,19 +7,28 @@ $('#loginBtn').on('click', function(){
 })
 
 $('.loginClose').on('click', function(){
-	$('.signUpWrapper').hide()
-	$('.signInWrapper').show()
+	$('.signUpWrapper').hide();
+	$('.signInWrapper').show();
 	$('.loginModalWindow').hide();
+	$('#welcomeWrapper').hide();
 })
 
 $('.toSignUp').on('click', function(){
-	$('.signUpWrapper').show()
-	$('.signInWrapper').hide()
+	$('.signUpWrapper').show();
+	$('.signInWrapper').hide();
 })
 
 $('.toLogin').on('click', function(){
-	$('.signUpWrapper').hide()
-	$('.signInWrapper').show()
+	$('.signUpWrapper').hide();
+	$('.signInWrapper').show();
+})
+
+$('#welcomeToLogin').on('click', function(){
+	// show login page
+	$('.signUpWrapper').hide();
+	$('#welcomeWrapper').hide();
+	$('.signInWrapper').show();
+
 })
 
 $('#createAccountForm').submit(function(e) {
@@ -36,11 +45,11 @@ $('#createAccountForm').submit(function(e) {
 	    		console.log('it failed');
 	    	}
 	    	
-	      //display message back to user here
-	      // if account was created successfully
-	      	clearCreateAccountForm();
+	        //display message back to user here
+	        // if account was created successfully
 	      	displayMessage();
-
+	      	// clear form values
+	      	clearCreateAccountForm();
 	    }
 	  });
 	  return false;
@@ -52,6 +61,26 @@ $('#createAccountForm').submit(function(e) {
 	// // console.log(e,$(this).serialize())
 	// e.preventDefault();
 });
+
+
+function clearCreateAccountForm(){
+	console.log('clear form');
+	// on account create success, loop through all form inputs and set value to empty
+	$.each($('#createAccountForm input'), function(i,v){
+		if(v.type != 'submit'){
+			$(v).val(''); // reset value to nothing
+			$(v).css('background-color', 'rgb(255,255,255)'); // reset background color to white
+		}
+	})
+}
+
+function displayMessage(){
+	console.log('Welcome to the site!!');
+	$('#createAccountWrapper').hide();
+	$('#loginWrapper').hide();
+	$('#welcomeWrapper').show();
+}
+
 
 function validateFormValues(){
 	var fnameValid = false;
@@ -127,9 +156,7 @@ function validateFormValues(){
 	});
 
 	function isValid(){
-		console.log(pass2, pass1, emailValid, lnameValid, fnameValid)
 		if (fnameValid && lnameValid && emailValid && pass1 && pass2) {
-			console.log('names valid')
 			// disable submit button until all form values are validated
 			$('#submitCreateAccount').prop('disabled', false);
 		}else{
@@ -137,25 +164,9 @@ function validateFormValues(){
 			$('#submitCreateAccount').prop('disabled', 'disabled');
 		}
 	}
-	
 }
 validateFormValues(); // call the function
 
 
 
-
-
-
-
-
-
-
-
-function clearCreateAccountForm(){
-	console.log('clear form');
-}
-
-function displayMessage(){
-	console.log('Welcome to the site!!')
-}
 

@@ -27,9 +27,7 @@
 
   // call the function to connect to db.
   $db = db_connect(); // connect to database
-
-
-  // db_close($db); // disconnect to database
+  
 ?>
 
 

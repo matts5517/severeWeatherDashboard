@@ -22,7 +22,7 @@
 					<div class="loginClose">&times;</div>
 				</div>
 				<!-- sign in wrapper //////////////////////////////////// -->
-				<div class="signInWrapper">
+				<div id="loginWrapper" class="signInWrapper">
 					<div class="loginHeader">Member Sign In</div>
 					<hr>
 					<form id="loginForm" action="" method="post" class="loginForm">
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 				<!-- sign up wrapper ////////////////////// -->
-				<div class="signUpWrapper" style="display: none;">
+				<div id="createAccountWrapper" class="signUpWrapper" style="display: none;">
 					<div class="loginHeader">Create Account</div>
 					<hr>
 					<form id="createAccountForm" class="loginForm">
@@ -60,6 +60,11 @@
 							<button class="toLogin">Log In</button>
 						</div>
 					</div>
+				</div>
+				<!-- welome wrapper after user creates account -->
+				<div id="welcomeWrapper" style="display: none;">
+					<div>Welcome to the site new member!!</div>
+					<button id="welcomeToLogin">Login Here!!</button>
 				</div>
 			</div>
 		</div>
