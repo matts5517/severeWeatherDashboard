@@ -1,21 +1,21 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
+# -------------------------------------------------------------------------------
+# Name:        Severe Storm Extraction Script
 # Purpose:
 #
-# Author:      msilveira
+# Author:      Matt Silveira
 #
-# Created:     28/02/2017
-# Copyright:   (c) msilveira 2017
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
-
+# Created:     02/28/2017 ***** Updated 02/09/2019
+# Copyright:   (c) msilveira 2019
+# Licence:     ''
+# -------------------------------------------------------------------------------
 import math, os, sys, time, datetime, xml.etree.ElementTree, json
 from email.Utils import formatdate
+
 print  time.asctime()
 start = time.time()
-#Script starts here
-#-------------------------------------------------------------------------------
-
+# Script starts here
+# -------------------------------------------------------------------------------
+import xml.etree.ElementTree as ET
 
 from xml.dom import minidom
 import xml.sax
@@ -23,14 +23,31 @@ import urllib
 import zipfile
 import csv
 
-reportDate = '130520' # May 20th 2013
-filePath = 'data/csv/fileSevere.csv'
-jsonPath = 'data/geoJson/severeData_' + reportDate + '.json'
+print time.asctime()
+start = time.time()
+# Script starts here
+# -------------------------------------------------------------------------------
 
 
+reportDate = '130522' # May 20th 2013 for testing, lots of storms this day
 
-url = 'http://www.spc.noaa.gov/climo/reports/' + reportDate + '_rpts_raw.csv'
-urllib.urlretrieve(url, filePath)
+d = datetime.date.today()
+month = '%02d' % d.month
+day = '%02d' % d.day
+year = str(str('%02d' % d.year)[-2:])
+
+now = datetime.datetime.now()
+todaysDate = str(str(year) + str(month) + str(day))
+print todaysDate
+
+filePath = 'data/csv/fileSevere_' + todaysDate + '.csv'
+jsonPath = 'data/geoJson/severeData_' + todaysDate + '.json'
+
+
+url = 'http://www.spc.noaa.gov/climo/reports/' + todaysDate + '_rpts_raw.csv'
+urlToday = 'http://www.spc.noaa.gov/climo/reports/today_raw.csv'
+
+urllib.urlretrieve(urlToday, filePath)
 
 jsonData = []
 with open(filePath, "rb") as f:
@@ -38,6 +55,7 @@ with open(filePath, "rb") as f:
     for i, line in enumerate(reader):
         line = str(line)[2:-2]
         listLine = line.split(',')
+        print listLine
         time = listLine[0]
         if 'Raw Tornado LSR' in str(listLine):
             reportType = 'tornado'
@@ -74,9 +92,3 @@ jsonData = {'type': 'FeatureCollection', 'features': jsonData}
 print jsonData
 with open(jsonPath, 'w') as outfile:
     json.dump(jsonData, outfile, indent=4, separators=(',', ':'))
-
-
-
-
-
-
