@@ -38,7 +38,7 @@ function loadSevereLayers(test){
                 stops: allStormList
             },
             'circle-radius': {
-				'base': 3.75,
+				'base': 1.75,
 				'stops': [[1, 2],[4, 3],[6, 5],[10, 10],[14, 25]]
 			},
         },
@@ -86,7 +86,7 @@ function loadSevereLayers(test){
                 stops: allStormList
             },
             'circle-radius': {
-				'base': 3.75,
+				'base': 1.75,
 				'stops': [[1, 2],[4, 3],[6, 5],[10, 10],[14, 25]]
 			},
         },

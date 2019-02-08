@@ -3,7 +3,7 @@ let app = {}; // main app object to store global vars
 
 allStormList = [
   [1, '#ef2009'],
-  [2, '#2009ef'],
+  [2, '#3D9DB3'],
   [3, '#1ab701']
 
 ]
