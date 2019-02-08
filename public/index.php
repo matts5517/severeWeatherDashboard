@@ -88,12 +88,14 @@
 				<!-- <input checked="true" type="checkbox" id="current-option" name="" value="co"> -->
 
 				<div class="pillCheckbox" id="currentObs-Pill">
-		            <label class="form-component mainCB" for="all-option">
+		            <!-- <label class="form-component mainCB" for="all-option">
 		              <input checked="true" type="checkbox" id="all-option" name="" value="all">
 		              <div class="check"></div>
 		              <span class="form-text">All Storms</span>
-		            </label>
+		            </label> -->
 		            <div class="subStormsWrapper">
+		            	<h3>Storm Reports</h3>
+		            	<hr class="whiteHr">
 		            	 <label class="form-component mainCB" for="tornado-option">
 			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 			              <div class="check"></div>
@@ -130,6 +132,7 @@
 		  crossorigin="anonymous">
 		</script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/layers.js"></script>
 		<script type="text/javascript" src="js/login.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>
 	</body>

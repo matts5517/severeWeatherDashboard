@@ -24,6 +24,7 @@ input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
+
 /* footer style */
 footer{
 	position: absolute; bottom: 20px; left: 0px; height: 25px; color: lightgrey;
@@ -66,25 +67,33 @@ footer div{
  #map { 
  	position:absolute; top:60px; bottom:0; width:100%; 
  }
-
+.whiteHr{
+	border: 0; height: 2px; background-image: linear-gradient(to right, rgba(6, 106, 117, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
 /* layer selector styles ***************************************************************/
 .layerSelectorWrapper{
 	position: absolute; z-index: 3000; right: 10px; top: 60px;
 }
 .pillCheckbox {
-    color: white; background-color: rgba(37,61,89,.7); border-radius: 5px; width: 124px;
+    color: white; background-color: rgba(37,61,89,.7); border-radius: 5px; width: 150px;
 }
 .pillCheckbox label {
-    display: flex; padding: 6px 4px 6px 4px;
+    display: flex; padding: 6px 4px 6px 4px; align-items: center;
+}
+.pillCheckbox label:hover{
+	cursor: pointer; color: orange;
 }
 .form-text {
-    margin-left: 5px;
+    margin-left: 5px; font-size: 18px;
 }
 .cntrlWrap {
-    display: none; background-color: rgba(37,61,89,.5); border-radius: 5px; width: 177px;
+    display: none; background-color: rgba(37,61,89,.5); border-radius: 5px; width: 177px; font-weight: 83px;
 }
 .subStormsWrapper{
-	margin-left: 10px;
+	padding: 5px; text-align: center;
+}
+.subStormsWrapper h3{
+	margin-bottom: 0px; margin-top: 0px;
 }
  /* login modal window style ************************************************************/
  .loginModalWindow{

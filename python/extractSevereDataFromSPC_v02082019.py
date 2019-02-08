@@ -30,7 +30,7 @@ start = time.time()
 # -------------------------------------------------------------------------------
 
 
-reportDate = '130522'  # May 20th 2013 for testing, lots of storms this day
+reportDate = '130520'  # May 20th 2013 for testing, lots of storms this day
 
 d = datetime.date.today()
 month = '%02d' % d.month
@@ -41,14 +41,14 @@ now = datetime.datetime.now()
 todaysDate = str(str(year) + str(month) + str(day))
 
 
-filePath = 'data/csv/fileSevere_' + todaysDate + '.csv'
-jsonPath = 'data/geoJson/severeData_' + todaysDate + '.json'
+filePath = 'data/csv/fileSevere_' + reportDate + '.csv'
+jsonPath = 'data/geoJson/severeData_' + reportDate + '.json'
 
 
-url = 'http://www.spc.noaa.gov/climo/reports/' + todaysDate + '_rpts_raw.csv'
+url = 'http://www.spc.noaa.gov/climo/reports/' + reportDate + '_rpts_raw.csv'
 urlToday = 'http://www.spc.noaa.gov/climo/reports/today_raw.csv'
 
-urllib.urlretrieve(urlToday, filePath)
+urllib.urlretrieve(url, filePath)
 
 jsonData = []
 with open(filePath, "rb") as f:
@@ -68,10 +68,13 @@ with open(filePath, "rb") as f:
         try:
             if reportType == 'hail':
                 eventType = 'hail'
+                eventNum = 1
             if reportType == 'wind':
                 eventType = 'wind'
+                eventNum = 2
             if reportType == 'tornado':
                 eventType = 'tornado'
+                eventNum = 3
 
             timeReported = listLine[0]
             size = listLine[1]
@@ -83,7 +86,7 @@ with open(filePath, "rb") as f:
             comments = listLine[7]
 
             d1 = {'type':'Feature','geometry':{'type':'Point', 'coordinates': [float(lon), float(lat)]},
-            'properties': {'timeReported': timeReported,'size': size, 'location':location,'county':county ,'state':state,'eventType':eventType,'comments':comments , 'marker-symbol':'default_marker'}}
+            'properties': {'timeReported': timeReported,'size': size, 'location':location,'county':county ,'state':state,'eventType':eventType,'eventNum':eventNum,'comments':comments , 'marker-symbol':'default_marker'}}
             jsonData.append(d1)
 
         except:

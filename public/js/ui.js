@@ -1,24 +1,6 @@
 // js file for handling the UI of the site ////////////////////////////////////////////////////////////////////////////////////////
 
 
-// when a user clicks on All Storms, 
-$('#all-option').on('click', function(v){
-	console.log(v);
-	let val = $(this).val();
-	console.log(val)
-})
-	// if checkbox checked
-
-		// loop through all sub checkboxes and trigger check them
-
-	// else
-
-		// loop through all sub checkboxes and trigger uncheck them
-
-
-
-
-
 
 
 
