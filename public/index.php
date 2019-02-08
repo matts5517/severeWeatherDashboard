@@ -82,6 +82,39 @@
 			<div class="siteSettings">
 				<img src="assets/settingCog.png" style="height: 24px;">
 			</div>
+
+
+			<div class="layerSelectorWrapper">
+				<!-- <input checked="true" type="checkbox" id="current-option" name="" value="co"> -->
+
+				<div class="pillCheckbox" id="currentObs-Pill">
+		            <label class="form-component mainCB" for="all-option">
+		              <input checked="true" type="checkbox" id="all-option" name="" value="all">
+		              <div class="check"></div>
+		              <span class="form-text">All Storms</span>
+		            </label>
+		            <div class="subStormsWrapper">
+		            	 <label class="form-component mainCB" for="tornado-option">
+			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
+			              <div class="check"></div>
+			              <span class="form-text">Tornadoes</span>
+			            </label>
+			            <label class="form-component mainCB" for="hail-option">
+			              <input checked="true" type="checkbox" id="hail-option" name="" value="hail">
+			              <div class="check"></div>
+			              <span class="form-text">Hail</span>
+			            </label>
+			            <label class="form-component mainCB" for="wind-option">
+			              <input checked="true" type="checkbox" id="wind-option" name="" value="wind">
+			              <div class="check"></div>
+			              <span class="form-text">Wind</span>
+			            </label>
+		            </div>
+		           
+		        </div>
+			</div>
+
+
 		</div>
 		<!-- mapbox div -->
 		<div id="map"></div>
@@ -98,6 +131,7 @@
 		</script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/ui.js"></script>
 	</body>
 </html>
 

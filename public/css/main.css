@@ -67,8 +67,25 @@ footer div{
  	position:absolute; top:60px; bottom:0; width:100%; 
  }
 
-
-
+/* layer selector styles ***************************************************************/
+.layerSelectorWrapper{
+	position: absolute; z-index: 3000; right: 10px; top: 60px;
+}
+.pillCheckbox {
+    color: white; background-color: rgba(37,61,89,.7); border-radius: 5px; width: 124px;
+}
+.pillCheckbox label {
+    display: flex; padding: 6px 4px 6px 4px;
+}
+.form-text {
+    margin-left: 5px;
+}
+.cntrlWrap {
+    display: none; background-color: rgba(37,61,89,.5); border-radius: 5px; width: 177px;
+}
+.subStormsWrapper{
+	margin-left: 10px;
+}
  /* login modal window style ************************************************************/
  .loginModalWindow{
  	height: 100%; width: 100%; top: 0px; position: absolute; z-index: 2001; background-color: rgba(200,200,200,.2); display: flex; justify-content: center;

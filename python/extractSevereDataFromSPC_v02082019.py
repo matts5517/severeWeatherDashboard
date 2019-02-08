@@ -1,20 +1,15 @@
 # -------------------------------------------------------------------------------
-# Name:        Severe Storm Extraction Script
+# Name:        Severe Storm Report Extraction Script
 # Purpose:
 #
 # Author:      Matt Silveira
 #
 # Created:     02/28/2017 ***** Updated 02/09/2019
-# Copyright:   (c) msilveira 2019
+# Copyright:   (c) Matt Silveira 2019
 # Licence:     ''
 # -------------------------------------------------------------------------------
 import math, os, sys, time, datetime, xml.etree.ElementTree, json
 from email.Utils import formatdate
-
-print  time.asctime()
-start = time.time()
-# Script starts here
-# -------------------------------------------------------------------------------
 import xml.etree.ElementTree as ET
 
 from xml.dom import minidom
@@ -29,7 +24,13 @@ start = time.time()
 # -------------------------------------------------------------------------------
 
 
-reportDate = '130522' # May 20th 2013 for testing, lots of storms this day
+print time.asctime()
+start = time.time()
+# Script starts here
+# -------------------------------------------------------------------------------
+
+
+reportDate = '130522'  # May 20th 2013 for testing, lots of storms this day
 
 d = datetime.date.today()
 month = '%02d' % d.month
@@ -38,7 +39,7 @@ year = str(str('%02d' % d.year)[-2:])
 
 now = datetime.datetime.now()
 todaysDate = str(str(year) + str(month) + str(day))
-print todaysDate
+
 
 filePath = 'data/csv/fileSevere_' + todaysDate + '.csv'
 jsonPath = 'data/geoJson/severeData_' + todaysDate + '.json'
