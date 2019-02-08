@@ -39,32 +39,28 @@ $('#createAccountForm').submit(function(e) {
 	    // dataType: 'json; charset=utf-8',
 	    success: function(d) {
 	    	var response = d.trim();
-	    	if (response) {
-	    		console.log('it worked');
+	    	var success = response.split(':')[0]
+	    	var welcomeName = response.split(':')[1]
+	    	console.log(response)
+	    	
+	    	if (success) {
+	    		// set welcome name var to be used on the welcome screen
+	    		app.welcomeName = welcomeName;
+	    		//display message back to user here
+		        // if account was created successfully
+		      	displayMessage();
+		      	// clear form values
+		      	clearCreateAccountForm();
 	    	}else{
 	    		console.log('it failed');
 	    	}
-	    	
-	        //display message back to user here
-	        // if account was created successfully
-	      	displayMessage();
-	      	// clear form values
-	      	clearCreateAccountForm();
 	    }
-	  });
-	  return false;
-
-	// $.post("../../private/login.php", $(this).serialize())
-	// $.post("../../private/login.php", $(this).serialize(), function(data){
-	// 	console.log(data)
-	// });
-	// // console.log(e,$(this).serialize())
-	// e.preventDefault();
+	});
+	return false;
 });
 
 
 function clearCreateAccountForm(){
-	console.log('clear form');
 	// on account create success, loop through all form inputs and set value to empty
 	$.each($('#createAccountForm input'), function(i,v){
 		if(v.type != 'submit'){
@@ -75,10 +71,13 @@ function clearCreateAccountForm(){
 }
 
 function displayMessage(){
-	console.log('Welcome to the site!!');
 	$('#createAccountWrapper').hide();
 	$('#loginWrapper').hide();
 	$('#welcomeWrapper').show();
+	//welcomeMemberName
+	console.log(app.welcomeName)
+	// customize welcome message
+	$('#welcomeMemberName').html(app.welcomeName);
 }
 
 

@@ -63,8 +63,8 @@
 				</div>
 				<!-- welome wrapper after user creates account -->
 				<div id="welcomeWrapper" style="display: none;">
-					<div>Welcome to the site new member!!</div>
-					<button id="welcomeToLogin">Login Here!!</button>
+					<div>Welcome to the site <span id="welcomeMemberName"></span>!!</div>
+					<button id="welcomeToLogin">Login</button>
 				</div>
 			</div>
 		</div>
