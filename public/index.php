@@ -72,7 +72,9 @@
 		<!-- header area -->
 		<header>
 			<h1><?php echo $page_title; ?></h1>
+			<div id="timeWrapper"><span id="utcTime">01:34:27</span></div>
 			<div class="headerOptions">
+
 				<div>About</div>
 				<div id="loginBtn">Sign In</div>
 			</div>
@@ -132,6 +134,7 @@
 		  crossorigin="anonymous">
 		</script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/colors.js"></script>
 		<script type="text/javascript" src="js/layers.js"></script>
 		<script type="text/javascript" src="js/login.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>

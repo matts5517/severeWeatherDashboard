@@ -51,7 +51,10 @@ footer div{
 .headerOptions div:hover{
  	color: orange; cursor: pointer;
  }
-
+#timeWrapper{
+	color: lightgrey; position: absolute; top: 70px; left: 10px; font-weight: bold;
+	 z-index: 3000;
+}
 
  /* main content area styles ************************************************************/
  .mainContentArea{

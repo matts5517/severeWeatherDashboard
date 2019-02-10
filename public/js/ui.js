@@ -1,10 +1,24 @@
 // js file for handling the UI of the site ////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
+function startTime() {
+  	var today = new Date();
+  	let utcMonth = today.getUTCMonth();
+  	let utcDate = today.getUTCDate();
+  	let utcYear = today.getUTCFullYear();
+  	let utcHour = today.getUTCHours();
+	let utcMin = today.getUTCMinutes();
+	let utcSec = today.getUTCSeconds();
+	let gmtPlus = today.getTimezoneOffset()/60
+  	let html ="Time (UTC+" +gmtPlus+ "): " + utcMonth +"/" + utcDate + "/" +utcYear+ " - " 
+  	+  checkTime(utcHour) + ":"+ checkTime(utcMin) + ":" + checkTime(utcSec)
+  	$('#utcTime').html(html)
+  	var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+startTime();
 
 
 
