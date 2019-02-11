@@ -31,6 +31,13 @@ jsonData = data["features"]
 jsonArray = []
 for item in jsonData:
     props = item["properties"]
+    print props
+    cat = props['cat']
+    prob = props['prob']
+    newcat = str(cat) + ":" + str(prob)
+    props['newCat'] = newcat
+    print newcat
+    print props
     geom  = item["geometry"]["coordinates"]
 ##    name = item.get("geometry")
 ##    for item in name:

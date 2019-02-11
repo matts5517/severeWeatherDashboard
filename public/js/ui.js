@@ -21,8 +21,96 @@ function checkTime(i) {
 startTime();
 
 
+// checkbox layer toggle visibility functionality
+let inputs = $('.pillCheckbox input')
+
+$('.pillCheckbox input').on('change',function(v){
+	let checked = v.currentTarget.checked;
+	let type = v.currentTarget.type;
+	let val = $(this).val()
+	let radarInput = $('#radarSatLayers input:checked')
+	if(radarInput.length > 0){
+		$('#sliderWrapper').slideDown();
+	}else{
+		$('#sliderWrapper').slideUp();
+	}
+	// only update layers if type checkbox
+	if(type == 'checkbox'){
+		if(checked){
+			map.setLayoutProperty(val, 'visibility', 'visible');
+			// if(val === 'nexrad'){
+			// 	$('#radarLoop').show();
+			// 	loopRadar();
+			// }
+		}else{
+			map.setLayoutProperty(val, 'visibility', 'none');
+			// if(val === 'nexrad'){
+			// 	$('#radarLoop').hide();
+			// 	loopRadar();
+			// }
+		}
+	}
+})
+// sat and radar slider functionality
+$( "#radSatSlider" ).slider({
+	value: 80,
+  	slide: function( v, ui ) {
+  		console.log(v, ui.value)
+  		let sliderVal = ui.value;
+  		$('#radar-slider-value').html(sliderVal);
+  		map.setPaintProperty('nexrad', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  	}
+});
 
 
+
+// works but super slow right now. maybe have to download image to server
+// function loopRadar(){
+// 	i = 0
+// 	let radarArray = ['nexrad','radar_10','radar_20','radar_50'];
+// 	setInterval(function(){
+// 		map.setLayoutProperty('nexrad', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_10', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_20', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_50', 'visibility', 'none');
+// 		console.log('timeout')
+// 		console.log(i)
+// 		console.log(radarArray[i])
+// 		map.setLayoutProperty(radarArray[i], 'visibility', 'visible');
+// 		if(i==3){
+// 			i=0
+// 		}else{
+// 			i++
+// 		}
+		
+// 	},3000)
+
+
+// }
+
+
+// function loopRadar(){
+// 	console.log('loop');
+// 	let radarArray = ['nexrad','radar_10','radar_20','radar_50'];
+
+// 	function nexradLoop(){
+// 		console.log('radar loop');
+// 		map.setLayoutProperty('nexrad', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_10', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_20', 'visibility', 'none');
+// 		map.setLayoutProperty('radar_50', 'visibility', 'none');
+// 		$.each(radarArray, function(i,v){
+// 			console.log(v)
+// 			map.setLayoutProperty(v, 'visibility', 'visible');
+// 		})
+		
+
+// 		t = setTimeout(nexradLoop,2000);
+// 	}
+
+// 	nexradLoop();
+// }
 
 
 

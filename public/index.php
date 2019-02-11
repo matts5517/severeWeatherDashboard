@@ -9,6 +9,9 @@
 	<meta charset="utf-8">
 	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<!-- bring in CSS and JS files -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
 	<link rel="stylesheet" media="all" href="css/main.css">
@@ -89,30 +92,48 @@
 			<div class="layerSelectorWrapper">
 				<!-- <input checked="true" type="checkbox" id="current-option" name="" value="co"> -->
 
-				<div class="pillCheckbox" id="currentObs-Pill">
-		            <!-- <label class="form-component mainCB" for="all-option">
-		              <input checked="true" type="checkbox" id="all-option" name="" value="all">
-		              <div class="check"></div>
-		              <span class="form-text">All Storms</span>
-		            </label> -->
+				<div class="pillCheckbox" id="">
 		            <div class="subStormsWrapper">
 		            	<h3>Storm Reports</h3>
 		            	<hr class="whiteHr">
 		            	 <label class="form-component mainCB" for="tornado-option">
 			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 			              <div class="check"></div>
-			              <span class="form-text">Tornadoes</span>
+			              <span class="form-text noselect">Tornadoes</span>
 			            </label>
 			            <label class="form-component mainCB" for="hail-option">
 			              <input checked="true" type="checkbox" id="hail-option" name="" value="hail">
 			              <div class="check"></div>
-			              <span class="form-text">Hail</span>
+			              <span class="form-text noselect">Hail</span>
 			            </label>
 			            <label class="form-component mainCB" for="wind-option">
 			              <input checked="true" type="checkbox" id="wind-option" name="" value="wind">
 			              <div class="check"></div>
-			              <span class="form-text">Wind</span>
+			              <span class="form-text noselect">Wind</span>
 			            </label>
+			            <h3>Radar</h3>
+			            <hr class="whiteHr">
+			            <div id="radarSatLayers">
+			            	 <label class="form-component mainCB" for="nexrad-option">
+				              <input type="checkbox" id="nexrad-option" name="" value="nexrad">
+				              <div class="check"></div>
+				              <span class="form-text noselect">NEXRAD</span>
+				            </label>
+				            <!-- <button id="radarLoop" style="display: none;">Loop</button> -->
+				            
+				            <label class="form-component mainCB" for="goes_vis-option">
+				              <input type="checkbox" id="goes_vis-option" name="" value="goes_vis">
+				              <div class="check"></div>
+				              <span class="form-text noselect">GOES Vis</span>
+				            </label>
+				            <div id="sliderWrapper" style="display: none;">
+				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">80</span>%</div>
+				            	<div id="radSatSlider"></div>
+				            	<!-- <label>Opacity: <span id='radar-slider-value'>100%</span></label>
+								<input id='radSatSlider' type='range' min='0' max='100' step='1' value='100' /> -->
+				            </div>
+			            </div>
+			           
 		            </div>
 		           
 		        </div>
@@ -128,11 +149,8 @@
 			<div>&copy <?php echo date('Y');?> <?php echo $page_title; ?></div>
 		</footer>
 		<!-- Bring in JS files at end of DOM -->
-		<script
-		  src="https://code.jquery.com/jquery-3.3.1.min.js"
-		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		  crossorigin="anonymous">
-		</script>
+		
+		
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/colors.js"></script>
 		<script type="text/javascript" src="js/layers.js"></script>
