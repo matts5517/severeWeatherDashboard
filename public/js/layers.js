@@ -2,19 +2,20 @@
 
 
 // js file to work with weather data layers
-function loadSevereLayers(test){
+function loadSevereLayers(data){
+    console.log(data)
 	// tornado
-	var features = $.grep(test.features, function(element, index){
+	var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 3;
     });
     var tornadoData = {"type":"FeatureCollection", features }
     // wind
-    var features = $.grep(test.features, function(element, index){
+    var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 2;
     });
     var windData = {"type":"FeatureCollection", features }
     // hail 
-    var features = $.grep(test.features, function(element, index){
+    var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 1;
     });
     var hailData = {"type":"FeatureCollection", features }
@@ -315,7 +316,7 @@ function radarLayerLoad(){
         'layout': {
             'visibility': 'none'
         },
-        'paint': {}
+        
     },);
 
 
@@ -326,6 +327,27 @@ function loadESRIServices(){
     console.log('load')
 }
 
+function loadWatchWarn(data){
+    console.log(data)
+    let features = data.features
+    var tornadoData = {"type":"FeatureCollection", features }
+    console.log(tornadoData)
+    map.addLayer({
+        'id': 'watch_warn',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': tornadoData,
+        },
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'fill-color': '#088',
+            'fill-opacity': 0.8
+        }
+    },);
+}
 // end of code *****************************************
 
 

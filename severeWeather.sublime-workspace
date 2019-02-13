@@ -519,59 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "public/js/main.js",
-			"settings":
-			{
-				"buffer_size": 873,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "python/data2.json",
-			"settings":
-			{
-				"buffer_size": 940306,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/index.php",
-			"settings":
-			{
-				"buffer_size": 6825,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/ui.js",
-			"settings":
-			{
-				"buffer_size": 12364,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/layers.js",
-			"settings":
-			{
-				"buffer_size": 8852,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/css/main.css",
-			"settings":
-			{
-				"buffer_size": 6031,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -605,18 +552,15 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/assets",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js"
 	],
 	"file_history":
 	[
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/layers.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/ui.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data2.json",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/addLayer.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/radarImages/testRadar.png",
@@ -626,21 +570,16 @@
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/index.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/severeData.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/colors.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/main.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/login.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/db_credentials.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/createAccount.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/login.php",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/layers.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/index.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/colorScale.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/database.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/geoJson/severeData_130520.json",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/geoJson/severeData_130521.json",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/geoJson/severeData_130522.json",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/data.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css/main.css",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/ui.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/Ex_Files_PHP_MySQL_EssT_2_CMS/globe_bank_matt/private/database.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/Ex_Files_PHP_MySQL_EssT_2_CMS/globe_bank_matt/private/query_functions.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/learn_PHP_Fall_2018/Ex_Files_PHP_MySQL_EssT_2_CMS/globe_bank_matt/private/validation_functions.php",
@@ -743,8 +682,7 @@
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/index.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/simpleIndex.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/HRCRP-webMap-app_simple_withHeader/js/makevariables.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/The Monster Slayer Project/index.html",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/The Monster Slayer Project/main.js"
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/Vue JS Training/The Monster Slayer Project/index.html"
 	],
 	"find":
 	{
@@ -788,182 +726,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "public/js/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 873,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								711,
-								711
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "python/data2.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 940306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5795,
-								5808
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1917.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/js/ui.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								811,
-								811
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "public/js/layers.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6688,
-								6688
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3711.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6031,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3521,
-								3521
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1697.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
 			]
 		}
 	],

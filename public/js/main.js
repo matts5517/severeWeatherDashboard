@@ -21,6 +21,9 @@ map.on('style.load', function(){
 	$.getJSON("../../python/data/geoJson/severeData_130520.json", function(jsonData) {
 		loadSevereLayers(jsonData);
 	})
+	$.getJSON("../../python/data/geoJson/watch_warn.json", function(jsonData) {
+		loadWatchWarn(jsonData);
+	})
 })
 
 
