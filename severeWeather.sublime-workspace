@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"tile",
+				"tileURL"
+			],
+			[
+				"tie",
+				"tileURL"
+			],
+			[
+				"TI",
+				"tileURL"
+			],
+			[
 				"sli",
 				"slideUp"
 			],
@@ -502,23 +514,37 @@
 			[
 				"s",
 				"startGame"
-			],
-			[
-				"daa",
-				"damage"
-			],
-			[
-				"game",
-				"gameIsRunning"
-			],
-			[
-				"js",
-				"jsonData"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
+			"settings":
+			{
+				"buffer_size": 8588,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/addLayer.js",
+			"settings":
+			{
+				"buffer_size": 23197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/layers.js",
+			"settings":
+			{
+				"buffer_size": 11497,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -552,24 +578,29 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python"
 	],
 	"file_history":
 	[
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/main.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css/main.css",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/layers.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/ui.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/index.php",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/layers.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/main.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/colors.js",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/css/main.css",
+		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/ui.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data2.json",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/addLayer.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/radarImages/testRadar.png",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/main.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/ui.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/currentObs.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/index.html",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/severeData.js",
-		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/colors.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/public/js/login.js",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/db_credentials.php",
 		"/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/private/createAccount.php",
@@ -726,8 +757,99 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/radarIndex.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3406,
+								3406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1182.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/WeatherDashboard_git/js/addLayer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5349,
+								5349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1498.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/js/layers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5184,
+								5184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

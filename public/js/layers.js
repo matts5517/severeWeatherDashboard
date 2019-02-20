@@ -92,75 +92,75 @@ function loadSevereLayers(data){
         },
         
     });
-    // use code below to add a point pukse functionality ***************************
-    var framesPerSecond = 15; 
-    var initialOpacity = 1
-    var opacity = initialOpacity;
-    var initialRadius = 3;
-    var radius = initialRadius;
-    var maxRadius = 15;
+    // // use code below to add a point pukse functionality ***************************
+    // var framesPerSecond = 15; 
+    // var initialOpacity = 1
+    // var opacity = initialOpacity;
+    // var initialRadius = 3;
+    // var radius = initialRadius;
+    // var maxRadius = 15;
 
-    // Add a source and layer displaying a point which will be animated in a circle.
-    // map.addSource('point', {
-    //     "type": "geojson",
-    //     "data": {
+    // // Add a source and layer displaying a point which will be animated in a circle.
+    // // map.addSource('point', {
+    // //     "type": "geojson",
+    // //     "data": {
+    // //         "type": "geojson",
+    // //         "data": tornadoData
+    // //     }
+    // // });
+
+    // map.addLayer({
+    //     "id": "point",
+    //     "source": {
     //         "type": "geojson",
     //         "data": tornadoData
+    //     },
+    //     "type": "circle",
+    //     "paint": {
+    //         "circle-radius": initialRadius,
+    //         "circle-radius-transition": {duration: 0},
+    //         "circle-opacity-transition": {duration: 0},
+    //         "circle-color": "#ef2009"
     //     }
     // });
 
-    map.addLayer({
-        "id": "point",
-        "source": {
-            "type": "geojson",
-            "data": tornadoData
-        },
-        "type": "circle",
-        "paint": {
-            "circle-radius": initialRadius,
-            "circle-radius-transition": {duration: 0},
-            "circle-opacity-transition": {duration: 0},
-            "circle-color": "#ef2009"
-        }
-    });
-
-    map.addLayer({
-        "id": "point1",
-        "source": {
-            "type": "geojson",
-            "data": tornadoData
-        },
-        "type": "circle",
-        "paint": {
-            "circle-radius": initialRadius,
-            "circle-color": "#ef2009"
-        }
-    });
+    // map.addLayer({
+    //     "id": "point1",
+    //     "source": {
+    //         "type": "geojson",
+    //         "data": tornadoData
+    //     },
+    //     "type": "circle",
+    //     "paint": {
+    //         "circle-radius": initialRadius,
+    //         "circle-color": "#ef2009"
+    //     }
+    // });
 
 
 
-    function animateMarker(timestamp) {
-        setTimeout(function(){
-            requestAnimationFrame(animateMarker);
-            radius += (maxRadius - radius) / framesPerSecond;
-            opacity -= ( .9 / framesPerSecond );
-            if(opacity < 0){
-                opacity = 0; // to stop error
-            }
-            map.setPaintProperty('point', 'circle-radius', radius);
-            map.setPaintProperty('point', 'circle-opacity', opacity);
+    // function animateMarker(timestamp) {
+    //     setTimeout(function(){
+    //         requestAnimationFrame(animateMarker);
+    //         radius += (maxRadius - radius) / framesPerSecond;
+    //         opacity -= ( .9 / framesPerSecond );
+    //         if(opacity < 0){
+    //             opacity = 0; // to stop error
+    //         }
+    //         map.setPaintProperty('point', 'circle-radius', radius);
+    //         map.setPaintProperty('point', 'circle-opacity', opacity);
 
-            if (opacity <= 0) {
-                radius = initialRadius;
-                opacity = initialOpacity;
-            } 
+    //         if (opacity <= 0) {
+    //             radius = initialRadius;
+    //             opacity = initialOpacity;
+    //         } 
 
-        }, 1000 / framesPerSecond);
+    //     }, 1000 / framesPerSecond);
         
-    }
+    // }
 
-    // Start the animation.
-    animateMarker(0);
+    // // Start the animation.
+    // animateMarker(0);
 } // end of load severe weather data function
 
 
@@ -171,7 +171,7 @@ function radarLayerLoad(){
     'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
     // may 20th 2013 radar image
     'https://mesonet.agron.iastate.edu/archive/data/2013/05/20/GIS/uscomp/n0r_201305200005.png'
-
+    'https://mesonet.agron.iastate.edu/cgi-bin/wms/iowa/rainfall.cgi?'
     // radar layers //////////////////////
     map.addLayer({
         'id': 'nexrad',
@@ -179,7 +179,7 @@ function radarLayerLoad(){
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913/{z}/{x}/{y}.png'
+                'https://realearth.ssec.wisc.edu/tiles/nexreet/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
