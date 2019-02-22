@@ -1,11 +1,8 @@
 
 let app = {}; // main app object to store global vars
 
-
-
-
 // init mapbox map ****************************************************************************
-mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dHM1NTE3IiwiYSI6ImNpeWo0amtmdTA2MGQzMm9lZWUzbHd1MW4ifQ.AJr1T--2DBpQWH_UEPPIww';
+mapboxgl.accessToken = accessToken; // this comes from PHP code to keep it hidden on the index.php page
 var map = new mapboxgl.Map({
 	container: 'map', // container id
 	style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
@@ -18,10 +15,10 @@ map.on('style.load', function(){
 	radarLayerLoad(); //  load radar layers
 	loadESRIServices();
 	// get severe storm report data
-	$.getJSON("../../python/data/geoJson/severeData_130520.json", function(jsonData) {
+	$.getJSON("../python/data/geoJson/severeData_130520.json", function(jsonData) {
 		loadSevereLayers(jsonData);
 	})
-	$.getJSON("../../python/data/geoJson/watch_warn.json", function(jsonData) {
+	$.getJSON("../python/data/geoJson/watch_warn.json", function(jsonData) {
 		loadWatchWarn(jsonData);
 	})
 })

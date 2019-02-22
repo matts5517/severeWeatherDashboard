@@ -6,6 +6,9 @@
   require_once('database.php');
   // variables to be used in multiple places in the html
   $page_title = 'Severe Weather Explorer'; // main title of website
+
+  // mapbox access token
+  $accessToken = 'pk.eyJ1IjoibWF0dHM1NTE3IiwiYSI6ImNpeWo0amtmdTA2MGQzMm9lZWUzbHd1MW4ifQ.AJr1T--2DBpQWH_UEPPIww';
   
   // Assign file paths to PHP constants
   // __FILE__ returns the current path to this file
@@ -27,6 +30,7 @@
 
   // call the function to connect to db.
   $db = db_connect(); // connect to database
+  
   
 ?>
 

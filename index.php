@@ -1,7 +1,11 @@
 
 <!-- index.php public facing site for  -->
-<!-- Bring in the init php functions -->
-<?php require_once('../private/initialize.php');?>
+<?php 
+	// init php file
+	require_once('private/initialize.php');
+?>
+<!-- bring in vars from php to js -->
+ <script> let accessToken = "<?php echo $accessToken; ?>";</script>
 
 <!DOCTYPE html>
 <html>
