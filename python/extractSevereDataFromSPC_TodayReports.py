@@ -40,12 +40,13 @@ year = str(str('%02d' % d.year)[-2:])
 now = datetime.datetime.now()
 todaysDate = str(str(year) + str(month) + str(day))
 
+print reportDate, todaysDate
 
-filePath = 'data/csv/fileSevere_' + reportDate + '.csv'
-jsonPath = 'data/geoJson/severeData_' + reportDate + '.json'
+filePath = 'data/csv/severeData_' + 'today' + '.csv'
+jsonPath = 'data/geoJson/severeWeather/severeData_' + 'today' + '.json'
 
 
-url = 'http://www.spc.noaa.gov/climo/reports/' + reportDate + '_rpts_raw.csv'
+url = 'http://www.spc.noaa.gov/climo/reports/' + todaysDate + '_rpts_raw.csv'
 urlToday = 'http://www.spc.noaa.gov/climo/reports/today_raw.csv'
 
 urllib.urlretrieve(url, filePath)
@@ -56,7 +57,7 @@ with open(filePath, "rb") as f:
     for i, line in enumerate(reader):
         line = str(line)[2:-2]
         listLine = line.split(',')
-        print listLine
+        
         time = listLine[0]
         if 'Raw Tornado LSR' in str(listLine):
             reportType = 'tornado'

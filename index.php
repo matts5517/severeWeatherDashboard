@@ -18,6 +18,8 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.min.js'></script>
+	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.css' type='text/css' />
 	<link rel="stylesheet" media="all" href="css/main.css">
 	<title><?php echo $page_title; ?></title>
 </head>
@@ -79,7 +81,11 @@
 		<!-- header area -->
 		<header>
 			<h1><?php echo $page_title; ?></h1>
-			<div id="timeWrapper"><span id="utcTime">01:34:27</span></div>
+			<div id="timeWrapper">
+				<span id="utcTime">01:34:27</span>
+				<br>
+				<span id="latLongText"></span>
+			</div>
 			<div class="headerOptions">
 
 				<div>About</div>
@@ -91,6 +97,20 @@
 			<div class="siteSettings">
 				<img src="assets/settingCog.png" style="height: 24px;">
 			</div>
+			<div  class="toolBoxWrapper">
+				<div class="toolBoxItems" id="basemapTool">
+					<span class="noselect">Basemap</span>
+				</div>
+				<span class="noselect" id="basemapSelector" style="display: none;">
+					<div data-basemap='navigation-guidance-night-v2' class="basemapItems">Dark</div>
+					<div data-basemap='satellite-streets-v10' class="basemapItems">Satellite</div>
+					<div data-basemap='outdoors-v11' class="basemapItems">Streets</div>
+				</span>
+				<div class="noselect toolBoxItems">
+					<span>Measure</span>
+				</div>
+			</div>
+			
 
 
 			<div class="layerSelectorWrapper">

@@ -3,21 +3,23 @@
 
 // js file to work with weather data layers
 function loadSevereLayers(data){
-    console.log(data)
 	// tornado
 	var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 3;
     });
+    console.log(features.length, 'tornado')
     var tornadoData = {"type":"FeatureCollection", features }
     // wind
     var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 2;
     });
+    console.log(features.length, 'wind')
     var windData = {"type":"FeatureCollection", features }
     // hail 
     var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 1;
     });
+    console.log(features.length, 'hail')
     var hailData = {"type":"FeatureCollection", features }
     
     // add the wind storm layer 
@@ -309,7 +311,7 @@ function radarLayerLoad(){
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/goes-vis-1km-900913/{z}/{x}/{y}.png'
+                'https://realearth.ssec.wisc.edu/tiles/globalir-avn/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
@@ -324,14 +326,11 @@ function radarLayerLoad(){
 
 
 function loadESRIServices(){
-    console.log('load')
 }
 
 function loadWatchWarn(data){
-    console.log(data)
     let features = data.features
     var tornadoData = {"type":"FeatureCollection", features }
-    console.log(tornadoData)
     map.addLayer({
         'id': 'watch_warn',
         'type': 'fill',

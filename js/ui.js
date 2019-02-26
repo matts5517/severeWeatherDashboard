@@ -1,5 +1,6 @@
 // js file for handling the UI of the site ////////////////////////////////////////////////////////////////////////////////////////
 
+// utc clock on main site
 function startTime() {
   	var today = new Date();
   	let utcMonth = today.getUTCMonth();
@@ -55,7 +56,6 @@ $('.pillCheckbox input').on('change',function(v){
 $( "#radSatSlider" ).slider({
 	value: 80,
   	slide: function( v, ui ) {
-  		console.log(v, ui.value)
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
   		map.setPaintProperty('nexrad', 'raster-opacity', parseInt(sliderVal, 10) / 100);
@@ -64,6 +64,73 @@ $( "#radSatSlider" ).slider({
 });
 
 
+// display lat long on map when cursor move move
+map.on('mousemove', function (e) {
+	let lon = parseFloat(e.lngLat.lng).toFixed(2)
+	let lat = parseFloat(e.lngLat.lat).toFixed(2)
+	$('#latLongText').html(lon + ' ' + lat)
+})
+// on map click
+map.on('click', function(e) {
+	// set bbox as 5px reactangle area around clicked point
+	var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
+	console.log(e, bbox)
+	var features = map.queryRenderedFeatures(bbox, { layers: ['tornado', 'hail', 'wind'] });
+	console.log(features)
+
+	// ***** to filter selection symbol *********
+	// // Run through the selected features and set a filter
+	// // to match features with unique FIPS codes to activate
+	// // the `counties-highlighted` layer.
+	// var filter = features.reduce(function(memo, feature) {
+	// memo.push(feature.properties.FIPS);
+	// return memo;
+	// }, ['in', 'FIPS']);
+	 
+	// map.setFilter("counties-highlighted", filter);
+})
+
+// on toolbox/settings click
+$('.siteSettings').on('click', function(v){
+	if ($('.toolBoxWrapper').is(":visible")) {
+		$('.toolBoxWrapper').slideUp()
+	}else{
+		$('.toolBoxWrapper').slideDown()
+	}
+})
+// on basemap tool selection
+$('#basemapTool').on('click', function(v){
+	console.log(v);
+	console.log()
+	if ($('#basemapSelector').is(":visible")) {
+		$('#basemapSelector').slideUp()
+	}else{
+		$('#basemapSelector').slideDown()
+	}
+	
+})
+basemapSelector
+$('.basemapItems').on('click', function(v){
+	console.log(v.currentTarget.dataset['basemap'])
+	let layerId = v.currentTarget.dataset['basemap']
+	map.setStyle('mapbox://styles/mapbox/' + layerId);
+})
+
+
+
+
+
+// // if clicked off the toolbox dropdown
+// $(document).bind('click', function(e) {
+// 	console.log(e.target)
+// 	// || !$(e.target).is('.toolBoxItems'))
+// 	if (!$(e.target).is('.basemapItems') ) {
+// 		console.log('other click')
+// 	}
+//   // if(!$(e.target).is('#special')) {
+//   //   // do something
+//   // }
+// });
 
 // works but super slow right now. maybe have to download image to server
 // function loopRadar(){
