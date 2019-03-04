@@ -36,9 +36,9 @@ start = time.time()
 jsonPath = 'data/geoJson/severeWeather/pastYear/currentYear.json'
 
 
-# donwload all raw csv's to a folder
-# i = 1
-# while i < 60:
+# # donwload all raw csv's to a folder
+# i = 50
+# while i < 70:
 #     # get the correct date
 #     day= str(datetime.datetime(2019, 1, 1) + datetime.timedelta(i - 1))
 #     day = day.split(' ')[0]
@@ -60,6 +60,7 @@ jsonPath = 'data/geoJson/severeWeather/pastYear/currentYear.json'
 # loop through dir of csv files and merge into one geojson file
 yearDir  = '/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/python/data/csv/2019'
 jsonData = []
+uid = 1
 for file in os.listdir(yearDir):
     if file[-4:] == '.csv':
         filePath = os.path.join(yearDir, file)
@@ -69,7 +70,9 @@ for file in os.listdir(yearDir):
         dayOfYear = dt.strftime('%j')
         with open(filePath, "rb") as f:
             reader = csv.reader(f, delimiter="\t")
+            
             for i, line in enumerate(reader):
+                print uid, 'uid'
                 line = str(line)[2:-2]
                 listLine = line.split(',')
                 if 'F_Scale' in str(listLine):
@@ -98,14 +101,33 @@ for file in os.listdir(yearDir):
                         lon = listLine[6]
                         comments = listLine[7]
                         date = date
-                        print timeReported
+                        print uid
+                        uniqueid = str(uid) + '_' + str(timeReported) + '_' + str(date)
+
                         d1 = {'type':'Feature','geometry':{'type':'Point', 'coordinates': [float(lon), float(lat)]},
-                        'properties': {'dayOfYear':dayOfYear,'date':date,'timeReported': timeReported,'size': size, 'location':location,'county':county ,'state':state,'eventType':eventType,'eventNum':eventNum,'comments':comments , 'marker-symbol':'default_marker'}}
+                        'properties': {'uniqueid': uniqueid,'dayOfYear':dayOfYear,'date':date,'timeReported': timeReported,'size': size, 'location':location,'county':county ,'state':state,'eventType':eventType,'eventNum':eventNum,'comments':comments , 'marker-symbol':'default_marker'}}
                         jsonData.append(d1)
+
+                        uid +=1
                 except:
                     print 'except'
 jsonData = {'type': 'FeatureCollection', 'features': jsonData}
-print jsonData
+
 # print jsonPath
 with open(jsonPath, 'w') as outfile:
     json.dump(jsonData, outfile, indent=4, separators=(',', ':'))
+
+
+
+
+
+# build a dir for every days csv files, or read the one merged geojson file
+
+# on run every 15 mins, grab the most current storm reports and make a file called current
+
+# keep overwriting that current file 
+
+# merge current with the current_year file
+
+
+

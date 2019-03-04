@@ -3,6 +3,10 @@
 
 // js file to work with weather data layers
 function loadSevereLayers(data){
+    console.log(data)
+    
+
+
 	// tornado
 	var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 3;
@@ -21,7 +25,7 @@ function loadSevereLayers(data){
     });
     console.log(features.length, 'hail')
     var hailData = {"type":"FeatureCollection", features }
-    
+    console.log(hailData)
     // add the wind storm layer 
     map.addLayer({
         'id': 'wind',
@@ -93,6 +97,27 @@ function loadSevereLayers(data){
 			},
         },
         
+    });
+     // add the storm selection layer
+    map.addLayer({
+        'id': 'storm_selection',
+        'type': 'symbol',
+        'source': {
+            "type": "geojson",
+            "data": data
+        },
+        'layout': {
+            'visibility': 'visible',
+        },
+        "type": "circle",
+        'paint': {
+            'circle-color':"#efe140",
+            'circle-radius': {
+                'base': 1.75,
+                'stops': [[1, 2],[4, 3],[6, 5],[10, 10],[14, 25]]
+            },
+        },
+        "filter": ["in", "uniqueid", ""]
     });
     // // use code below to add a point pukse functionality ***************************
     // var framesPerSecond = 15; 

@@ -90,25 +90,23 @@ footer div{
  	cursor: pointer;
  }
  .toolBoxWrapper{
- 	 position: absolute; top: 145px; background-color: rgba(37,61,89,.7);
+ 	 position: absolute; top: 111px; background-color: rgba(37,61,89,.7);
  	z-index: 1999; left: 10px; border-radius: 5px 5px 5px 5px; width: 125px;
- 	display: none;
+ 	
  }
  .toolBoxWrapper div{
- 	font-size: 18px; color: white; padding: 5px; 
+ 	font-size: 18px; color: white; padding: 5px; border-bottom: solid 1px rgba(255,255,255,.2)
  }
  .toolBoxWrapper div:hover{
  	color: orange; cursor: pointer; background-color: rgba(61, 157, 179,.2)
  }
 
 .basemapItems{
-	border-bottom: solid 1px rgba(255,255,255,.2)
+	border-bottom: solid 1px rgba(255,255,255,.2) font-size: 12px;
 }
- #basemapSelector div{
- 	font-size: 14px; background-color: rgba(61, 157, 179,.2)
- }
-
-
+.basemapItems span{
+	margin-left: 10px;
+}
  #map { 
  	position:absolute; top:60px; bottom:0; width:100%; 
  }

@@ -64,32 +64,47 @@ $( "#radSatSlider" ).slider({
 });
 
 
-// display lat long on map when cursor move move
-map.on('mousemove', function (e) {
-	let lon = parseFloat(e.lngLat.lng).toFixed(2)
-	let lat = parseFloat(e.lngLat.lat).toFixed(2)
-	$('#latLongText').html(lon + ' ' + lat)
-})
+
+
 // on map click
 map.on('click', function(e) {
 	// set bbox as 5px reactangle area around clicked point
-	var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
-	console.log(e, bbox)
+	var bbox = [[e.point.x - 3, e.point.y - 3], [e.point.x + 3, e.point.y + 3]];
 	var features = map.queryRenderedFeatures(bbox, { layers: ['tornado', 'hail', 'wind'] });
-	console.log(features)
+	// filter features to show the storm selection symbol.
+	i = 1
+	var filter = features.reduce(function(memo, feature) {
+		if(i==1){ // limit to only one selected point
+			memo.push(feature.properties.uniqueid);
+		}
+		i +=1
+		return memo;
+	}, ['in', 'uniqueid']);
+	map.setFilter("storm_selection", filter);
 
-	// ***** to filter selection symbol *********
-	// // Run through the selected features and set a filter
-	// // to match features with unique FIPS codes to activate
-	// // the `counties-highlighted` layer.
-	// var filter = features.reduce(function(memo, feature) {
-	// memo.push(feature.properties.FIPS);
-	// return memo;
-	// }, ['in', 'FIPS']);
-	 
-	// map.setFilter("counties-highlighted", filter);
+	// call the populate storm info function
+	populateStormInfo(features[0])
 })
+// populate storm information function
+function populateStormInfo(feat){
+	console.log(feat.properties, 'hey')
+	// build out the html for storm click here
+}
+// on mouse move over map
+map.on('mousemove', function (e) {
+	let lon = parseFloat(e.lngLat.lng).toFixed(2)
+	let lat = parseFloat(e.lngLat.lat).toFixed(2)
+	// add lat long to the map
+	$('#latLongText').html(lon + ' ' + lat)
 
+	var bbox = [[e.point.x - 3, e.point.y - 3], [e.point.x + 3, e.point.y + 3]];
+	var features = map.queryRenderedFeatures(bbox, { layers: ['tornado', 'hail', 'wind'] });
+	if(features.length > 0){
+		map.getCanvas().style.cursor = 'pointer';
+	}else{
+		map.getCanvas().style.cursor = '';
+	}
+})
 // on toolbox/settings click
 $('.siteSettings').on('click', function(v){
 	if ($('.toolBoxWrapper').is(":visible")) {
@@ -100,8 +115,6 @@ $('.siteSettings').on('click', function(v){
 })
 // on basemap tool selection
 $('#basemapTool').on('click', function(v){
-	console.log(v);
-	console.log()
 	if ($('#basemapSelector').is(":visible")) {
 		$('#basemapSelector').slideUp()
 	}else{
@@ -111,9 +124,13 @@ $('#basemapTool').on('click', function(v){
 })
 basemapSelector
 $('.basemapItems').on('click', function(v){
-	console.log(v.currentTarget.dataset['basemap'])
 	let layerId = v.currentTarget.dataset['basemap']
-	map.setStyle('mapbox://styles/mapbox/' + layerId);
+	// dont let the user reselect a basemap if its already selected
+	if (layerId != map.style.stylesheet.id) {
+		map.setStyle('mapbox://styles/mapbox/' + layerId);
+		$('#basemapSelector').slideUp()
+	}
+	
 })
 
 

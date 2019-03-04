@@ -1,7 +1,3 @@
-Raw Tornado LSR for 190208 12Z to 11:59Z the next day
-Time,EF_Scale,Location,County,State,LAT,LON,Remarks
-Raw Wind/Gust LSR for 190208 12Z to 11:59Z the next day
-Time,Speed(MPH),Location,County,State,LAT,LON,Remarks
-1340,UNK,4 NW ALDEN,ERIE,NY,42.94,-78.55,1 PINE TREE DOWN ON NORTH MILLGROVE ROAD. TIME ESTIMATED. (BUF)
-Raw Hail LSR for 190208 12Z to 11:59Z the next day
-Time,Size(1/100in.),Location,County,State,LAT,LON,Remarks
+Time,F_Scale,Location,County,State,Lat,Lon,Comments
+Time,Speed,Location,County,State,Lat,Lon,Comments
+Time,Size,Location,County,State,Lat,Lon,Comments
