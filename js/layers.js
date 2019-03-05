@@ -199,6 +199,9 @@ function radarLayerLoad(){
     // may 20th 2013 radar image
     'https://mesonet.agron.iastate.edu/archive/data/2013/05/20/GIS/uscomp/n0r_201305200005.png'
     'https://mesonet.agron.iastate.edu/cgi-bin/wms/iowa/rainfall.cgi?'
+
+    // at specific time
+    'http://realearth.ssec.wisc.edu/tiles/nexrphase/20190303/212100/{z}/{x}/{y}.png'
     // radar layers //////////////////////
     map.addLayer({
         'id': 'nexrad',
@@ -206,7 +209,7 @@ function radarLayerLoad(){
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://realearth.ssec.wisc.edu/tiles/nexreet/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/nexrphase/20190303/203100/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },

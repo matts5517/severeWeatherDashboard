@@ -96,7 +96,7 @@ for file in os.listdir(yearDir):
                         jsonData.append(d1)
                         uid +=1
                 except:
-                    print 'except', listLine
+                    print 'except', listLine, date
 jsonData = {'type': 'FeatureCollection', 'features': jsonData}
 with open(jsonYearPath, 'w') as outfile:
     json.dump(jsonData, outfile, indent=4, separators=(',', ':'))
