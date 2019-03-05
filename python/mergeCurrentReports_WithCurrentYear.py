@@ -35,20 +35,20 @@ date = str(date)[:-16].split('-')
 date = date[0][-2:] + date[1] + date[2]
 
 # root path 
-rootPath = 'var/www/html/'
-
+# rootPath = 'var/www/html/python/'
+# rootPath = 'var/www/html/efs/'
+rootPath = ''
+# storm reports url
 url = 'http://www.spc.noaa.gov/climo/reports/today_filtered.csv'
-currentYearFilePath = rootPath + 'python/data/csv/2019/severeData_'+ date + '.csv'
-jsonYearPath = rootPath + 'python/data/geoJson/severeWeather/pastYear/currentYear.json'
-jsonTodayPath = rootPath + 'python/data/geoJson/severeWeather/pastYear/'
-yearDir  = rootPath + 'python/data/csv/2019'
-jsonDataToday = []
+# other vars
+currentYearFilePath = rootPath + 'data/csv/2019/severeData_'+ date + '.csv'
+jsonYearPath = rootPath + 'data/geoJson/severeWeather/currentYear_stormReports.json'
+yearDir  = rootPath + 'data/csv/2019'
 
 urllib.urlretrieve(url, currentYearFilePath)
 
 # loop through all csv's and rebuild json file #######################################################################
 # loop through dir of csv files and merge into one geojson file
-
 jsonData = []
 uid = 1
 for file in os.listdir(yearDir):

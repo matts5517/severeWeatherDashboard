@@ -3,7 +3,7 @@
 // utc clock on main site
 function startTime() {
   	var today = new Date();
-  	let utcMonth = today.getUTCMonth();
+  	let utcMonth = today.getUTCMonth() + 1;
   	let utcDate = today.getUTCDate();
   	let utcYear = today.getUTCFullYear();
   	let utcHour = today.getUTCHours();
@@ -87,6 +87,7 @@ map.on('click', function(e) {
 })
 // populate storm information function
 function populateStormInfo(feat){
+
 	console.log(feat.properties, 'hey')
 	// build out the html for storm click here
 }

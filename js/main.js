@@ -29,7 +29,7 @@ map.on('style.load', function(){
 	radarLayerLoad(); //  load radar layers
 	loadESRIServices();
 	// get severe storm report data
-	$.getJSON("../python/data/geoJson/severeWeather/pastYear/currentYear.json", function(jsonData) {
+	$.getJSON("../python/data/geoJson/severeWeather/currentYear_stormReports.json", function(jsonData) {
 		loadSevereLayers(jsonData);
 	})
 	$.getJSON("../python/data/geoJson/watch_warn.json", function(jsonData) {
