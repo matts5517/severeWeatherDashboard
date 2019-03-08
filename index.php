@@ -160,16 +160,15 @@
 			<!-- this is the div that is used to breakout more data for storms and other in the future -->
 			<div class="severe-storm-breakout">
 				<h3>Storm Count</h3>
-				<div><span>Tornado: </span><span id="tornadoCount">13</span></div>
-				<div><span>Hail: </span><span id="hailCount">54</span></div>
-				<div><span>Wind: </span><span id="windCount">123</span></div>
-				
+				<div><span>Tornado: </span><span id="tornadoCount">80</span></div>
+				<div><span>Hail: </span><span id="hailCount">63</span></div>
+				<div><span>Wind: </span><span id="windCount">327</span></div>
+
 				<!-- <div>other stuff goes here!!</div> -->
 
 			</div> <!-- end of storm  breakout area -->
 			<!-- mapbox div -->
 			<div id="map"></div>
-
 			<!-- footer -->
 			<footer>
 				<div>&copy <?php echo date('Y');?> <?php echo $page_title; ?></div>

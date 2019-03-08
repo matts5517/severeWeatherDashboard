@@ -20,7 +20,6 @@ function checkTime(i) {
   return i;
 }
 startTime();
-
 // handle any date functionality needed throughout the app and make global vars
 function handleDates(){
 	console.log('handle date')
@@ -28,17 +27,12 @@ function handleDates(){
 	var n = d.getUTCDate();
 	var y = d.getUTCFullYear();
 	var m = d.getUTCMonth() + 1;
-
-	console.log(n, y, m, '//////////')
-
 	var now = new Date(y +'-' + m + '-' + n);
-	console.log(now)
 	var start = new Date(now.getFullYear(), 0, 0);
-	console.log((now-start))
 	var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
 	var oneDay = 1000 * 60 * 60 * 24;
 	var day = Math.floor(diff / oneDay);
-	console.log('Day of year: ' + day);
+	console.log('UTC Day of year: ' + day);
 }
 handleDates() // get any date funtionality needed and make globals vars
 
