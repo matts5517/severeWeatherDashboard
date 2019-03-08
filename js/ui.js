@@ -21,6 +21,27 @@ function checkTime(i) {
 }
 startTime();
 
+// handle any date functionality needed throughout the app and make global vars
+function handleDates(){
+	console.log('handle date')
+	var d = new Date();
+	var n = d.getUTCDate();
+	var y = d.getUTCFullYear();
+	var m = d.getUTCMonth() + 1;
+
+	console.log(n, y, m, '//////////')
+
+	var now = new Date(y +'-' + m + '-' + n);
+	console.log(now)
+	var start = new Date(now.getFullYear(), 0, 0);
+	console.log((now-start))
+	var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+	var oneDay = 1000 * 60 * 60 * 24;
+	var day = Math.floor(diff / oneDay);
+	console.log('Day of year: ' + day);
+}
+handleDates() // get any date funtionality needed and make globals vars
+
 
 // checkbox layer toggle visibility functionality
 let inputs = $('.pillCheckbox input')
@@ -63,9 +84,6 @@ $( "#radSatSlider" ).slider({
   	}
 });
 
-
-
-
 // on map click
 map.on('click', function(e) {
 	// set bbox as 5px reactangle area around clicked point
@@ -91,6 +109,17 @@ function populateStormInfo(feat){
 	console.log(feat.properties, 'hey')
 	// build out the html for storm click here
 }
+
+// populate storm count for today, past 7 days, and past year. Also populate HTML
+function populateStormCount(){
+	console.log(app.severeStormData)
+	// tornado
+	var features = $.grep(app.severeStormData.features, function(element, index){
+          return element.properties.eventNum == 3;
+    });
+    console.log(app.tornadoCountPastYear, 'tornado past year')
+}
+
 // on mouse move over map
 map.on('mousemove', function (e) {
 	let lon = parseFloat(e.lngLat.lng).toFixed(2)
@@ -123,7 +152,7 @@ $('#basemapTool').on('click', function(v){
 	}
 	
 })
-basemapSelector
+// basemap items click, this changes the basemap
 $('.basemapItems').on('click', function(v){
 	let layerId = v.currentTarget.dataset['basemap']
 	// dont let the user reselect a basemap if its already selected
@@ -134,7 +163,10 @@ $('.basemapItems').on('click', function(v){
 	
 })
 
-
+// on analyze storm button click
+$('.severe-analyze-button').on('click', function(evt){
+	console.log(evt)
+})
 
 
 

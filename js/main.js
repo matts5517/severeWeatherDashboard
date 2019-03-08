@@ -20,10 +20,14 @@ map.addControl(new mapboxgl.NavigationControl({showCompass:false, showZoom:true}
 // load layers, call functions, etc on map ready ****************************************************************************
 map.on('style.load', function(){
 	radarLayerLoad(); //  load radar layers
-	loadESRIServices();
+	loadESRIServices(); // load esri services geojson
+	
+
 	// get severe storm report data
 	$.getJSON( pathToData + "geoJson/severeWeather/currentYear_stormReports.json", function(jsonData) {
-		loadSevereLayers(jsonData);
+		app.severeStormData = jsonData; // set global var to carry over severe storm json to entire app
+		loadSevereLayers(app.severeStormData);
+		populateStormCount(); // count storms and populate html
 	})
 })
 

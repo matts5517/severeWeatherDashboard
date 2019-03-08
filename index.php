@@ -116,7 +116,7 @@
 				<div class="pillCheckbox" id="">
 		            <div class="subStormsWrapper">
 		            	<h3>Storm Reports</h3>
-		            	<hr class="whiteHr">
+		            	<!-- <hr class="whiteHr"> -->
 		            	 <label class="form-component mainCB" for="tornado-option">
 			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 			              <div class="check"></div>
@@ -132,9 +132,11 @@
 			              <div class="check"></div>
 			              <span class="form-text noselect">Wind</span>
 			            </label>
-			            <div>Click Here for more!!</div>
-			            <h3>Radar</h3>
+			            <button class="severe-analyze-button">Analyze Storms</button>
+
 			            <hr class="whiteHr">
+			            <h3>Radar</h3>
+			            
 			            <div id="radarSatLayers">
 			            	 <label class="form-component mainCB" for="nexrad-option">
 				              <input type="checkbox" id="nexrad-option" name="" value="nexrad">
@@ -153,17 +155,29 @@
 				        </div>
 					</div>
 				</div>
-			</div>
-		<!-- mapbox div -->
-		<div id="map"></div>
+			</div> <!-- end of layer selector div -->
 
-		<!-- footer -->
-		<footer>
-			<div>&copy <?php echo date('Y');?> <?php echo $page_title; ?></div>
-		</footer>
-		<!-- Bring in JS files at end of DOM -->
+			<!-- this is the div that is used to breakout more data for storms and other in the future -->
+			<div class="severe-storm-breakout">
+				<h3>Storm Count</h3>
+				<div><span>Tornado: </span><span id="tornadoCount">13</span></div>
+				<div><span>Hail: </span><span id="hailCount">54</span></div>
+				<div><span>Wind: </span><span id="windCount">123</span></div>
+				
+				<!-- <div>other stuff goes here!!</div> -->
+
+			</div> <!-- end of storm  breakout area -->
+			<!-- mapbox div -->
+			<div id="map"></div>
+
+			<!-- footer -->
+			<footer>
+				<div>&copy <?php echo date('Y');?> <?php echo $page_title; ?></div>
+			</footer>
+			<!-- Bring in JS files at end of DOM -->
 		
-		
+		</div> <!-- end of main content area div  -->
+
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/colors.js"></script>
 		<script type="text/javascript" src="js/layers.js"></script>

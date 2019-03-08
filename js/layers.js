@@ -3,10 +3,6 @@
 
 // js file to work with weather data layers
 function loadSevereLayers(data){
-    console.log(data)
-    
-
-
 	// tornado
 	var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 3;
@@ -25,7 +21,6 @@ function loadSevereLayers(data){
     });
     console.log(features.length, 'hail')
     var hailData = {"type":"FeatureCollection", features }
-    console.log(hailData)
     // add the wind storm layer 
     map.addLayer({
         'id': 'wind',
