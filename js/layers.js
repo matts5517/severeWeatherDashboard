@@ -189,6 +189,7 @@ function loadSevereLayers(data){
 // load radar layers
 
 function radarLayerLoad(){
+    console.log('radar load')
     // the url below is for archived radar products !!!!!!!!!!!!!!!! back to at least 2007
     'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
     // may 20th 2013 radar image
@@ -204,7 +205,7 @@ function radarLayerLoad(){
         'source': {
             'type': 'raster',
             'tiles': [
-                'http://realearth.ssec.wisc.edu/tiles/nexrphase/20190303/203100/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/nexrphase/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },

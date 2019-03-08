@@ -33,6 +33,7 @@ function handleDates(){
 	var oneDay = 1000 * 60 * 60 * 24;
 	var day = Math.floor(diff / oneDay);
 	console.log('UTC Day of year: ' + day);
+	app.UTCdayOfYear = day;
 }
 handleDates() // get any date funtionality needed and make globals vars
 
@@ -44,6 +45,7 @@ $('.pillCheckbox input').on('change',function(v){
 	let checked = v.currentTarget.checked;
 	let type = v.currentTarget.type;
 	let val = $(this).val()
+	console.log(val)
 	let radarInput = $('#radarSatLayers input:checked')
 	if(radarInput.length > 0){
 		$('#sliderWrapper').slideDown();
@@ -100,18 +102,13 @@ map.on('click', function(e) {
 // populate storm information function
 function populateStormInfo(feat){
 
-	console.log(feat.properties, 'hey')
+	// console.log(feat.properties, 'hey')
 	// build out the html for storm click here
 }
 
 // populate storm count for today, past 7 days, and past year. Also populate HTML
 function populateStormCount(){
-	console.log(app.severeStormData)
-	// tornado
-	var features = $.grep(app.severeStormData.features, function(element, index){
-          return element.properties.eventNum == 3;
-    });
-    console.log(app.tornadoCountPastYear, 'tornado past year')
+	console.log('populate storm count')	
 }
 
 // on mouse move over map
@@ -162,6 +159,109 @@ $('.severe-analyze-button').on('click', function(evt){
 	console.log(evt)
 })
 
+
+
+
+// populate storm count for today, past 7 days, and past year. Also populate HTML
+// function populateStormCount(){
+// 	let endDay = parseInt(app.UTCdayOfYear);
+// 	// get count for storms today
+// 	var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 3 && element.properties.dayOfYear == endDay;
+//     });
+    
+//     app.tornadoCountToday = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 2 && element.properties.dayOfYear == endDay;
+//     });
+    
+//     app.windCountToday = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 1 && element.properties.dayOfYear == endDay;
+//     });
+    
+//     app.hailCountToday = features.length
+
+// 	// get count for last week of storms ///////////////////////////////////
+
+
+
+// 	// tornado
+//     let startDay = parseInt(app.UTCdayOfYear -7)
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 3 && element.properties.dayOfYear >= startDay && element.properties.dayOfYear <= endDay;
+//     });
+    
+//     app.tornadoCountPastWeek = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 2 && element.properties.dayOfYear >= startDay && element.properties.dayOfYear <= endDay;
+//     });
+//     app.windCountPastWeek = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 1 && element.properties.dayOfYear >= startDay && element.properties.dayOfYear <= endDay;
+//     });
+//     app.hailCountPastWeek = features.length
+    
+
+//     // get count for last month of storms ///////////////////////////////////////
+//     let endDay2 = parseInt(app.UTCdayOfYear);
+//     let startDay2 = parseInt(app.UTCdayOfYear -31)
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 3 && element.properties.dayOfYear >= startDay2 && element.properties.dayOfYear <= endDay2;
+//     });
+    
+//     app.tornadoCountPastMonth = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 2 && element.properties.dayOfYear >= startDay2 && element.properties.dayOfYear <= endDay2;
+//     });
+//     app.windCountPastMonth = features.length
+
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 1 && element.properties.dayOfYear >= startDay2 && element.properties.dayOfYear <= endDay2;
+//     });
+//     app.hailCountPastMonth = features.length
+
+//     // get count for storms for this year
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 3;
+//     });
+    
+//     app.tornadoCountPastYear = features.length
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 2;
+//     });
+    
+//     app.windCountPastYear = features.length
+//     var features = $.grep(app.severeStormData.features, function(element, index){
+//         return element.properties.eventNum == 1;
+//     });
+//     app.hailCountPastYear = features.length
+
+
+//     console.log(app.tornadoCountToday, 'tornado past today')
+//     console.log(app.windCountToday, 'wind past today')
+//     console.log(app.hailCountToday, 'hail past today')
+//     console.log('  ')
+
+//     console.log(app.tornadoCountPastWeek, 'tornado past week')
+//     console.log(app.windCountPastWeek, 'wind past week')
+//     console.log(app.hailCountPastWeek, 'hail past week')
+//     console.log('  ')
+
+//     console.log(app.tornadoCountPastMonth, 'tornado past Month')
+//     console.log(app.windCountPastMonth, 'wind past Month')
+//     console.log(app.hailCountPastMonth, 'hail past Month')
+//     console.log('  ')
+
+//     console.log(app.tornadoCountPastYear, 'tornado past year')
+//     console.log(app.windCountPastYear, 'wind past year')
+//     console.log(app.hailCountPastYear, 'hail past year')
+// }
 
 
 // // if clicked off the toolbox dropdown
