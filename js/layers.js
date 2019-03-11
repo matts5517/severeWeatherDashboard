@@ -277,8 +277,10 @@ function radarLayerLoad(){
         'layout': {
             'visibility': 'none'
         },
-        'paint': {}
+        'paint': {
+        }
     },);
+    map.setPaintProperty('nexrad', 'raster-opacity', .70);
     // radar - 10 mins
     map.addLayer({
         'id': 'radar_10',
@@ -409,7 +411,7 @@ function radarLayerLoad(){
         },
         
     },);
-
+    map.setPaintProperty('goes_vis', 'raster-opacity', .70);
 
 } 
 

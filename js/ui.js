@@ -71,10 +71,11 @@ $('.pillCheckbox input').on('change',function(v){
 })
 // sat and radar slider functionality
 $( "#radSatSlider" ).slider({
-	value: 80,
+	value: 70,
   	slide: function( v, ui ) {
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
+  		console.log(parseInt(sliderVal, 10) / 100)
   		map.setPaintProperty('nexrad', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}

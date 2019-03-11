@@ -147,7 +147,7 @@
 				              <span class="form-text noselect">GOES Vis</span>
 				            </label>
 				            <div id="sliderWrapper" style="display: none;">
-				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">80</span>%</div>
+				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">70</span>%</div>
 				            	<div id="radSatSlider"></div>
 				            </div>
 				        </div>
