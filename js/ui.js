@@ -102,16 +102,20 @@ map.on('click', function(e) {
 // populate storm information function
 function populateStormInfo(feat){
 
-	// console.log(feat.properties, 'hey')
+	console.log(feat.properties, 'hey');
 	// build out the html for storm click here
 }
 
 // populate storm count for today, past 7 days, and past year. Also populate HTML
 function populateStormCount(){
-	console.log('populate storm count')	
+	$('#tornadoCount').html(app.severeStormCount.today.tornado)
+	$('#windCount').html(app.severeStormCount.today.wind)
+	$('#hailCount').html(app.severeStormCount.today.hail)
 }
+// storm filter toggle
 
-// on mouse move over map
+
+// on mouse move over map /////////////
 map.on('mousemove', function (e) {
 	let lon = parseFloat(e.lngLat.lng).toFixed(2)
 	let lat = parseFloat(e.lngLat.lat).toFixed(2)
@@ -156,8 +160,26 @@ $('.basemapItems').on('click', function(v){
 
 // on analyze storm button click
 $('.severe-analyze-button').on('click', function(evt){
-	console.log(evt)
+	// slide down the severe storm breakout box
+	$('.severe-storm-breakout').slideDown();
 })
+// on storm breakout close click
+$('.severe-storm-breakout-close').on('click', function(evt){
+	// slide down the severe storm breakout box
+	$('.severe-storm-breakout').slideUp();
+})
+
+// on severe storm breakout filter radio buttons click
+$('.severe-storm-breakout input').on('click', function(evt){
+	$('#tornadoCount').html(app.severeStormCount[evt.currentTarget.value].tornado)
+	$('#windCount').html(app.severeStormCount[evt.currentTarget.value].wind)
+	$('#hailCount').html(app.severeStormCount[evt.currentTarget.value].hail)
+	// filter layers on map
+	map.getSource('tornado').setData(app.data['tornadoData' + evt.currentTarget.value]);
+	map.getSource('hail').setData(app.data['hailData' + evt.currentTarget.value]);
+	map.getSource('wind').setData(app.data['windData' + evt.currentTarget.value]);
+})
+
 
 
 

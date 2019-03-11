@@ -103,6 +103,7 @@ for file in os.listdir(yearDir):
                     print 'except', listLine, date
 
 jsonDataForCount = jsonData
+print len(jsonDataForCount)
 jsonData = {'type': 'FeatureCollection', 'features': jsonData}
 
 with open(jsonYearPath, 'w') as outfile:

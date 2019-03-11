@@ -109,8 +109,6 @@
 				</span>
 				
 			</div>
-			
-
 
 			<div class="layerSelectorWrapper">
 				<div class="pillCheckbox" id="">
@@ -120,7 +118,7 @@
 		            	 <label class="form-component mainCB" for="tornado-option">
 			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 			              <div class="check"></div>
-			              <span class="form-text noselect">Tornadoes</span>
+			              <span class="form-text noselect">Tornado</span>
 			            </label>
 			            <label class="form-component mainCB" for="hail-option">
 			              <input checked="true" type="checkbox" id="hail-option" name="" value="hail">
@@ -158,14 +156,30 @@
 			</div> <!-- end of layer selector div -->
 
 			<!-- this is the div that is used to breakout more data for storms and other in the future -->
-			<div class="severe-storm-breakout">
+			<div class="severe-storm-breakout noselect">
+				<div class="severe-storm-breakout-close noselect"><span style="margin-top: 1px;">&#10005;</span></div>
 				<h3>Storm Count</h3>
-				<div><span>Tornado: </span><span id="tornadoCount">80</span></div>
-				<div><span>Hail: </span><span id="hailCount">63</span></div>
-				<div><span>Wind: </span><span id="windCount">327</span></div>
-
-				<!-- <div>other stuff goes here!!</div> -->
-
+				<div><span>Tornado: </span><span class="stormCount" id="tornadoCount">80</span></div>
+				<div><span>Hail: </span><span class="stormCount" id="hailCount">63</span></div>
+				<div><span>Wind: </span><span class="stormCount" id="windCount">327</span></div>
+				<hr class="whiteHr">
+				<h3>Filter Data</h3>
+				<div class="stormCountWrapper">
+					<input checked type="radio" id="today-option" value="today" name="food">
+					<label class="form-component" for="today-option">Today</label>
+				</div>
+				<div class="stormCountWrapper">
+					<input  type="radio" id="week-option" value="week" name="food">
+					<label class="form-component" for="week-option">Past Week</label>
+				</div>
+				<div class="stormCountWrapper">
+					<input  type="radio" id="month-option" value="month" name="food">
+					<label class="form-component" for="month-option">Past Month</label>
+				</div>
+				<div class="stormCountWrapper">
+					<input  type="radio" id="year-option" value="year" name="food">
+					<label class="form-component" for="year-option">This Year</label>
+				</div>
 			</div> <!-- end of storm  breakout area -->
 			<!-- mapbox div -->
 			<div id="map"></div>

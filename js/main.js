@@ -23,10 +23,16 @@ map.on('style.load', function(){
 	loadESRIServices(); // load esri services geojson
 	
 
-	// get severe storm report data
+	// get severe storm report json data
 	$.getJSON( pathToData + "geoJson/severeWeather/currentYear_stormReports.json", function(jsonData) {
 		app.severeStormData = jsonData; // set global var to carry over severe storm json to entire app
+		console.log(app.severeStormData.features.length)
 		loadSevereLayers(app.severeStormData);
+		
+	})
+	// get severe storm count json data
+	$.getJSON( pathToData + "geoJson/severeWeather/stormReports_count.json", function(jsonData) {
+		app.severeStormCount = jsonData;
 		populateStormCount(); // count storms and populate html
 	})
 })

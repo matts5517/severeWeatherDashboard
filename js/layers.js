@@ -3,31 +3,97 @@
 
 // js file to work with weather data layers
 function loadSevereLayers(data){
-	// tornado
+    let today = app.UTCdayOfYear; 
+    let last7 = app.UTCdayOfYear - 7; 
+    let last30 = app.UTCdayOfYear - 31;
+    app.data = {}
+    // #####################################################################################
+    // tornado today
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 3 && element.properties.dayOfYear == app.UTCdayOfYear;
+    });
+    app.data.tornadoDatatoday = {"type":"FeatureCollection", features }
+
+    // tornado last 7 days
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 3 && element.properties.dayOfYear >= last7 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.tornadoDataweek = {"type":"FeatureCollection", features }
+
+    // tornado last 30 days
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 3 && element.properties.dayOfYear >= last30 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.tornadoDatamonth = {"type":"FeatureCollection", features }
+    
+
+	// tornado past year
 	var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 3;
     });
-    console.log(features.length, 'tornado')
-    var tornadoData = {"type":"FeatureCollection", features }
-    // wind
+    
+    app.data.tornadoDatayear = {"type":"FeatureCollection", features }
+   
+   // #####################################################################################
+    // wind past Today
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 2 && element.properties.dayOfYear == app.UTCdayOfYear;
+    });
+    app.data.windDatatoday = {"type":"FeatureCollection", features }
+
+    // wind past week
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 2 && element.properties.dayOfYear >= last7 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.windDataweek = {"type":"FeatureCollection", features }
+
+    // wind past month
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 2 && element.properties.dayOfYear >= last30 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.windDatamonth = {"type":"FeatureCollection", features }
+
+    // wind past year
     var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 2;
     });
-    console.log(features.length, 'wind')
-    var windData = {"type":"FeatureCollection", features }
-    // hail 
+    app.data.windDatayear = {"type":"FeatureCollection", features }
+
+    // #####################################################################################
+    // hail Today
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 1 && element.properties.dayOfYear == app.UTCdayOfYear;
+    });
+    app.data.hailDatatoday = {"type":"FeatureCollection", features }
+
+    // hail past week
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 1 && element.properties.dayOfYear >= last7 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.hailDataweek = {"type":"FeatureCollection", features }
+
+    // hail past month
+    var features = $.grep(data.features, function(element, index){
+          return element.properties.eventNum == 1 && element.properties.dayOfYear >= last30 && element.properties.dayOfYear <= app.UTCdayOfYear;
+    });
+    app.data.hailDatamonth = {"type":"FeatureCollection", features }
+
+    // hail past year
     var features = $.grep(data.features, function(element, index){
           return element.properties.eventNum == 1;
     });
-    console.log(features.length, 'hail')
-    var hailData = {"type":"FeatureCollection", features }
+    app.data.hailDatayear = {"type":"FeatureCollection", features }
+
+    console.log(app)
+
+
     // add the wind storm layer 
     map.addLayer({
         'id': 'wind',
         'type': 'symbol',
         'source': {
             "type": "geojson",
-            "data": windData
+            "data": app.data.windDatatoday
         },
         'layout': {
             'visibility': 'visible',
@@ -43,7 +109,6 @@ function loadSevereLayers(data){
 				'stops': [[1, 2],[4, 3],[6, 5],[10, 10],[14, 25]]
 			},
         },
-        
     });
     // add the hail storm layer 
     map.addLayer({
@@ -51,7 +116,7 @@ function loadSevereLayers(data){
         'type': 'symbol',
         'source': {
             "type": "geojson",
-            "data": hailData
+            "data": app.data.hailDatatoday
         },
         'layout': {
             'visibility': 'visible',
@@ -75,7 +140,7 @@ function loadSevereLayers(data){
         'type': 'symbol',
         'source': {
             "type": "geojson",
-            "data": tornadoData
+            "data": app.data.tornadoDatatoday
         },
         'layout': {
             'visibility': 'visible',

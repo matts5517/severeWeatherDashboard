@@ -1,22 +1,22 @@
 {
     "week":{
-        "tornado":72,
-        "hail":20,
-        "wind":78
+        "tornado":15,
+        "hail":19,
+        "wind":92
     },
     "year":{
-        "tornado":115,
-        "hail":64,
-        "wind":332
+        "tornado":129,
+        "hail":83,
+        "wind":424
     },
     "today":{
         "tornado":0,
-        "hail":0,
-        "wind":0
+        "hail":3,
+        "wind":2
     },
     "month":{
-        "tornado":95,
-        "hail":51,
-        "wind":234
+        "tornado":101,
+        "hail":52,
+        "wind":269
     }
 }
