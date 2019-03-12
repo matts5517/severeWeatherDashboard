@@ -1,6 +1,6 @@
 {
     "week":{
-        "tornado":15,
+        "tornado":14,
         "hail":19,
         "wind":92
     },
@@ -11,12 +11,12 @@
     },
     "today":{
         "tornado":0,
-        "hail":3,
-        "wind":2
+        "hail":0,
+        "wind":0
     },
     "month":{
         "tornado":101,
         "hail":52,
-        "wind":269
+        "wind":268
     }
 }

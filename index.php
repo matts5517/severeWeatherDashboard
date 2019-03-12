@@ -20,7 +20,7 @@
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
 	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.min.js'></script>
 	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.css' type='text/css' />
-	<link rel="stylesheet" media="all" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title><?php echo $page_title; ?></title>
 </head>
 	<body>
@@ -78,22 +78,23 @@
 			</div>
 		</div>
 
-		<!-- header area -->
-		<header>
-			<h1><?php echo $page_title; ?></h1>
-			<div id="timeWrapper">
-				<span id="utcTime">01:34:27</span>
-				<br>
-				<span id="latLongText"></span>
-			</div>
-			<div class="headerOptions">
-
-				<div>About</div>
-				<div id="loginBtn">Sign In</div>
-			</div>
-		</header>
+		
 		<!-- Main content area -->
 		<div class="mainContentArea">
+			<!-- header area -->
+			<header>
+				<h1><?php echo $page_title; ?></h1>
+				<div id="timeWrapper">
+					<span id="utcTime">01:34:27</span>
+					<br>
+					<span id="latLongText"></span>
+				</div>
+				<div class="headerOptions">
+
+					<div>About</div>
+					<div id="loginBtn">Sign In</div>
+				</div>
+			</header>
 			<!-- <div class="siteSettings">
 				<img src="assets/settingCog.png" style="height: 24px;">
 			</div> -->
@@ -190,12 +191,13 @@
 			<!-- Bring in JS files at end of DOM -->
 		
 		</div> <!-- end of main content area div  -->
-
-		<script type="text/javascript" src="js/main.js"></script>
+		
 		<script type="text/javascript" src="js/colors.js"></script>
 		<script type="text/javascript" src="js/layers.js"></script>
 		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>
+		
 	</body>
 </html>
 
