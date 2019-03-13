@@ -22,7 +22,6 @@ function checkTime(i) {
 startTime();
 // handle any date functionality needed throughout the app and make global vars
 function handleDates(){
-	console.log('handle date')
 	var d = new Date();
 	var n = d.getUTCDate();
 	var y = d.getUTCFullYear();
@@ -32,7 +31,6 @@ function handleDates(){
 	var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
 	var oneDay = 1000 * 60 * 60 * 24;
 	var day = Math.floor(diff / oneDay);
-	console.log('UTC Day of year: ' + day);
 	app.UTCdayOfYear = day;
 }
 handleDates() // get any date funtionality needed and make globals vars
@@ -45,7 +43,6 @@ $('.pillCheckbox input').on('change',function(v){
 	let checked = v.currentTarget.checked;
 	let type = v.currentTarget.type;
 	let val = $(this).val()
-	console.log(val)
 	let radarInput = $('#radarSatLayers input:checked')
 	if(radarInput.length > 0){
 		$('#sliderWrapper').slideDown();
@@ -75,35 +72,74 @@ $( "#radSatSlider" ).slider({
   	slide: function( v, ui ) {
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
-  		console.log(parseInt(sliderVal, 10) / 100)
   		map.setPaintProperty('nexrad', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
 
-// on map click
+
+// Create a popup, but don't add it to the map yet.
+app.popup = new mapboxgl.Popup({
+	closeButton: true,
+	closeOnClick: true,
+	anchor: 'right',
+	className: 'severe-storm-popup'
+});
+// on mouse enter, add a selection symbol, this works for wind right now
 map.on('click', function(e) {
+	app.popup.remove();
+	if(app.popup.isOpen){
+		console.log('its open')
+	}
+	// set selected symbol on map point, yellow point for now, maybe make it flash in the future
 	// set bbox as 5px reactangle area around clicked point
 	var bbox = [[e.point.x - 3, e.point.y - 3], [e.point.x + 3, e.point.y + 3]];
 	var features = map.queryRenderedFeatures(bbox, { layers: ['tornado', 'hail', 'wind'] });
-	// filter features to show the storm selection symbol.
-	i = 1
-	var filter = features.reduce(function(memo, feature) {
-		if(i==1){ // limit to only one selected point
-			memo.push(feature.properties.uniqueid);
-		}
-		i +=1
-		return memo;
-	}, ['in', 'uniqueid']);
-	map.setFilter("storm_selection", filter);
-
-	// call the populate storm info function
-	populateStormInfo(features[0])
+	// // filter features to show the storm selection symbol.
+	// i = 1
+	// var filter = features.reduce(function(memo, feature) {
+	// 	if(i==1){ // limit to only one selected point
+	// 		memo.push(feature.properties.uniqueid);
+	// 	}
+	// 	i +=1
+	// 	return memo;
+	// }, ['in', 'uniqueid']);
+	// map.setFilter("storm_selection", filter);
+	// build popup /////////////////////////////////////////////////////////
+	let coordinates = [e.lngLat['lng'], e.lngLat['lat']]
+	// Ensure that if the map is zoomed out such that multiple
+	// copies of the feature are visible, the popup appears
+	// over the copy being pointed to.
+	while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+		coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+	}
+	if(features.length > 0){
+		let date = features[0].properties.date
+		let date1 = date.slice(4,6)
+		let date2 = date.slice(2,4)
+		let date3 = date.slice(0,2)
+		date = date2 + '/' + date1 + '/' + date3
+		let location = features[0].properties.location + ', ' + features[0].properties.state;
+		// build html for popup
+		description = '<div class="popupItemWrapper"><span class="popupHeader">Storm Type:</span><span> ' + features[0].properties.eventType + '</span></div>'
+		description += '<div class="popupItemWrapper"><span class="popupHeader">Date:</span><span> ' + date +' ' + features[0].properties.timeReported + ' (UTC)' +'</span></div>'
+		description += '<div class="popupItemWrapper"><span class="popupHeader">Location:</span><span> ' + location + '</span></div>'
+		description += '<div class="popupItemWrapper"><span class="popupHeader">Magnitude:</span><span> ' + String(features[0].properties.size) + '</span></div>'
+		description += '<div class="popupItemWrapper"><span class="popupHeader">Comments:</span><span> ' + features[0].properties.comments; + '</span></div>'
+		app.popup
+			.setLngLat(coordinates)
+			.setHTML(description)
+			.addTo(map);
+	}
+	
 })
+
 // populate storm information function
 function populateStormInfo(feat){
-
-	console.log(feat.properties, 'hey');
+	// if(feat.properties){
+	// 	console.log(feat.properties, 'hey');
+	// }
+	
 	// build out the html for storm click here
 }
 
@@ -126,6 +162,7 @@ map.on('mousemove', function (e) {
 	var bbox = [[e.point.x - 3, e.point.y - 3], [e.point.x + 3, e.point.y + 3]];
 	var features = map.queryRenderedFeatures(bbox, { layers: ['tornado', 'hail', 'wind'] });
 	if(features.length > 0){
+		// console.log(features)
 		map.getCanvas().style.cursor = 'pointer';
 	}else{
 		map.getCanvas().style.cursor = '';

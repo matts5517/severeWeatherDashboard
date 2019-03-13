@@ -84,9 +84,6 @@ function loadSevereLayers(data){
     });
     app.data.hailDatayear = {"type":"FeatureCollection", features }
 
-    console.log(app)
-
-
     // add the wind storm layer 
     map.addLayer({
         'id': 'wind',
@@ -254,7 +251,6 @@ function loadSevereLayers(data){
 // load radar layers
 
 function radarLayerLoad(){
-    console.log('radar load')
     // the url below is for archived radar products !!!!!!!!!!!!!!!! back to at least 2007
     'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
     // may 20th 2013 radar image

@@ -26,7 +26,6 @@ map.on('style.load', function(){
 	// get severe storm report json data
 	$.getJSON( pathToData + "geoJson/severeWeather/currentYear_stormReports.json", function(jsonData) {
 		app.severeStormData = jsonData; // set global var to carry over severe storm json to entire app
-		console.log(app.severeStormData.features.length)
 		loadSevereLayers(app.severeStormData);
 		
 	})

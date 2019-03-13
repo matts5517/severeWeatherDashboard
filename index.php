@@ -23,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title><?php echo $page_title; ?></title>
 </head>
-	<body>
+	<body style="width: 100%; height: 100%; padding: 0px; margin: 0px;">
 		<!--  login modal window -->
 		<div class="loginModalWindow">
 			<div class="loginArea">
@@ -194,6 +194,7 @@
 		
 		<script type="text/javascript" src="js/colors.js"></script>
 		<script type="text/javascript" src="js/layers.js"></script>
+
 		<script type="text/javascript" src="js/login.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>

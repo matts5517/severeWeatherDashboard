@@ -1,9 +1,7 @@
 
 // JS code for logging in or creating new account
 $(document).ready(function() {
-	console.log('login.js')
 	$('#loginBtn').on('click', function(){
-		console.log('login button click')
 		$('.loginModalWindow').show();
 		$('.loginModalWindow').css('display', 'flex');
 	})
