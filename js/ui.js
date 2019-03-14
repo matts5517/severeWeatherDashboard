@@ -72,7 +72,8 @@ $( "#radSatSlider" ).slider({
   	slide: function( v, ui ) {
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
-  		map.setPaintProperty('nexrad', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('nexradPhase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('nexradBase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
@@ -89,7 +90,7 @@ app.popup = new mapboxgl.Popup({
 map.on('click', function(e) {
 	app.popup.remove();
 	if(app.popup.isOpen){
-		console.log('its open')
+		// console.log('its open')
 	}
 	// set selected symbol on map point, yellow point for now, maybe make it flash in the future
 	// set bbox as 5px reactangle area around clicked point

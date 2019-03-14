@@ -251,17 +251,17 @@ function loadSevereLayers(data){
 // load radar layers
 
 function radarLayerLoad(){
-    // the url below is for archived radar products !!!!!!!!!!!!!!!! back to at least 2007
-    'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
-    // may 20th 2013 radar image
-    'https://mesonet.agron.iastate.edu/archive/data/2013/05/20/GIS/uscomp/n0r_201305200005.png'
-    'https://mesonet.agron.iastate.edu/cgi-bin/wms/iowa/rainfall.cgi?'
+    // // the url below is for archived radar products !!!!!!!!!!!!!!!! back to at least 2007
+    // 'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
+    // // may 20th 2013 radar image
+    // 'https://mesonet.agron.iastate.edu/archive/data/2013/05/20/GIS/uscomp/n0r_201305200005.png'
+    // 'https://mesonet.agron.iastate.edu/cgi-bin/wms/iowa/rainfall.cgi?'
 
     // at specific time
     'http://realearth.ssec.wisc.edu/tiles/nexrphase/20190303/212100/{z}/{x}/{y}.png'
     // radar layers //////////////////////
     map.addLayer({
-        'id': 'nexrad',
+        'id': 'nexradPhase',
         'type': 'raster',
         'source': {
             'type': 'raster',
@@ -276,121 +276,180 @@ function radarLayerLoad(){
         'paint': {
         }
     },);
-    map.setPaintProperty('nexrad', 'raster-opacity', .70);
-    // radar - 10 mins
+    map.setPaintProperty('nexradPhase', 'raster-opacity', .70);
+
+    // base reflectivity //////////////////////
     map.addLayer({
-        'id': 'radar_10',
+        'id': 'nexradBase',
         'type': 'raster',
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m10m/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/nexrcomp/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
         'layout': {
             'visibility': 'none'
         },
-        'paint': {}
+        'paint': {
+        }
     },);
-    // radar - 20 mins
-    map.addLayer({
-        'id': 'radar_20',
+    map.setPaintProperty('nexradBase', 'raster-opacity', .70);
+    // PROBSEVERE prob severe layer
+     map.addLayer({
+        'id': 'probSevere',
         'type': 'raster',
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m20m/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/PROBSEVERE/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
         'layout': {
             'visibility': 'none'
         },
-        'paint': {}
+        'paint': {
+        }
     },);
-    // radar - 50 mins
+
+
+    // radar cell point tracker
     map.addLayer({
-        'id': 'radar_50',
+        'id': 'nexradPoint',
         'type': 'raster',
         'source': {
             'type': 'raster',
             'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m50m/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/SCIT-PNT/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
         'layout': {
             'visibility': 'none'
         },
-        'paint': {}
+        'paint': {
+        }
     },);
+
+
+
+    // // radar - 10 mins
+    // map.addLayer({
+    //     'id': 'radar_10',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m10m/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+    // // radar - 20 mins
+    // map.addLayer({
+    //     'id': 'radar_20',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m20m/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+    // // radar - 50 mins
+    // map.addLayer({
+    //     'id': 'radar_50',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m50m/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
     
-    // 1 hour precip
-    map.addLayer({
-        'id': 'one_hour_precip',
-        'type': 'raster',
-        'source': {
-            'type': 'raster',
-            'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-n1p-900913/{z}/{x}/{y}.png'
-            ],
-            'tileSize': 256
-        },
-        'layout': {
-            'visibility': 'none'
-        },
-        'paint': {}
-    },);
-    // 24 hour precip
-    map.addLayer({
-        'id': '24_precip',
-        'type': 'raster',
-        'source': {
-            'type': 'raster',
-            'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p24h-900913/{z}/{x}/{y}.png'
-            ],
-            'tileSize': 256
-        },
-        'layout': {
-            'visibility': 'none'
-        },
-        'paint': {}
-    },);
-    // 48 hour precip
-    map.addLayer({
-        'id': '48_precip',
-        'type': 'raster',
-        'source': {
-            'type': 'raster',
-            'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p48h-900913/{z}/{x}/{y}.png'
-            ],
-            'tileSize': 256
-        },
-        'layout': {
-            'visibility': 'none'
-        },
-        'paint': {}
-    },);
-    // 72 hour precip
-    map.addLayer({
-        'id': '72_precip',
-        'type': 'raster',
-        'source': {
-            'type': 'raster',
-            'tiles': [
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p72h-900913/{z}/{x}/{y}.png'
-            ],
-            'tileSize': 256
-        },
-        'layout': {
-            'visibility': 'none'
-        },
-        'paint': {}
-    },);
-    // satalite layers ////////////////////////
+    // // 1 hour precip
+    // map.addLayer({
+    //     'id': 'one_hour_precip',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-n1p-900913/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+    // // 24 hour precip
+    // map.addLayer({
+    //     'id': '24_precip',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p24h-900913/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+    // // 48 hour precip
+    // map.addLayer({
+    //     'id': '48_precip',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p48h-900913/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+    // // 72 hour precip
+    // map.addLayer({
+    //     'id': '72_precip',
+    //     'type': 'raster',
+    //     'source': {
+    //         'type': 'raster',
+    //         'tiles': [
+    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p72h-900913/{z}/{x}/{y}.png'
+    //         ],
+    //         'tileSize': 256
+    //     },
+    //     'layout': {
+    //         'visibility': 'none'
+    //     },
+    //     'paint': {}
+    // },);
+
+    // satalite layers ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // goes vis
     map.addLayer({
         'id': 'goes_vis',
@@ -416,23 +475,23 @@ function loadESRIServices(){
 }
 
 function loadWatchWarn(data){
-    let features = data.features
-    var tornadoData = {"type":"FeatureCollection", features }
-    map.addLayer({
-        'id': 'watch_warn',
-        'type': 'fill',
-        'source': {
-            'type': 'geojson',
-            'data': tornadoData,
-        },
-        'layout': {
-            'visibility': 'visible'
-        },
-        'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.8
-        }
-    },);
+    // let features = data.features
+    // var tornadoData = {"type":"FeatureCollection", features }
+    // map.addLayer({
+    //     'id': 'watch_warn',
+    //     'type': 'fill',
+    //     'source': {
+    //         'type': 'geojson',
+    //         'data': tornadoData,
+    //     },
+    //     'layout': {
+    //         'visibility': 'visible'
+    //     },
+    //     'paint': {
+    //         'fill-color': '#088',
+    //         'fill-opacity': 0.8
+    //     }
+    // },);
 }
 // end of code *****************************************
 

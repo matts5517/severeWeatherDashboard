@@ -134,14 +134,24 @@
 			            <button class="severe-analyze-button">Analyze Storms</button>
 
 			            <hr class="whiteHr">
-			            <h3>Radar</h3>
+			            <h3>NEXRAD Radar</h3>
 			            
 			            <div id="radarSatLayers">
-			            	 <label class="form-component mainCB" for="nexrad-option">
-				              <input type="checkbox" id="nexrad-option" name="" value="nexrad">
+			            	 <label class="form-component mainCB" for="nexradPhase-option">
+				              <input type="checkbox" id="nexradPhase-option" name="" value="nexradPhase">
 				              <div class="check"></div>
-				              <span class="form-text noselect">NEXRAD</span>
+				              <span class="form-text noselect">Precip Type</span>
 				            </label>
+				             <label class="form-component mainCB" for="nexradBase-option">
+				              <input type="checkbox" id="nexradBase-option" name="" value="nexradBase">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Base Reflectivity</span>
+				            </label>
+				          <!--   <label class="form-component mainCB" for="probSevere-option">
+				              <input type="checkbox" id="probSevere-option" name="" value="probSevere">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Prob Severe</span>
+				            </label> -->
 				            <label class="form-component mainCB" for="goes_vis-option">
 				              <input type="checkbox" id="goes_vis-option" name="" value="goes_vis">
 				              <div class="check"></div>
