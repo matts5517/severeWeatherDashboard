@@ -38,7 +38,7 @@ jsonPath = 'data/geoJson/severeWeather/pastYear/currentYear.json'
 
 # donwload all raw csv's to a folder
 i = 1
-while i < 70:
+while i < 80:
     # get the correct date
     day= str(datetime.datetime(2019, 1, 1) + datetime.timedelta(i - 1))
     day = day.split(' ')[0]

@@ -278,14 +278,14 @@ function radarLayerLoad(){
     },);
     map.setPaintProperty('nexradPhase', 'raster-opacity', .70);
 
-    // base reflectivity //////////////////////
+    // merged reflectivity //////////////////////
     map.addLayer({
-        'id': 'nexradBase',
+        'id': 'nexradMerged',
         'type': 'raster',
         'source': {
             'type': 'raster',
             'tiles': [
-                'http://realearth.ssec.wisc.edu/tiles/nexrcomp/{z}/{x}/{y}.png'
+                'http://realearth.ssec.wisc.edu/tiles/MERGEDREF/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
@@ -295,7 +295,7 @@ function radarLayerLoad(){
         'paint': {
         }
     },);
-    map.setPaintProperty('nexradBase', 'raster-opacity', .70);
+    map.setPaintProperty('nexradMerged', 'raster-opacity', .70);
     // PROBSEVERE prob severe layer
      map.addLayer({
         'id': 'probSevere',

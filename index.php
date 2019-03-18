@@ -143,9 +143,9 @@
 				              <span class="form-text noselect">Precip Type</span>
 				            </label>
 				             <label class="form-component mainCB" for="nexradBase-option">
-				              <input type="checkbox" id="nexradBase-option" name="" value="nexradBase">
+				              <input type="checkbox" id="nexradBase-option" name="" value="nexradMerged">
 				              <div class="check"></div>
-				              <span class="form-text noselect">Base Reflectivity</span>
+				              <span class="form-text noselect">Merged Reflectivity</span>
 				            </label>
 				          <!--   <label class="form-component mainCB" for="probSevere-option">
 				              <input type="checkbox" id="probSevere-option" name="" value="probSevere">

@@ -73,7 +73,7 @@ $( "#radSatSlider" ).slider({
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
   		map.setPaintProperty('nexradPhase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
-  		map.setPaintProperty('nexradBase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('nexradMerged', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
