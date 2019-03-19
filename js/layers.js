@@ -296,6 +296,7 @@ function radarLayerLoad(){
         }
     },);
     map.setPaintProperty('nexradMerged', 'raster-opacity', .70);
+
     // PROBSEVERE prob severe layer
      map.addLayer({
         'id': 'probSevere',
@@ -335,120 +336,7 @@ function radarLayerLoad(){
 
 
 
-    // // radar - 10 mins
-    // map.addLayer({
-    //     'id': 'radar_10',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m10m/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-    // // radar - 20 mins
-    // map.addLayer({
-    //     'id': 'radar_20',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m20m/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-    // // radar - 50 mins
-    // map.addLayer({
-    //     'id': 'radar_50',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913-m50m/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
     
-    // // 1 hour precip
-    // map.addLayer({
-    //     'id': 'one_hour_precip',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-n1p-900913/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-    // // 24 hour precip
-    // map.addLayer({
-    //     'id': '24_precip',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p24h-900913/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-    // // 48 hour precip
-    // map.addLayer({
-    //     'id': '48_precip',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p48h-900913/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-    // // 72 hour precip
-    // map.addLayer({
-    //     'id': '72_precip',
-    //     'type': 'raster',
-    //     'source': {
-    //         'type': 'raster',
-    //         'tiles': [
-    //             'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-p72h-900913/{z}/{x}/{y}.png'
-    //         ],
-    //         'tileSize': 256
-    //     },
-    //     'layout': {
-    //         'visibility': 'none'
-    //     },
-    //     'paint': {}
-    // },);
-
     // satalite layers ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // goes vis
     map.addLayer({
@@ -495,9 +383,44 @@ function loadWatchWarn(data){
 }
 // end of code *****************************************
 
-
-
-
+function staticLayerLoad(data){
+    // console.log(data)
+    // map.addLayer({
+    //     'id': 'counties',
+    //     'type': 'fill',
+    //     'source': {
+    //         'type': 'geojson',
+    //         'data': data,
+    //     },
+    //     'layout': {
+    //         'visibility': 'visible'
+    //     },
+    //     'paint': {
+    //         'fill-color': 'rgba(255,255,255,.0)',// set to no color by full transparent
+    //         'fill-opacity': 0.5,
+    //         'fill-outline-color': 'rgba(255,255,255,.3)'
+    //     }
+    // },);
+    // map.addLayer({
+    //     "id": "usa-counties",
+    //     "type": "line",
+    //     "source": {
+    //         type: 'vector',
+    //         url: 'mapbox://styles/matts5517/cjtg30p9m6ev11fpivqwl31v2'
+    //     },
+    //     "source-layer": "USA_counties",
+    //     "layout": {
+    //         "line-join": "round",
+    //         "line-cap": "round"
+    //     },
+    //     "paint": {
+    //         "line-color": "#ff69b4",
+    //         "line-width": 1
+    //     }
+    // });
+}
+// matts5517.ciyj3vdhp05d52wl4y5guibj7-726d0
+// matts5517.cjteva9py00e82xqyhf3pj2s5-89cxw
 
 
 

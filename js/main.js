@@ -8,7 +8,8 @@ let pathToData = '../python/data/' // for development on mac
 mapboxgl.accessToken = accessToken; // this comes from PHP code to keep it hidden on the index.php page
 var map = new mapboxgl.Map({
 	container: 'map', // container id
-	style: 'mapbox://styles/mapbox/navigation-guidance-night-v2', // stylesheet location
+	// style: 'mapbox://styles/mapbox/satellite-v9', // stylesheet location
+	style: 'mapbox://styles/matts5517/cjtg30p9m6ev11fpivqwl31v2', // stylesheet location
 	center: [-95.50, 40], // starting position [lng, lat]
 	zoom: 3.5 // starting zoom
 });
@@ -33,6 +34,11 @@ map.on('style.load', function(){
 	$.getJSON( pathToData + "geoJson/severeWeather/stormReports_count.json", function(jsonData) {
 		app.severeStormCount = jsonData;
 		populateStormCount(); // count storms and populate html
+	})
+	// get USA counties data
+	$.getJSON( pathToData + "geoJson/staticData/cb_2017_us_county_20m.geojson", function(jsonData) {
+		staticLayerLoad(jsonData)
+		
 	})
 })
 
