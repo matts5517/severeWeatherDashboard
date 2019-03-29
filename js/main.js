@@ -11,9 +11,8 @@ var map = new mapboxgl.Map({
 	// style: 'mapbox://styles/mapbox/satellite-v9', // stylesheet location
 	style: 'mapbox://styles/matts5517/cjtg30p9m6ev11fpivqwl31v2', // stylesheet location
 	center: [-95.50, 40], // starting position [lng, lat]
-	zoom: 3.5 // starting zoom
+	zoom: 3.2 // starting zoom
 });
-
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl({showCompass:false, showZoom:true}));
@@ -22,7 +21,6 @@ map.addControl(new mapboxgl.NavigationControl({showCompass:false, showZoom:true}
 map.on('style.load', function(){
 	radarLayerLoad(); //  load radar layers
 	loadESRIServices(); // load esri services geojson
-	
 
 	// get severe storm report json data
 	$.getJSON( pathToData + "geoJson/severeWeather/currentYear_stormReports.json", function(jsonData) {

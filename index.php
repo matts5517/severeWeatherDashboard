@@ -111,32 +111,59 @@
 				
 			</div>
 
-			<div class="layerSelectorWrapper">
+			<div class="layerSelectorWrapper noselect">
 				<div class="pillCheckbox" id="">
 		            <div class="subStormsWrapper">
-		            	<h3>Storm Reports</h3>
+		            	<h3>Severe Reports</h3>
 		            	<!-- <hr class="whiteHr"> -->
 		            	 <label class="form-component mainCB" for="tornado-option">
 			              <input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 			              <div class="check"></div>
-			              <span class="form-text noselect">Tornado</span>
+			              <div class="stormCb-countWrapper">
+			              	<span class="form-text noselect severeStormText">Tornado</span>
+			              	<span id="tornadoCount" class="severeStormCount noselect"></span>
+			              </div>
+			              
 			            </label>
 			            <label class="form-component mainCB" for="hail-option">
 			              <input checked="true" type="checkbox" id="hail-option" name="" value="hail">
 			              <div class="check"></div>
-			              <span class="form-text noselect">Hail</span>
+			              <div class="stormCb-countWrapper">
+				              <span class="form-text noselect severeStormText">Hail</span>
+				              <span id="hailCount" class="severeStormCount noselect"></span>
+				          </div>
 			            </label>
 			            <label class="form-component mainCB" for="wind-option">
 			              <input checked="true" type="checkbox" id="wind-option" name="" value="wind">
 			              <div class="check"></div>
-			              <span class="form-text noselect">Wind</span>
+			              <div class="stormCb-countWrapper">
+				              <span class="form-text noselect severeStormText">Wind</span>
+				              <span id="windCount" class="severeStormCount noselect"></span>
+				          </div>
 			            </label>
-			            <button class="severe-analyze-button">Analyze Storms</button>
+			            <!-- time filtering for severe storm reports -->
+			            <div class="layerSelectorSubHeader">Filter days:</div>
+			            <div class="severeTimeFilterBtnWrapper">
+			            	<div data-severe-time-filter='today' class="radioButton severeTimeFilterButton" style="background-color: rgba(0,150,214,.95)">1</div>
+			            	<div data-severe-time-filter='week' class="radioButton severeTimeFilterButton">7</div>
+			            	<div data-severe-time-filter='month' class="radioButton severeTimeFilterButton">30</div>
+			            	<div data-severe-time-filter='year' class="radioButton severeTimeFilterButton">365</div>
+			            </div>
+			            <!-- <button class="severe-analyze-button">Analyze Storms</button> -->
+
+
+			            <!-- display severe storm data with points or heatmap -->
+			            <!-- <div class="layerSelectorSubHeader">Display Data:</div>
+			            <div class="severeDisplayWrapper">
+			            	<div data-severe-display-filter='point' class="radioButton severeDisplayFilterButton" style="background-color: rgba(0,150,214,.95)">Points</div>
+			            	<div data-severe-display-filter='heat' class="radioButton severeDisplayFilterButton">Heatmap</div>
+			            </div> -->
+
 
 			            <hr class="whiteHr">
 			            <h3>NEXRAD Radar</h3>
 			            
-			            <div id="radarSatLayers">
+			            <div id="radarLayers">
 			            	 <label class="form-component mainCB" for="nexradPhase-option">
 				              <input type="checkbox" id="nexradPhase-option" name="" value="nexradPhase">
 				              <div class="check"></div>
@@ -145,53 +172,46 @@
 				             <label class="form-component mainCB" for="nexradBase-option">
 				              <input type="checkbox" id="nexradBase-option" name="" value="nexradMerged">
 				              <div class="check"></div>
-				              <span class="form-text noselect">Merged Reflectivity</span>
+				              <span class="form-text noselect">Base Reflectivity</span>
+				            </label>
+				            <label class="form-component mainCB" for="lightning-option">
+				              <input type="checkbox" id="lightning-option" name="" value="lightning">
+				              <div class="check"></div>
+				              <span class="form-text noselect">GLM Lightning</span>
 				            </label>
 				          <!--   <label class="form-component mainCB" for="probSevere-option">
 				              <input type="checkbox" id="probSevere-option" name="" value="probSevere">
 				              <div class="check"></div>
 				              <span class="form-text noselect">Prob Severe</span>
 				            </label> -->
-				            <label class="form-component mainCB" for="goes_vis-option">
+				            
+				            <div id="radarSliderWrapper" style="display: none;">
+				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">70</span>%</div>
+				            	<div id="radSlider"></div>
+				            </div>
+				        </div>
+				         <hr class="whiteHr">
+				        <h3>GOES Satellite</h3>
+				        <div id="satLayers">
+				        	<label class="form-component mainCB" for="goes_vis-option">
 				              <input type="checkbox" id="goes_vis-option" name="" value="goes_vis">
 				              <div class="check"></div>
-				              <span class="form-text noselect">GOES Vis</span>
+				              <span class="form-text noselect">Visible False Color</span>
 				            </label>
-				            <div id="sliderWrapper" style="display: none;">
-				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">70</span>%</div>
-				            	<div id="radSatSlider"></div>
+				            <label class="form-component mainCB" for="global_waterVapor-option">
+				              <input type="checkbox" id="global_waterVapor-option" name="" value="global_waterVapor">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Water Vapor</span>
+				            </label>
+				             <div id="satSliderWrapper" style="display: none;">
+				            	<div style="font-size: 12px;">Opacity: <span id="satellite-slider-value">70</span>%</div>
+				            	<div id="satSlider"></div>
 				            </div>
 				        </div>
 					</div>
 				</div>
 			</div> <!-- end of layer selector div -->
 
-			<!-- this is the div that is used to breakout more data for storms and other in the future -->
-			<div class="severe-storm-breakout noselect">
-				<div class="severe-storm-breakout-close noselect"><span style="margin-top: 1px;">&#10005;</span></div>
-				<h3>Storm Count</h3>
-				<div><span>Tornado: </span><span class="stormCount" id="tornadoCount">80</span></div>
-				<div><span>Hail: </span><span class="stormCount" id="hailCount">63</span></div>
-				<div><span>Wind: </span><span class="stormCount" id="windCount">327</span></div>
-				<hr class="whiteHr">
-				<h3>Filter Data</h3>
-				<div class="stormCountWrapper">
-					<input checked type="radio" id="today-option" value="today" name="food">
-					<label class="form-component" for="today-option">Today</label>
-				</div>
-				<div class="stormCountWrapper">
-					<input  type="radio" id="week-option" value="week" name="food">
-					<label class="form-component" for="week-option">Past Week</label>
-				</div>
-				<div class="stormCountWrapper">
-					<input  type="radio" id="month-option" value="month" name="food">
-					<label class="form-component" for="month-option">Past Month</label>
-				</div>
-				<div class="stormCountWrapper">
-					<input  type="radio" id="year-option" value="year" name="food">
-					<label class="form-component" for="year-option">This Year</label>
-				</div>
-			</div> <!-- end of storm  breakout area -->
 			<!-- mapbox div -->
 			<div id="map"></div>
 			<!-- footer -->

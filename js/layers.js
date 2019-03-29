@@ -256,6 +256,7 @@ function radarLayerLoad(){
     // // may 20th 2013 radar image
     // 'https://mesonet.agron.iastate.edu/archive/data/2013/05/20/GIS/uscomp/n0r_201305200005.png'
     // 'https://mesonet.agron.iastate.edu/cgi-bin/wms/iowa/rainfall.cgi?'
+    // 'https://mesonet.agron.iastate.edu/goes-east-ir-4km-900913/{z}/{x}/{y}.png'
 
     // at specific time
     'http://realearth.ssec.wisc.edu/tiles/nexrphase/20190303/212100/{z}/{x}/{y}.png'
@@ -267,6 +268,7 @@ function radarLayerLoad(){
             'type': 'raster',
             'tiles': [
                 'http://realearth.ssec.wisc.edu/tiles/nexrphase/{z}/{x}/{y}.png'
+
             ],
             'tileSize': 256
         },
@@ -285,7 +287,7 @@ function radarLayerLoad(){
         'source': {
             'type': 'raster',
             'tiles': [
-                'http://realearth.ssec.wisc.edu/tiles/MERGEDREF/{z}/{x}/{y}.png'
+                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913/{z}/{x}/{y}.png'
             ],
             'tileSize': 256
         },
@@ -333,8 +335,25 @@ function radarLayerLoad(){
         'paint': {
         }
     },);
-
-
+    //TotalEnergy 
+    // Lightning  tracker
+    map.addLayer({
+        'id': 'lightning',
+        'type': 'raster',
+        'source': {
+            'type': 'raster',
+            'tiles': [
+                'http://realearth.ssec.wisc.edu/tiles/TotalEnergy/{z}/{x}/{y}.png'
+            ],
+            'tileSize': 256
+        },
+        'layout': {
+            'visibility': 'none'
+        },
+        'paint': {
+        }
+    },);
+    map.setPaintProperty('lightning', 'raster-opacity', .70);
 
     
     // satalite layers ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -355,6 +374,24 @@ function radarLayerLoad(){
         
     },);
     map.setPaintProperty('goes_vis', 'raster-opacity', .70);
+    // globalwv-grad
+    // goes vis
+    map.addLayer({
+        'id': 'global_waterVapor',
+        'type': 'raster',
+        'source': {
+            'type': 'raster',
+            'tiles': [
+                'https://realearth.ssec.wisc.edu/tiles/globalwv-grad/{z}/{x}/{y}.png'
+            ],
+            'tileSize': 256
+        },
+        'layout': {
+            'visibility': 'none'
+        },
+        
+    },);
+    map.setPaintProperty('global_waterVapor', 'raster-opacity', .70);
 
 } 
 

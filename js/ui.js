@@ -43,41 +43,51 @@ $('.pillCheckbox input').on('change',function(v){
 	let checked = v.currentTarget.checked;
 	let type = v.currentTarget.type;
 	let val = $(this).val()
-	let radarInput = $('#radarSatLayers input:checked')
+	let radarInput = $('#radarLayers input:checked')
+	let satInput = $('#satLayers input:checked')
 	if(radarInput.length > 0){
-		$('#sliderWrapper').slideDown();
+		$('#radarSliderWrapper').slideDown();
 	}else{
-		$('#sliderWrapper').slideUp();
+		$('#radarSliderWrapper').slideUp();
+	}
+	if(satInput.length > 0){
+		$('#satSliderWrapper').slideDown();
+	}else{
+		$('#satSliderWrapper').slideUp();
 	}
 	// only update layers if type checkbox
 	if(type == 'checkbox'){
 		if(checked){
 			map.setLayoutProperty(val, 'visibility', 'visible');
-			// if(val === 'nexrad'){
-			// 	$('#radarLoop').show();
-			// 	loopRadar();
-			// }
+			
 		}else{
 			map.setLayoutProperty(val, 'visibility', 'none');
-			// if(val === 'nexrad'){
-			// 	$('#radarLoop').hide();
-			// 	loopRadar();
-			// }
+			
 		}
 	}
 })
-// sat and radar slider functionality
-$( "#radSatSlider" ).slider({
+// radar slider functionality
+$( "#radSlider" ).slider({
 	value: 70,
   	slide: function( v, ui ) {
   		let sliderVal = ui.value;
   		$('#radar-slider-value').html(sliderVal);
   		map.setPaintProperty('nexradPhase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('nexradMerged', 'raster-opacity', parseInt(sliderVal, 10) / 100);
-  		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('lightning', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		// map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
-
+// sat slider functionality
+$( "#satSlider" ).slider({
+	value: 70,
+  	slide: function( v, ui ) {
+  		let sliderVal = ui.value;
+  		$('#satellite-slider-value').html(sliderVal);
+  		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('global_waterVapor', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  	}
+});
 
 // Create a popup, but don't add it to the map yet.
 app.popup = new mapboxgl.Popup({
@@ -197,31 +207,31 @@ $('.basemapItems').on('click', function(v){
 	
 })
 
-// on analyze storm button click
-$('.severe-analyze-button').on('click', function(evt){
-	// slide down the severe storm breakout box
-	$('.severe-storm-breakout').slideDown();
-})
-// on storm breakout close click
-$('.severe-storm-breakout-close').on('click', function(evt){
-	// slide down the severe storm breakout box
-	$('.severe-storm-breakout').slideUp();
-})
-
-// on severe storm breakout filter radio buttons click
-$('.severe-storm-breakout input').on('click', function(evt){
-	$('#tornadoCount').html(app.severeStormCount[evt.currentTarget.value].tornado)
-	$('#windCount').html(app.severeStormCount[evt.currentTarget.value].wind)
-	$('#hailCount').html(app.severeStormCount[evt.currentTarget.value].hail)
+// on severe storm time filter/pill button click
+$('.severeTimeFilterButton').bind('click', function(evt){
+	$('#tornadoCount').html(app.severeStormCount[evt.currentTarget.dataset.severeTimeFilter].tornado)
+	$('#windCount').html(app.severeStormCount[evt.currentTarget.dataset.severeTimeFilter].wind)
+	$('#hailCount').html(app.severeStormCount[evt.currentTarget.dataset.severeTimeFilter].hail)
 	// filter layers on map
-	map.getSource('tornado').setData(app.data['tornadoData' + evt.currentTarget.value]);
-	map.getSource('hail').setData(app.data['hailData' + evt.currentTarget.value]);
-	map.getSource('wind').setData(app.data['windData' + evt.currentTarget.value]);
+	map.getSource('tornado').setData(app.data['tornadoData' + evt.currentTarget.dataset.severeTimeFilter]);
+	map.getSource('hail').setData(app.data['hailData' + evt.currentTarget.dataset.severeTimeFilter]);
+	map.getSource('wind').setData(app.data['windData' + evt.currentTarget.dataset.severeTimeFilter]);
+	// update css on click to make the selection known
+	$.each($('.severeTimeFilterButton'), function(i,v){
+		$(v).css('background-color', 'rgba(0,150,214,.45)')
+	})
+	$(evt.currentTarget).css('background-color', 'rgba(0,150,214,.95)')
 })
+// on severe storm display filter click
+$('.severeDisplayFilterButton').bind('click', function(evt){
 
+	// update css on click to make the selection known
+	$.each($('.severeDisplayFilterButton'), function(i,v){
+		$(v).css('background-color', 'rgba(0,150,214,.45)')
+	})
+	$(evt.currentTarget).css('background-color', 'rgba(0,150,214,.95)')
 
-
-
+})
 
 // populate storm count for today, past 7 days, and past year. Also populate HTML
 // function populateStormCount(){

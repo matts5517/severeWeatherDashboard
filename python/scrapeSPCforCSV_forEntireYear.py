@@ -35,7 +35,8 @@ dt = datetime2.strptime(date, fmt)
 dayOfYearToday = dt.strftime('%j')
 
 # download all raw csv's to a folder
-i = 1
+i = int(int(dayOfYearToday) - 14)
+print i
 while i < int(int(dayOfYearToday) + 1):
     # get the correct date
     day= str(datetime.datetime(2019, 1, 1) + datetime.timedelta(i - 1))
