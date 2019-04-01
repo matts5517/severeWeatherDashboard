@@ -18,8 +18,8 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
-	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.min.js'></script>
-	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.css' type='text/css' />
+<!-- 	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.min.js'></script>
+	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.css' type='text/css' /> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title><?php echo $page_title; ?></title>
 </head>
@@ -174,16 +174,8 @@
 				              <div class="check"></div>
 				              <span class="form-text noselect">Base Reflectivity</span>
 				            </label>
-				            <label class="form-component mainCB" for="lightning-option">
-				              <input type="checkbox" id="lightning-option" name="" value="lightning">
-				              <div class="check"></div>
-				              <span class="form-text noselect">GLM Lightning</span>
-				            </label>
-				          <!--   <label class="form-component mainCB" for="probSevere-option">
-				              <input type="checkbox" id="probSevere-option" name="" value="probSevere">
-				              <div class="check"></div>
-				              <span class="form-text noselect">Prob Severe</span>
-				            </label> -->
+				            
+				          
 				            
 				            <div id="radarSliderWrapper" style="display: none;">
 				            	<div style="font-size: 12px;">Opacity: <span id="radar-slider-value">70</span>%</div>
@@ -203,11 +195,44 @@
 				              <div class="check"></div>
 				              <span class="form-text noselect">Water Vapor</span>
 				            </label>
+				            <label class="form-component mainCB" for="lightning-option">
+				              <input type="checkbox" id="lightning-option" name="" value="lightning">
+				              <div class="check"></div>
+				              <span class="form-text noselect">GLM Lightning</span>
+				            </label>
 				             <div id="satSliderWrapper" style="display: none;">
 				            	<div style="font-size: 12px;">Opacity: <span id="satellite-slider-value">70</span>%</div>
 				            	<div id="satSlider"></div>
 				            </div>
 				        </div>
+				        <hr class="whiteHr">
+				        <h3>Warnings/Outlooks</h3>
+				        <div id="watchWarnLayers">
+				        	<label class="form-component mainCB" for="severeWarn-option">
+				              <input type="checkbox" id="severeWarn-option" name="" value="severeWarn">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Warnings</span>
+				            </label>
+				            <label class="form-component mainCB" for="severeWatch-option">
+				              <input type="checkbox" id="severeWatch-option" name="" value="severeWatch">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Watches</span>
+				            </label>
+				            <label class="form-component mainCB" for="severeOutlook-option">
+				              <input type="checkbox" id="severeOutlook-option" name="" value="severeOutlookOutlook">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Severe Outlook</span>
+				            </label>
+				        </div>
+				        <!-- <hr class="whiteHr"> -->
+				        <!-- <h3>Outlooks</h3>
+				        <div id="watchWarnLayers">
+				        	<label class="form-component mainCB" for="severeWarn-option">
+				              <input type="checkbox" id="severeWarn-option" name="" value="severeWarn">
+				              <div class="check"></div>
+				              <span class="form-text noselect">Warnings</span>
+				            </label>
+				        </div> -->
 					</div>
 				</div>
 			</div> <!-- end of layer selector div -->

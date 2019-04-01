@@ -1,6 +1,6 @@
 
 let app = {}; // main app object to store global vars
-// let pathToData = '/var/www/html/efs/severeWeatherData/' // for ec2 instance
+// let pathToData = '../efs/severeWeatherData/' // for ec2 instance
 let pathToData = '../python/data/' // for development on mac
 
 

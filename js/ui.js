@@ -74,7 +74,7 @@ $( "#radSlider" ).slider({
   		$('#radar-slider-value').html(sliderVal);
   		map.setPaintProperty('nexradPhase', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('nexradMerged', 'raster-opacity', parseInt(sliderVal, 10) / 100);
-  		map.setPaintProperty('lightning', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		
   		// map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
@@ -86,6 +86,7 @@ $( "#satSlider" ).slider({
   		$('#satellite-slider-value').html(sliderVal);
   		map.setPaintProperty('goes_vis', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   		map.setPaintProperty('global_waterVapor', 'raster-opacity', parseInt(sliderVal, 10) / 100);
+  		map.setPaintProperty('lightning', 'raster-opacity', parseInt(sliderVal, 10) / 100);
   	}
 });
 
