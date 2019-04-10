@@ -1,0 +1,14 @@
+
+.header{
+	position: absolute; height: 50px; width: 100%; color: white; top: 0px; z-index: 1000;
+	background-color: rgba(255,255,255,.3); align-items: center; display: flex;
+}
+.header h2{
+	margin-left: 10px;
+}
+.mainContentWrapper{
+	position: absolute; width: 100%; height: 100%;
+}
+#map{
+	position: absolute; width: 100%; height: 100%;
+}
