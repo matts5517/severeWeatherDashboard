@@ -20,6 +20,7 @@ function getRiverData(){
 getRiverData();
 
 function addLayers(data){
+  
 	console.log('add layers', data)
 	// hail past month
     var features = $.grep(data.features, function(element, index){
@@ -34,14 +35,14 @@ function addLayers(data){
     });
     
     downSites =  {"type":"FeatureCollection", features}
-    console.log(liveSites, downSites)
+    console.log(liveSites, downSites, data)
 	// add the live sites layer 
     map.addLayer({
         'id': 'liveSites',
         'type': 'symbol',
         'source': {
             "type": "geojson",
-            "data": liveSites
+            "data": data
         },
         'layout': {
             'visibility': 'visible',
@@ -49,7 +50,7 @@ function addLayers(data){
         "type": "circle",
         'paint': {
             'circle-color': {
-                property: 'percentile',
+                property: 'flow',
                 stops: [
 				  [0, 'rgba(0,0,0,.2)'],
 				  [1, 'red'],
