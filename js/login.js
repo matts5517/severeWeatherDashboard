@@ -38,12 +38,10 @@ $(document).ready(function() {
 		    data: $(this).serialize(),
 		    // dataType: 'json; charset=utf-8',
 		    success: function(d) {
-		    	var response = d.trim();
-		    	var success = response.split(':')[0]
-		    	var welcomeName = response.split(':')[1]
-		    	console.log(response)
-		    	
-		    	if (success) {
+		    	let response = JSON.parse(d)
+		    	let success = response.success
+		    	let welcomeName = response.name
+		    	if (success == 'true') {
 		    		// set welcome name var to be used on the welcome screen
 		    		app.welcomeName = welcomeName;
 		    		//display message back to user here
@@ -75,7 +73,7 @@ $(document).ready(function() {
 		$('#loginWrapper').hide();
 		$('#welcomeWrapper').show();
 		//welcomeMemberName
-		console.log(app.welcomeName)
+		// console.log(app.welcomeName)
 		// customize welcome message
 		$('#welcomeMemberName').html(app.welcomeName);
 	}

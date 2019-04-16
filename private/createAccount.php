@@ -7,17 +7,26 @@
 		$first = $_POST['first'];
 		$last = $_POST['last'];
 		$password = $_POST['password'];
+		$name = $first . ' ' . $last;
 
-		$sql = "INSERT INTO users (email, first_name, last_name, password) VALUES ("."'" . $email ."', '".$first."', '". $last ."', '" . $password ."')";
+		$sql = "SELECT * from users WHERE email = '$email'";
+		$email_row_test = mysqli_query($db, $sql);
 
-		$result = mysqli_query($db, $sql);
-		if($result){
-			echo 'True';
-			echo ":";
-			echo $first;
-		}else{ 
-			echo "False";  
-		}
+		if (mysqli_num_rows($email_row_test) > 0) {
+  	  		// $email_error = "'error':'this email is already taken', 'email':" . $email '"';
+  	  		$error_message = 'This email address has already been used to register an account';
+  	  		$email_error  = array('success' =>'false', 'error_message' =>$error_message ,'email'=>$email );
+  	  		echo json_encode($email_error);
+  	  	}else{
+  	  		$sql = "INSERT INTO users (email, first_name, last_name, password) VALUES ("."'" . $email ."', '".$first."', '". $last ."', '" . $password ."')";
+			$result = mysqli_query($db, $sql);
+			if($result){
+				$account_success  = array('success' =>'true' ,'email'=>$email,  'name'=>$name);
+				echo json_encode($account_success);
+			}else{ 
+				echo "False";  
+			}
+  	  	} 	
 	}
 	
 
