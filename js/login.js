@@ -30,7 +30,7 @@ $(document).ready(function() {
 		$('.signInWrapper').show();
 
 	})
-
+	// create account button, make an Ajax call to some PHP code
 	$('#createAccountForm').submit(function(e) {
 		$.ajax({
 		    type: "POST",
@@ -44,8 +44,7 @@ $(document).ready(function() {
 		    	if (success == 'true') {
 		    		// set welcome name var to be used on the welcome screen
 		    		app.welcomeName = welcomeName;
-		    		//display message back to user here
-			        // if account was created successfully
+		    		//display message back to user here if account was created successfully
 			      	displayMessage();
 			      	// clear form values
 			      	clearCreateAccountForm();
@@ -72,8 +71,6 @@ $(document).ready(function() {
 		$('#createAccountWrapper').hide();
 		$('#loginWrapper').hide();
 		$('#welcomeWrapper').show();
-		//welcomeMemberName
-		// console.log(app.welcomeName)
 		// customize welcome message
 		$('#welcomeMemberName').html(app.welcomeName);
 	}
