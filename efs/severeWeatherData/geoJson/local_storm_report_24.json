@@ -1,0 +1,4425 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.37,
+                    48.49
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221703",
+                "magnitude":"55.0",
+                "location":"10 S CUT BANK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW5772 CUT BANK."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -84.72,
+                    44.91
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221704",
+                "magnitude":"40.0",
+                "location":"1 NW WATERS",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION DW5664 GAYLORDNWS; GAYLORD."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.05,
+                    41.5
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221704",
+                "magnitude":"59.0",
+                "location":"11 SE ARLINGTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION WY25 10.7 SE ARLINGTON (WYDOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -85.13,
+                    45.37
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221715",
+                "magnitude":"None",
+                "location":"2 NW BAYSHORE",
+                "marker-symbol":"default_marker",
+                "source":"BROADCAST MEDIA",
+                "event_id":0,
+                "eventType":"COASTAL FLOOD",
+                "comments":"BROADCAST MEDIA REPORTED PORTIONS OF LITTLE TRAVERSE WHEELWAY BIKE PATH CRUMBLING DUE TO BEACH EROSION."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.32,
+                    47.6
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221718",
+                "magnitude":"60.0",
+                "location":"8 NNE AUGUSTA",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1FM FOXTROT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.34,
+                    47.56
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221730",
+                "magnitude":"57.0",
+                "location":"6 NNE AUGUSTA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MCBMT 5.5 NE AUGUSTA (MCSCN)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -84.8,
+                    45.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221731",
+                "magnitude":"40.0",
+                "location":"1 WNW PELLSTON",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KPLN PELLSTON - RGNL AIRPORT OF EMMET COUNTY."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -83.57,
+                    45.07
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221731",
+                "magnitude":"41.0",
+                "location":"6 S CATHRO",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KAPN ALPENA - PHELPS COLLINS FIELD."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -82.11,
+                    29.95
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221740",
+                "magnitude":"40.0",
+                "location":"1 NNE STARKE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"WEATHERSTEM STATION JUST NORTH OF STARKE MEASURED A PEAK WIND GUST OF 40 MPH."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.99,
+                    47.62
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221745",
+                "magnitude":"52.0",
+                "location":"FAIRFIELD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"GREENFIELDS IRRIGATION DISTRICT HADS SITE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.59,
+                    48.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221745",
+                "magnitude":"54.0",
+                "location":"12 WNW CUT BANK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION BFAM 12.1 W CUT BANK (AGRIMET)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.61,
+                    47.98
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221745",
+                "magnitude":"72.0",
+                "location":"14 W BYNUM",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION DELMT 15.2 SW DUPUYER (MCSCN). PEAK WIND GUST SO FAR TODAY FOR THIS STATION."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.34,
+                    43.23
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221745",
+                "magnitude":"None",
+                "location":"4 WNW ROOSEVELT PARK",
+                "marker-symbol":"default_marker",
+                "source":"NWS EMPLOYEE",
+                "event_id":0,
+                "eventType":"LAKESHORE FLOOD",
+                "comments":"RESTAURANT ON BEACH STREET FLOODED."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -82.72,
+                    30.14
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221745",
+                "magnitude":"None",
+                "location":"5 NNW COLUMBIA",
+                "marker-symbol":"default_marker",
+                "source":"LAW ENFORCEMENT",
+                "event_id":0,
+                "eventType":"TSTM WND DMG",
+                "comments":"LAW ENFORCEMENT RECEIVED REPORTS OF A TREE DOWN ON A POWERLINE. THE TIME GIVEN WAS BASED ON RADAR."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.31,
+                    46.56
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221748",
+                "magnitude":"54.0",
+                "location":"13 S MARYSVILLE",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MACDONALD PASS MDT SITE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.17,
+                    47.1
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221758",
+                "magnitude":"51.0",
+                "location":"2 NW WINDHAM",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1CM CHARLIE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.32,
+                    47.6
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221758",
+                "magnitude":"60.0",
+                "location":"8 NNE AUGUSTA",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1FM FOXTROT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -105.04,
+                    41.08
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221800",
+                "magnitude":"63.0",
+                "location":"11 WSW WARREN AF BASE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"UP226_ EMKAYW."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.09,
+                    41.55
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221800",
+                "magnitude":"65.0",
+                "location":"7 ESE ARLINGTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION WY24 6.9 E ARLINGTON (WYDOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.07,
+                    44.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221800",
+                "magnitude":"None",
+                "location":"EMPIRE",
+                "marker-symbol":"default_marker",
+                "source":"BROADCAST MEDIA",
+                "event_id":0,
+                "eventType":"COASTAL FLOOD",
+                "comments":"PARTS OF THE BREAK WALL AT EMPIRE BEACH BEING DISMANTLED DUE TO COASTAL FLOODING/EROSION. TIME ESTIMATED."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.11,
+                    46.89
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221813",
+                "magnitude":"55.0",
+                "location":"8 SSW WOLF CREEK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 301005 8 SSW WOLF CREEK."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.96,
+                    41.92
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221814",
+                "magnitude":"57.0",
+                "location":"9 S WHEATLAND",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.33,
+                    48.07
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221821",
+                "magnitude":"51.0",
+                "location":"2 NW PENDROY",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"PENDROY MDT SITE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.15,
+                    47.29
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221822",
+                "magnitude":"51.0",
+                "location":"17 SW SIMMS",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"BOWMANS CORNER MDT SITE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.67,
+                    30.22
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221823",
+                "magnitude":"43.0",
+                "location":"4 NE ORANGE PARK",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"AWOS STATION KNIP JACKSONVILLE NAS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.17,
+                    47.84
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221825",
+                "magnitude":"60.0",
+                "location":"2 NNE CHOTEAU",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"CHOTEAU AIRPORT AWOS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.37,
+                    48.6
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221834",
+                "magnitude":"59.0",
+                "location":"3 SW CUT BANK",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KCTB CUT BANK AIRPORT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.33,
+                    48.07
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221837",
+                "magnitude":"54.0",
+                "location":"2 NW PENDROY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTPND 2.0 NW PENDROY (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.64,
+                    30.32
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221840",
+                "magnitude":"41.0",
+                "location":"1 ESE JACKSONVILLE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"MESONET STATION 1325W 0.9 SE JACKSONVILLE (WEATHERSTEM)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.64,
+                    30.32
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221840",
+                "magnitude":"42.0",
+                "location":"1 ESE JACKSONVILLE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"MESONET STATION 1323W 1.3 SE JACKSONVILLE (WEATHERSTEM)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.52,
+                    30.33
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221842",
+                "magnitude":"44.0",
+                "location":"4 SSW FORT CAROLINE",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"ASOS STATION KCRG JACKSONVIL CRAIG."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.11,
+                    46.89
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221843",
+                "magnitude":"63.0",
+                "location":"8 SSW WOLF CREEK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 301005 8 SSW WOLF CREEK."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -83.46,
+                    44.25
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221845",
+                "magnitude":"42.0",
+                "location":"3 SSE EAST TAWAS",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION XTAW TAWAS POINT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.35,
+                    43.41
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221845",
+                "magnitude":"None",
+                "location":"1 ESE MONTAGUE",
+                "marker-symbol":"default_marker",
+                "source":"NWS EMPLOYEE",
+                "event_id":0,
+                "eventType":"LAKESHORE FLOOD",
+                "comments":"GAS DOCK AND PARKING LOTS FLOODED AT MARINA ON WHITE LAKE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.98,
+                    46.73
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221855",
+                "magnitude":"51.0",
+                "location":"9 NNE HELENA",
+                "marker-symbol":"default_marker",
+                "source":"AMATEUR RADIO",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"NORTH HILLS OF HELENA VALLEY."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.93,
+                    48.31
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221900",
+                "magnitude":"65.0",
+                "location":"6 NW LEDGER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM05 5.8 NW LEDGER (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.31,
+                    44.3
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221900",
+                "magnitude":"None",
+                "location":"2 N PARKDALE",
+                "marker-symbol":"default_marker",
+                "source":"NWS EMPLOYEE",
+                "event_id":0,
+                "eventType":"COASTAL FLOOD",
+                "comments":"DAMAGE TO DOCK AND BEACH SIGNAGE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.58,
+                    48.99
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221914",
+                "magnitude":"57.0",
+                "location":"16 WNW WHITLASH",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"WEST BUTTE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.35,
+                    48.48
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221915",
+                "magnitude":"60.0",
+                "location":"GALATA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.66,
+                    46.7
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221924",
+                "magnitude":"50.0",
+                "location":"5 SSE FINN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTAVN 5.2 SE FINN (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.71,
+                    48.1
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221924",
+                "magnitude":"68.0",
+                "location":"8 NE BRADY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"BERLAND."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.7,
+                    45.5
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221929",
+                "magnitude":"53.0",
+                "location":"4 NNE MCALLISTER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTNOR 4.2 NE MCALLISTER (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.64,
+                    48.51
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221929",
+                "magnitude":"66.0",
+                "location":"3 SE HAVRE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"SADDLE BUTTE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.38,
+                    48.6
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221930",
+                "magnitude":"44.0",
+                "location":"3 SW CUT BANK",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":0,
+                "eventType":"HIGH SUST WINDS",
+                "comments":"1 HR AND 10 MINUTE SUSTAINED WIND AT THE CUT BANK AIRPORT OF 44 MPH FROM 12:20 PM TO 1:30 PM."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.93,
+                    48.74
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221930",
+                "magnitude":"59.0",
+                "location":"14 NNW JOPLIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION DW4821 CHESTER."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.54,
+                    29.99
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221935",
+                "magnitude":"None",
+                "location":"6 NNE PICOLATA",
+                "marker-symbol":"default_marker",
+                "source":"911 CALL CENTER",
+                "event_id":0,
+                "eventType":"TSTM WND DMG",
+                "comments":"POWER LINE DOWN ON VICKIE TOWERS DR."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.97,
+                    48.74
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221939",
+                "magnitude":"56.0",
+                "location":"KEVIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION DW0975 KEVIN."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -81.72,
+                    30.08
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221940",
+                "magnitude":"50.0",
+                "location":"5 SE LAKESIDE",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"STORM SPOTTER REPORTED AN ESTIMATED WIND GUST OF 50 MPH ON SEA PINES LANE IN FLEMING ISLAND."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.39,
+                    47.46
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221952",
+                "magnitude":"61.0",
+                "location":"5 SW GREAT FALLS",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"NWS OFFICE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.98,
+                    48.54
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221954",
+                "magnitude":"53.0",
+                "location":"2 SE BROWNING",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTBWG 2.1 SE BROWNING (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -85.76,
+                    45.02
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221955",
+                "magnitude":"43.0",
+                "location":"1 NNE LELAND",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION XLEL LELAND HARBOR."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221955",
+                "magnitude":"55.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.38,
+                    47.47
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221955",
+                "magnitude":"61.0",
+                "location":"5 WSW GREAT FALLS",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KGTF GREAT FALLS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.17,
+                    47.1
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910221956",
+                "magnitude":"56.0",
+                "location":"2 NW WINDHAM",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1CM CHARLIE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.54,
+                    48.39
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222000",
+                "magnitude":"57.0",
+                "location":"12 S RUDYARD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"GATZEMEIER."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.58,
+                    45.71
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222000",
+                "magnitude":"60.0",
+                "location":"2 W REED POINT",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -113.72,
+                    48.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222000",
+                "magnitude":"62.0",
+                "location":"14 WSW SAINT MARY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION LGPVC LOGAN PASS (GNP)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.93,
+                    48.31
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222000",
+                "magnitude":"67.0",
+                "location":"6 NW LEDGER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM05 5.8 NW LEDGER (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.24,
+                    44.63
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222000",
+                "magnitude":"None",
+                "location":"FRANKFORT",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"LAKESHORE FLOOD",
+                "comments":"PARKING LOT FLOODING NEXT TO BETSIE LAKE IN FRANKFORT. REPORT W/PHOTO ON FACEBOOK. TIME ESTIMATED FROM PHOTO."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222010",
+                "magnitude":"60.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.97,
+                    47.09
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222015",
+                "magnitude":"52.0",
+                "location":"3 ENE BENCHLAND",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM47 2.6 E BENCHLAND (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.88,
+                    45.25
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222015",
+                "magnitude":"54.0",
+                "location":"8 NE BANNACK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM14 8.3 NE BANNACK (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.37,
+                    47.28
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222015",
+                "magnitude":"56.0",
+                "location":"6 E GEYSER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1BM BRAVO."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.93,
+                    48.74
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222015",
+                "magnitude":"61.0",
+                "location":"14 NNW JOPLIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION DW4821 CHESTER."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.18,
+                    48.47
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222016",
+                "magnitude":"51.0",
+                "location":"3 E LOTHAIR",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW8201 LOTHAIR 3E."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.75,
+                    46.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222024",
+                "magnitude":"55.0",
+                "location":"JUDITH GAP",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222025",
+                "magnitude":"64.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.03,
+                    48.08
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222029",
+                "magnitude":"57.0",
+                "location":"8 SSE BIG SANDY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -114.51,
+                    47.7
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222030",
+                "magnitude":"50.0",
+                "location":"6 E LONEPINE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM57 5.7 E LONEPINE (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.8,
+                    48.49
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222030",
+                "magnitude":"50.0",
+                "location":"6 WSW HAVRE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM06 6.4 SW HAVRE (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.75,
+                    46.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222030",
+                "magnitude":"54.0",
+                "location":"JUDITH GAP",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.85,
+                    45.58
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222035",
+                "magnitude":"55.0",
+                "location":"13 SSW GREYCLIFF",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222040",
+                "magnitude":"62.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.41,
+                    46.52
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222044",
+                "magnitude":"58.0",
+                "location":"6 NW MARTINSDALE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"INGER."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.2,
+                    48.04
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222045",
+                "magnitude":"55.0",
+                "location":"5 ESE PENDROY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION RICMT 4.9 E PENDROY (MCSCN)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.58,
+                    45.71
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222045",
+                "magnitude":"60.0",
+                "location":"2 W REED POINT",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.28,
+                    47.38
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222054",
+                "magnitude":"58.0",
+                "location":"5 WSW SAND COULEE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"CASSIDY."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222055",
+                "magnitude":"56.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -113.97,
+                    46.85
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222100",
+                "magnitude":"55.0",
+                "location":"2 SW EAST MISSOULA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"TOP OF MOUNT SENTINEL."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.54,
+                    48.39
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222100",
+                "magnitude":"57.0",
+                "location":"12 S RUDYARD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW1931 RUDYARD."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.56,
+                    45.61
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222100",
+                "magnitude":"66.0",
+                "location":"5 S REED POINT",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.6,
+                    48.85
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222101",
+                "magnitude":"54.0",
+                "location":"20 N RUDYARD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW1937 GOLDSTONE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.4,
+                    48.18
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222103",
+                "magnitude":"61.0",
+                "location":"13 W BIG SANDY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MYERS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.65,
+                    48.55
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222105",
+                "magnitude":"57.0",
+                "location":"2 E INVERNESS",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 629000 1 E INVERNESS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.51,
+                    47.55
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222114",
+                "magnitude":"56.0",
+                "location":"2 WNW SUN PRAIRIE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.16,
+                    47.9
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222115",
+                "magnitude":"50.0",
+                "location":"6 N CHOTEAU",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION TRFM 6.1 N CHOTEAU (AGRIMET)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.13,
+                    47.39
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222115",
+                "magnitude":"63.0",
+                "location":"4 NW COFFEE CREEK",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM15 3.6 NW COFFEE CREEK (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.72,
+                    48.3
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222118",
+                "magnitude":"58.0",
+                "location":"13 S FORT BELKNAP",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION FBLM8 FORT BELKNAP RAWS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.79,
+                    48.59
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222128",
+                "magnitude":"54.0",
+                "location":"3 NNW JOPLIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW9056 JOPLIN."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.31,
+                    47.96
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222130",
+                "magnitude":"56.0",
+                "location":"11 ENE ZORTMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":"MDT STATION MTMAL MALTA SOUTH ON 191."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    47.28
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222132",
+                "magnitude":"53.0",
+                "location":"3 WNW RAYNESFORD",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1AM ALPHA."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.92,
+                    46.64
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222142",
+                "magnitude":"55.0",
+                "location":"4 N EAST HELENA",
+                "marker-symbol":"default_marker",
+                "source":"NWS EMPLOYEE",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.96,
+                    47.33
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222145",
+                "magnitude":"0.25",
+                "location":"ROY",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HAIL",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.96,
+                    45.82
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222145",
+                "magnitude":"54.0",
+                "location":"1 S BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.61,
+                    45.56
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222145",
+                "magnitude":"59.0",
+                "location":"8 W ABSAROKEE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.42,
+                    47.45
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222154",
+                "magnitude":"52.0",
+                "location":"3 WSW SUFFOLK",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1EM ECHO."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -85.55,
+                    45.21
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222157",
+                "magnitude":"40.0",
+                "location":"7 NNE NORTHPORT",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION GTLM4 6 NE NORTHPORT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.47,
+                    47.03
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222157",
+                "magnitude":"51.0",
+                "location":"3 SW LEWISTOWN",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KLWT LEWISTOWN ASOS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.48,
+                    47.79
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222200",
+                "magnitude":"55.0",
+                "location":"8 ESE FORT BENTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM02 10.2 S LOMA (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -113.36,
+                    48.31
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222200",
+                "magnitude":"56.0",
+                "location":"5 ENE BLACKTAIL - RAILR",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.53,
+                    47.89
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222200",
+                "magnitude":"59.0",
+                "location":"3 SSW LOMA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM45 3.2 SW LOMA (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.75,
+                    46.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222200",
+                "magnitude":"64.0",
+                "location":"JUDITH GAP",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -84.6,
+                    45.85
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222200",
+                "magnitude":"None",
+                "location":"MACKINAC ISLAND",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"LAKESHORE FLOOD",
+                "comments":"M-185 CLOSED BETWEEN MILE MARKER 1.5 AND 3.5 DUE TO EROSION AND HEAVY DAMAGE TO ROAD. - DELAYED REPORT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.85,
+                    47.3
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222203",
+                "magnitude":"56.0",
+                "location":"5 ESE DENTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 268000 4 ESE DENTON."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.5,
+                    47.95
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222208",
+                "magnitude":"59.0",
+                "location":"1 N LOMA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 629003 LOMA."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.38,
+                    46.16
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222212",
+                "magnitude":"53.0",
+                "location":"17 NE WILSALL",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.53,
+                    46.12
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222215",
+                "magnitude":"51.0",
+                "location":"7 SW TOSTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM55 6.7 SW TOSTON (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.85,
+                    47.3
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222215",
+                "magnitude":"58.0",
+                "location":"5 ESE DENTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTDEN 4.9 E DENTON (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.5,
+                    47.95
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222215",
+                "magnitude":"59.0",
+                "location":"1 N LOMA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTLOM 1.0 N LOMA (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.95,
+                    47.06
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222215",
+                "magnitude":"59.0",
+                "location":"2 W MOCCASIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM09 2.1 W MOCCASIN (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.66,
+                    46.7
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222224",
+                "magnitude":"59.0",
+                "location":"5 SSE FINN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTAVN 5.2 SE FINN (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.98,
+                    46.6
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222226",
+                "magnitude":"60.0",
+                "location":"2 E HELENA",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KHLN HELENA AP ASOS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.47,
+                    47.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222230",
+                "magnitude":"62.0",
+                "location":"10 NNE VAUGHN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM21 9.6 NE VAUGHN (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.87,
+                    47.59
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222241",
+                "magnitude":"50.0",
+                "location":"18 NNE ROY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION ARMM8 ARMELLS CREEK RAWS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.93,
+                    47.33
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222244",
+                "magnitude":"60.0",
+                "location":"1 E ROY",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1OM OSCAR."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -114.7,
+                    47.02
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222245",
+                "magnitude":"54.0",
+                "location":"2 E TARKIO",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ELEVATION 3970 FEET."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.22,
+                    47.22
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222252",
+                "magnitude":"70.0",
+                "location":"7 ESE HILGER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION JPKM8 JUDITH PEAK RAWS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    45.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222258",
+                "magnitude":"51.0",
+                "location":"12 E BOZEMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTBZH 11.5 E BOZEMAN (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.55,
+                    47.75
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222258",
+                "magnitude":"53.0",
+                "location":"7 ENE POWER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION K1JM JULIE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.0,
+                    41.5
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222300",
+                "magnitude":"61.0",
+                "location":"15 NNE CENTENNIAL",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"WYDOT SENSOR AT STROUSS HILL ALONG INTERSTATE 80."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.93,
+                    45.82
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222300",
+                "magnitude":"62.0",
+                "location":"11 NNE BOZEMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION BBCST 11.1 NE BOZEMAN (AVALANCHE)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.95,
+                    44.47
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222305",
+                "magnitude":"50.0",
+                "location":"21 SW LIMA",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION HRKM8 HARKNESS RAWS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.07,
+                    46.35
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222313",
+                "magnitude":"56.0",
+                "location":"14 WNW RINGLING",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTDPC 15.6 SW WHITE SULPHUR SPRINGS (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.07,
+                    46.35
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222313",
+                "magnitude":"57.0",
+                "location":"14 WNW RINGLING",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION 564005 15 SW WHITE SULPHUR SPRINGS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.88,
+                    45.27
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222315",
+                "magnitude":"57.0",
+                "location":"4 SE VIRGINIA CITY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM17 3.5 SE VIRGINIA CITY (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.08,
+                    41.55
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222315",
+                "magnitude":"62.0",
+                "location":"7 ESE ARLINGTON",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"WYDOT SENSOR AT COOPER COVE BY ARLINGTON. SUSTAINED WINDS CURRENTLY 40 TO 45 MPH."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.15,
+                    47.29
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222322",
+                "magnitude":"55.0",
+                "location":"17 SW SIMMS",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTBOW 17.5 NW CRAIG (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.94,
+                    48.96
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222331",
+                "magnitude":"56.0",
+                "location":"6 NNW SUNBURST",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTSWT 6.0 N SUNBURST (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -77.14,
+                    35.35
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222340",
+                "magnitude":"None",
+                "location":"3 S WILMAR",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"TSTM WND DMG",
+                "comments":"TREES DOWN AND POSSIBLE POWER LINE DAMAGE."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.44,
+                    46.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222345",
+                "magnitude":"49.0",
+                "location":"1 WNW ELLISTON",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EW4329 ELLISTON."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.95,
+                    47.06
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222345",
+                "magnitude":"54.0",
+                "location":"2 WNW MOCCASIN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MWSM 2.0 W MOCCASIN (AGRIMET)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.18,
+                    47.06
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222350",
+                "magnitude":"50.0",
+                "location":"7 NW FORESTGROVE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTLEW 6.9 NW FORESTGROVE (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.76,
+                    46.13
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222350",
+                "magnitude":"58.0",
+                "location":"5 E BROADVIEW",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.22,
+                    47.22
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222352",
+                "magnitude":"71.0",
+                "location":"7 ESE HILGER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION JPKM8 JUDITH PEAK RAWS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.7,
+                    46.31
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910222354",
+                "magnitude":"55.0",
+                "location":"8 W TOWNSEND",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION EKHM8 ELKHORN RAWS - 8 W TOWNSEND."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    45.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230000",
+                "magnitude":"52.0",
+                "location":"12 W LIVINGSTON",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.97,
+                    47.09
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230000",
+                "magnitude":"67.0",
+                "location":"3 ENE BENCHLAND",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM47 2.6 E BENCHLAND (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.17,
+                    45.78
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230006",
+                "magnitude":"59.0",
+                "location":"BELGRADE",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KBZN BOZEMAN YELLOWSTONE AIRPORT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.55,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230008",
+                "magnitude":"67.0",
+                "location":"3 NW BILLINGS",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.38,
+                    46.16
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230012",
+                "magnitude":"66.0",
+                "location":"17 NE WILSALL",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.47,
+                    45.79
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230015",
+                "magnitude":"60.0",
+                "location":"3 WSW LOCKWOOD",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.37,
+                    45.73
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230030",
+                "magnitude":"54.0",
+                "location":"3 SW AMSTERDAM",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM07 3.2 SW AMSTERDAM (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.0,
+                    46.2
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230032",
+                "magnitude":"60.0",
+                "location":"15 N POMPEYS PILLAR",
+                "marker-symbol":"default_marker",
+                "source":"CO-OP OBSERVER",
+                "event_id":0,
+                "eventType":"TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.45,
+                    45.7
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230039",
+                "magnitude":"64.0",
+                "location":"6 ENE LIVINGSTON",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.93,
+                    46.83
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230040",
+                "magnitude":"66.0",
+                "location":"13 SSE FORESTGROVE",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"AWOS STATION KMVH N BAR RANCH AWOS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -105.85,
+                    46.41
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230045",
+                "magnitude":"0.25",
+                "location":"MILES CITY",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HAIL",
+                "comments":"MULTIPLE FACEBOOK PHOTOS AND VIDEOS."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.2,
+                    46.03
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230045",
+                "magnitude":"67.0",
+                "location":"23 ENE COLSTRIP",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.98,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230055",
+                "magnitude":"70.0",
+                "location":"2 SSW BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.73,
+                    45.85
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230057",
+                "magnitude":"65.0",
+                "location":"10 E MOLT",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    45.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230100",
+                "magnitude":"56.0",
+                "location":"12 W LIVINGSTON",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.45,
+                    45.23
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230100",
+                "magnitude":"66.0",
+                "location":"6 WSW BIG SKY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION YCTIM 6.3 W BIG SKY (AVALANCHE)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.93,
+                    45.82
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230100",
+                "magnitude":"70.0",
+                "location":"11 NNE BOZEMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION BBCST 11.1 NE BOZEMAN (AVALANCHE)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.55,
+                    45.81
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230107",
+                "magnitude":"61.0",
+                "location":"3 NW BILLINGS",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.95,
+                    45.75
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230110",
+                "magnitude":"56.0",
+                "location":"6 S BIG TIMBER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.26,
+                    45.47
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230115",
+                "magnitude":"59.0",
+                "location":"6 ESE ABSAROKEE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.57,
+                    45.46
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230120",
+                "magnitude":"62.0",
+                "location":"3 W FISHTAIL",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.4,
+                    45.73
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230121",
+                "magnitude":"53.0",
+                "location":"6 S LOCKWOOD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -107.3,
+                    45.0
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230128",
+                "magnitude":"53.0",
+                "location":"9 NW RANCHESTER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.49,
+                    45.34
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230130",
+                "magnitude":"53.0",
+                "location":"1 S ROSCOE",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.88,
+                    45.27
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230130",
+                "magnitude":"59.0",
+                "location":"4 SE VIRGINIA CITY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM17 3.5 SE VIRGINIA CITY (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.47,
+                    45.79
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230133",
+                "magnitude":"63.0",
+                "location":"3 WSW LOCKWOOD",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.86,
+                    37.98
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230133",
+                "magnitude":"None",
+                "location":"CRISFIELD",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"COASTAL FLOOD",
+                "comments":"FLOODING ON COVE STREET_ FROM HIGH TIDE. SOMERS COVE MARINA FLOODED."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.5,
+                    45.97
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230134",
+                "magnitude":"52.0",
+                "location":"3 SSE BUTTE",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KBTM BUTTE-MOONEY AP."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -85.55,
+                    45.21
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230140",
+                "magnitude":"43.0",
+                "location":"7 NNE NORTHPORT",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION GTLM4 6 NE NORTHPORT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.49,
+                    45.34
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230145",
+                "magnitude":"53.0",
+                "location":"1 S ROSCOE",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -107.32,
+                    45.03
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230151",
+                "magnitude":"66.0",
+                "location":"8 SSE WYOLA",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -107.3,
+                    45.0
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230158",
+                "magnitude":"63.0",
+                "location":"9 NW RANCHESTER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    45.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230200",
+                "magnitude":"58.0",
+                "location":"12 W LIVINGSTON",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.44,
+                    45.24
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230200",
+                "magnitude":"58.0",
+                "location":"6 WSW BIG SKY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION YCAMS 5.7 W BIG SKY (AVALANCHE)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.5,
+                    45.65
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230201",
+                "magnitude":"51.0",
+                "location":"8 ENE LAME DEER",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -113.99,
+                    46.69
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230209",
+                "magnitude":"51.0",
+                "location":"6 NE FLORENCE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MPG RANCH SENSOR ON SOUTH BALDY RIDGE AT 4911 FEET."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.4,
+                    45.73
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230221",
+                "magnitude":"56.0",
+                "location":"6 S LOCKWOOD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -114.1,
+                    46.92
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230227",
+                "magnitude":"47.0",
+                "location":"6 WNW MISSOULA",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"ASOS STATION KMSO MISSOULA_ MT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    45.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230228",
+                "magnitude":"58.0",
+                "location":"12 E BOZEMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTBZH 11.5 E BOZEMAN (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.86,
+                    44.64
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230228",
+                "magnitude":"62.0",
+                "location":"6 ESE BIG HORN",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -109.87,
+                    45.41
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230229",
+                "magnitude":"58.0",
+                "location":"3 WSW NYE",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.82,
+                    44.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230232",
+                "magnitude":"58.0",
+                "location":"4 SE BANNER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -107.3,
+                    45.0
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230254",
+                "magnitude":"61.0",
+                "location":"9 NW RANCHESTER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.82,
+                    44.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230254",
+                "magnitude":"63.0",
+                "location":"4 SE BANNER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.86,
+                    44.64
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230300",
+                "magnitude":"66.0",
+                "location":"6 ESE BIG HORN",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.1,
+                    45.0
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230304",
+                "magnitude":"54.0",
+                "location":"28 E WARREN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -105.54,
+                    44.35
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230306",
+                "magnitude":"55.0",
+                "location":"5 NNW DWTN GILLETTE",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.54,
+                    45.27
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230307",
+                "magnitude":"54.0",
+                "location":"12 SE EMIGRANT",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -114.26,
+                    46.04
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230309",
+                "magnitude":"50.0",
+                "location":"4 WNW DARBY",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION LRCM8 4 WNW DARBY."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.94,
+                    41.93
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230624",
+                "magnitude":"59.0",
+                "location":"1 SSE BORDEAUX",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.31,
+                    47.96
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230649",
+                "magnitude":"58.0",
+                "location":"11 ENE ZORTMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTMAL 11.3 SW PHILLIPS (MT DOT)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.32,
+                    47.89
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230700",
+                "magnitude":"63.0",
+                "location":"10 E ZORTMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION MTM38 9.5 E ZORTMAN (MT-MESO)."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -108.5,
+                    47.91
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230732",
+                "magnitude":"58.0",
+                "location":"1 ESE ZORTMAN",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"MESONET STATION ALDM8 ZORTMAN 1W."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.55,
+                    44.14
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230920",
+                "magnitude":"1.0",
+                "location":"1 SE OTISFIELD",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.1,
+                    43.86
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910230935",
+                "magnitude":"1.78",
+                "location":"FREEPORT",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.83,
+                    48.29
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231230",
+                "magnitude":"4.0",
+                "location":"HEART BUTTE",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":"PERIODS OF HEAVY SNOW REPORTED. REPORT VIA FACEBOOK."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.43,
+                    45.64
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231300",
+                "magnitude":"1.2",
+                "location":"7 ESE LIVINGSTON",
+                "marker-symbol":"default_marker",
+                "source":"COCORAHS",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -71.66,
+                    42.84
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231325",
+                "magnitude":"1.01",
+                "location":"MILFORD",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.63,
+                    47.87
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231345",
+                "magnitude":"6.0",
+                "location":"17 WSW BYNUM",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.29,
+                    47.93
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231351",
+                "magnitude":"1.0",
+                "location":"4 SSE BYNUM",
+                "marker-symbol":"default_marker",
+                "source":"CO-OP OBSERVER",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.98,
+                    46.5
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231354",
+                "magnitude":"2.0",
+                "location":"2 N CLANCY",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":"SOME ROADS ARE SLUSHY. REPORT VIA FACEBOOK."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -71.17,
+                    43.3
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231359",
+                "magnitude":"1.24",
+                "location":"2 SSE STRAFFORD",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.93,
+                    44.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231400",
+                "magnitude":"1.0",
+                "location":"2 WSW STORY",
+                "marker-symbol":"default_marker",
+                "source":"COCORAHS",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.02,
+                    46.62
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231400",
+                "magnitude":"1.0",
+                "location":"2 N HELENA",
+                "marker-symbol":"default_marker",
+                "source":"NWS EMPLOYEE",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":"ACCUMULATION MAINLY ON GRASSY AND ELEVATED SURFACES."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.82,
+                    44.57
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231408",
+                "magnitude":"53.0",
+                "location":"4 SE BANNER",
+                "marker-symbol":"default_marker",
+                "source":"DEPT OF HIGHWAYS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.55,
+                    43.39
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231410",
+                "magnitude":"2.47",
+                "location":"KENNEBUNK",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.27,
+                    46.67
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231420",
+                "magnitude":"4.0",
+                "location":"6 SSE MARYSVILLE",
+                "marker-symbol":"default_marker",
+                "source":"AMATEUR RADIO",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":"HAM RADIO REPORT. LOCATION ESTIMATED."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -148.83,
+                    60.79
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231426",
+                "magnitude":"81.0",
+                "location":"1 NE PORTAGE",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":"PATO ASOS REPORTS PEAK WIND GUST OF 81 MPH AT 456 AM AKDT."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.47,
+                    48.07
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231430",
+                "magnitude":"2.0",
+                "location":"8 W PENDROY",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":"REPORT FROM ROCKPORT COLONY."
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.75,
+                    43.09
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231453",
+                "magnitude":"1.71",
+                "location":"1 W KITTERY",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -113.01,
+                    48.56
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231505",
+                "magnitude":"4.0",
+                "location":"BROWNING",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":1,
+                "eventType":"SNOW",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -103.38,
+                    44.42
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231515",
+                "magnitude":"51.0",
+                "location":"5 SSE BEAR BUTTE STATE",
+                "marker-symbol":"default_marker",
+                "source":"AWOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.65,
+                    43.15
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231517",
+                "magnitude":"2.48",
+                "location":"YORK",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.72,
+                    43.54
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231518",
+                "magnitude":"2.72",
+                "location":"WATERBORO",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -71.07,
+                    43.48
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231522",
+                "magnitude":"1.6",
+                "location":"MIDDLETON",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.43,
+                    43.63
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231523",
+                "magnitude":"2.25",
+                "location":"3 SSE GORHAM",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -103.1,
+                    44.15
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231525",
+                "magnitude":"50.0",
+                "location":"ELLSWORTH AFB",
+                "marker-symbol":"default_marker",
+                "source":"OTHER FEDERAL",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.44,
+                    43.5
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231531",
+                "magnitude":"2.5",
+                "location":"SACO",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.81,
+                    43.24
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231532",
+                "magnitude":"1.45",
+                "location":"SOUTH BERWICK",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -103.06,
+                    44.05
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231536",
+                "magnitude":"54.0",
+                "location":"RAPID CITY ARPT",
+                "marker-symbol":"default_marker",
+                "source":"ASOS",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -102.93,
+                    44.12
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231553",
+                "magnitude":"52.0",
+                "location":"5 WNW NEW UNDERWOOD",
+                "marker-symbol":"default_marker",
+                "source":"MESONET",
+                "event_id":9,
+                "eventType":"NON-TSTM WND GST",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.22,
+                    44.12
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231556",
+                "magnitude":"2.25",
+                "location":"1 N LEWISTON",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -69.79,
+                    44.29
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231605",
+                "magnitude":"2.2",
+                "location":"HALLOWELL",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.58,
+                    44.15
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231616",
+                "magnitude":"1.75",
+                "location":"1 WNW OTISFIELD",
+                "marker-symbol":"default_marker",
+                "source":"TRAINED SPOTTER",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -69.8,
+                    43.91
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231618",
+                "magnitude":"2.77",
+                "location":"1 E BATH",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        },
+        {
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -68.9,
+                    44.31
+                ]
+            },
+            "type":"Feature",
+            "properties":{
+                "date":"201910231619",
+                "magnitude":"1.5",
+                "location":"ISLEBORO",
+                "marker-symbol":"default_marker",
+                "source":"PUBLIC",
+                "event_id":0,
+                "eventType":"HEAVY RAIN",
+                "comments":""
+            }
+        }
+    ]
+}

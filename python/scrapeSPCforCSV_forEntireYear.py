@@ -23,8 +23,8 @@ print time.asctime()
 start = time.time()
 # Script starts here
 # -------------------------------------------------------------------------------
-
-jsonPath = 'data/geoJson/severeWeather/pastYear/currentYear.json'
+# rootPath = '/var/www/html/efs/'
+rootPath = '/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/efs/'
 
 # get UTC date
 date =  datetime2.utcnow()
@@ -35,8 +35,7 @@ dt = datetime2.strptime(date, fmt)
 dayOfYearToday = dt.strftime('%j')
 
 # download all raw csv's to a folder
-i = int(int(dayOfYearToday) - 14)
-print i
+i = 1
 while i < int(int(dayOfYearToday) + 1):
     # get the correct date
     day= str(datetime.datetime(2019, 1, 1) + datetime.timedelta(i - 1))
@@ -48,7 +47,7 @@ while i < int(int(dayOfYearToday) + 1):
 
     newYearString = str(year + month + day)
     print newYearString
-    filePath = 'data/csv/2019/severeData_' + newYearString + '.csv'
+    filePath = rootPath + 'severeWeatherData/csv/2019/severeData_' + newYearString + '.csv'
     print filePath
     url = 'http://www.spc.noaa.gov/climo/reports/' + newYearString + '_rpts_filtered.csv'
 

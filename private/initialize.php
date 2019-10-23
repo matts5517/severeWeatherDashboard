@@ -4,6 +4,7 @@
   // ob_start(); // output buffering is turned on
   require_once('functions.php');
   require_once('database.php');
+
   // variables to be used in multiple places in the html
   $page_title = 'Severe Weather Explorer'; // main title of website
 
@@ -29,7 +30,7 @@
 
 
   // call the function to connect to db.
-  $db = db_connect(); // connect to database
+  // $db = db_connect(); // connect to database
   
   
 ?>

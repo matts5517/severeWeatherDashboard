@@ -39,16 +39,16 @@ dt = datetime.strptime(date, fmt)
 dayOfYearToday = dt.strftime('%j')
 
 # root path 
-# rootPath = 'var/www/html/python/'
-# rootPath = 'var/www/html/efs/'
-rootPath = ''
+# rootPath = '/var/www/html/efs/'
+rootPath = '/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/efs/'
+
 # storm reports url
 url = 'http://www.spc.noaa.gov/climo/reports/today_filtered.csv'
 # other vars
-currentYearFilePath = rootPath + 'data/csv/2019/severeData_'+ date + '.csv'
-jsonYearPath = rootPath + 'data/geoJson/severeWeather/currentYear_stormReports.json'
-jsonCountPath = 'data/geoJson/severeWeather/stormReports_count.json'
-yearDir  = rootPath + 'data/csv/2019'
+currentYearFilePath = rootPath + 'severeWeatherData/csv/2019/severeData_'+ date + '.csv'
+jsonYearPath = rootPath + 'severeWeatherData/geoJson/severeWeather/currentYear_stormReports.json'
+jsonCountPath = rootPath + 'severeWeatherData/geoJson/severeWeather/stormReports_count.json'
+yearDir  = rootPath + 'severeWeatherData/csv/2019'
 
 urllib.urlretrieve(url, currentYearFilePath)
 
@@ -103,7 +103,6 @@ for file in os.listdir(yearDir):
                     print 'except', listLine, date
 
 jsonDataForCount = jsonData
-print len(jsonDataForCount)
 jsonData = {'type': 'FeatureCollection', 'features': jsonData}
 
 with open(jsonYearPath, 'w') as outfile:
@@ -169,6 +168,7 @@ jsonData = {'today':{'tornado':len(tornadoToday), 'wind': len(windToday), 'hail'
 'week':{'tornado':len(tornadoWeek), 'wind':len(windWeek), 'hail': len(hailWeek)},
 'month':{'tornado':len(tornadoMonth), 'wind':len(windMonth), 'hail': len(hailMonth)}, 
 'year':{'tornado':len(tornadoYear), 'wind':len(windYear), 'hail': len(hailYear)}}
+
 with open(jsonCountPath, 'w') as outfile:
     json.dump(jsonData, outfile, indent=4, separators=(',', ':'))
 

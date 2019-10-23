@@ -1,7 +1,7 @@
 
 let app = {}; // main app object to store global vars
 // let pathToData = '../efs/severeWeatherData/' // for ec2 instance
-let pathToData = '../python/data/' // for development on mac
+let pathToData = '../efs/severeWeatherData/' // for development on mac
 
 
 // init mapbox map ****************************************************************************
@@ -37,6 +37,12 @@ map.on('style.load', function(){
 	$.getJSON( pathToData + "geoJson/staticData/cb_2017_us_county_20m.geojson", function(jsonData) {
 		staticLayerLoad(jsonData)
 		
+	})
+
+	// load the LSR layer 
+	$.getJSON(pathToData + "geoJson/local_storm_report_24.json", function (jsonData) {
+		app.lsr_data = jsonData; // set global var to carry over severe storm json to entire app
+		loadLSRLayers(app.lsr_data);
 	})
 })
 

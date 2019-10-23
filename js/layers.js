@@ -249,7 +249,6 @@ function loadSevereLayers(data){
 
 
 // load radar layers
-
 function radarLayerLoad(){
     // // the url below is for archived radar products !!!!!!!!!!!!!!!! back to at least 2007
     // 'https://mesonet.agron.iastate.edu/archive/data/2019/01/05/GIS/uscomp/n0q_201901051835.png'
@@ -397,6 +396,88 @@ function radarLayerLoad(){
 
 
 function loadESRIServices(){
+}
+
+
+function loadLSRLayers(data) {
+    console.log(data)
+
+    // var features = $.grep(data.features, function(element, index){
+    //       return element.properties.eventNum == 3
+    // });
+    // app.data.lsr_data_24 = {"type":"FeatureCollection", features }
+
+
+    app.lsr_data_24 = data;
+    console.log('add layer')
+    // add the wind storm layer 
+    map.addLayer({
+        'id': 'lsr_24_labels',
+        'type': 'symbol',
+        'source': {
+            "type": "geojson",
+            "data": app.lsr_data_24
+        },
+       
+        'layout': {
+            'visibility': 'visible',
+
+            'text-field': '{magnitude}',
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [1, -3],
+            "text-anchor": "top",
+            "text-size": 10
+
+
+      
+        },
+        'paint': {
+             "text-color": "white",
+            // 'circle-color': {
+            //     property: 'event_id',
+            //     stops: lsr_list
+            // },
+            // 'circle-radius': {
+            //     'base': 1.75,
+            //     'stops': [
+            //         [1, 2],
+            //         [4, 3],
+            //         [6, 5],
+            //         [10, 10],
+            //         [14, 25]
+            //     ]
+            // },
+        },
+    });
+    map.addLayer({
+        'id': 'lsr_24_points',
+        'type': 'circle',
+        'source': {
+            "type": "geojson",
+            "data": app.lsr_data_24
+        },
+
+        'layout': {
+            'visibility': 'visible',
+        },
+        'paint': {
+            'circle-color': {
+                property: 'event_id',
+                stops: lsr_list
+            },
+            'circle-radius': {
+                'base': 1.75,
+                'stops': [
+                    [1, 2],
+                    [4, 3],
+                    [6, 5],
+                    [10, 10],
+                    [14, 25]
+                ]
+            },
+        },
+    });
+    
 }
 
 function loadWatchWarn(data){
