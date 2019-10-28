@@ -38,24 +38,25 @@ dayOfYearToday = dt.strftime('%j')
 rootPath = '/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severeWeatherDashboard/efs/'
 
 # storm reports url
-url = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=86400&justcsv=1'
+url24 = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=86400&justcsv=1'
+url72 = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=259200&justcsv=1'
 # other vars
 local_storm_report_path = rootPath + 'severeWeatherData/csv/local_storm_report_24.csv'
 jsonYearPath = rootPath + 'severeWeatherData/geoJson/local_storm_report_24.json'
-urllib.urlretrieve(url, local_storm_report_path)
+urllib.urlretrieve(url72, local_storm_report_path)
 jsonData = []
 
 eventNum = {
     'SNOW': 1,
-    'HEAVY SNOW': 2,
-    'BLIZZARD': 3,
-    'FREEZING RAIN': 4,
-    'SLEET': 5,
-    'AVALANCHE':6,
-    'EXTR WIND CHILL':7,
-    'EXTREME COLD':8,
+    'HEAVY SNOW': 1,
+    'BLIZZARD': 2,
+    'FREEZING RAIN': 3,
+    'SLEET': 3,
+    # 'AVALANCHE':4,
+    'EXTR WIND CHILL':4,
+    'EXTREME COLD':4,
+    
     'NON-TSTM WND GST':9,
-
 
 }
 
@@ -75,15 +76,11 @@ with open(local_storm_report_path, "rb") as f:
             source = line[11]
             comment = line[12]
             for item in eventNum:
-                # print value, item
                 if value == item:
-                    print value, item, '################'
                     event_id = eventNum[item]
-                    print event_id, '%%%%%%%%%%%%%%%%%%'
                     break
                 else:
                     event_id = 0
-
           
             print date, lat,lon, magnitude, value, location, source, comment, event_id
 

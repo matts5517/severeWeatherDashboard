@@ -19,7 +19,7 @@ map.addControl(new mapboxgl.NavigationControl({showCompass:false, showZoom:true}
 
 // load layers, call functions, etc on map ready ****************************************************************************
 map.on('style.load', function(){
-	radarLayerLoad(); //  load radar layers
+	realEarthLayerLoad(); //  load radar layers
 	loadESRIServices(); // load esri services geojson
 
 	// get severe storm report json data

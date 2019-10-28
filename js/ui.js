@@ -188,6 +188,16 @@ $('.siteSettings').on('click', function(v){
 		$('.toolBoxWrapper').slideDown()
 	}
 })
+// on header click
+$('.layer-header').on('click', (evt)=>{
+	console.log(evt.currentTarget)
+	let item = $(evt.currentTarget).next()
+	if (item.is(":visible")) {
+		item.slideUp();
+	}else{
+		item.slideDown();
+	}
+})
 // on basemap tool selection
 $('#basemapTool').on('click', function(v){
 	if ($('#basemapSelector').is(":visible")) {
