@@ -418,174 +418,397 @@ function loadESRIServices(){
 
 
 function loadLSRLayers(data) {
-    console.log(data)
-
-    // heavy snow LSR ************************************************************************************************************************************************************************
-    var features = $.grep(data.features, function(element, index){
-          return element.properties.event_id == 1
-    });
-    app.lsr_heavy_snow = {"type":"FeatureCollection", features }
-
-    // add the Heavy snow layer 
-    map.addLayer({
-        'id': 'heavy_snow_labels',
-        'type': 'symbol',
-        'source': {
-            "type": "geojson",
-            "data": app.lsr_heavy_snow
+    const lsr_layers = {
+        'heavy-snow': {
+            'eventNum': 1
         },
-        'layout': {
-            'visibility': 'none',
-
-            'text-field': '{magnitude}',
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [1, -3],
-            "text-anchor": "top",
-            "text-size": 10
+        'blizzard': {
+            'eventNum': 2
         },
-        'paint': {
-             "text-color": "white",
+        'sleet': {
+            'eventNum': 3
         },
-    });
-    map.addLayer({
-        'id': 'heavy_snow',
-        'type': 'circle',
-        'source': {
-            "type": "geojson",
-            "data": app.lsr_heavy_snow
+        'extreme-cold': {
+            'eventNum': 4
         },
-
-        'layout': {
-            'visibility': 'none',
+        'heavy-rain': {
+            'eventNum': 11
         },
-        'paint': {
-            'circle-color': {
-                property: 'event_id',
-                stops: lsr_list
-            },
-            'circle-radius': {
-                'base': 1.75,
-                'stops': [
-                    [1, 2],
-                    [4, 3],
-                    [6, 5],
-                    [10, 10],
-                    [14, 25]
-                ]
-            },
+        'flood': {
+            'eventNum': 12
         },
-    });
-
-    // blizzard LSR ************************************************************************************************************************************
-    var features = $.grep(data.features, function(element, index){
-          return element.properties.event_id == 2
-    });
-    app.lsr_blizzard = {"type":"FeatureCollection", features }
-    map.addLayer({
-        'id': 'blizzard',
-        'type': 'circle',
-        'source': {
-            "type": "geojson",
-            "data": app.lsr_blizzard
+        'flash-flood': {
+            'eventNum': 13
         },
-
-        'layout': {
-            'visibility': 'none',
+        'coastal-flood': {
+            'eventNum': 14
         },
-        'paint': {
-            'circle-color': {
-                property: 'event_id',
-                stops: lsr_list
-            },
-            'circle-radius': {
-                'base': 1.75,
-                'stops': [
-                    [1, 2],
-                    [4, 3],
-                    [6, 5],
-                    [10, 10],
-                    [14, 25]
-                ]
-            },
+        'wind-gust': {
+            'eventNum': 5
         },
-    });
-
-    // sleet/freezing rain LSR ************************************************************************************************************************************
-    var features = $.grep(data.features, function (element, index) {
-        return element.properties.event_id == 3
-    });
-    app.lsr_sleet_rain = {
-        "type": "FeatureCollection",
-        features
+        'wind-dmg': {
+            'eventNum': 6
+        },
+        'wind-sus': {
+            'eventNum': 7
+        },
+        'marine-tstm-wind': {
+            'eventNum': 9
+        },
+        'waterspout': {
+            'eventNum': 10
+        },
     }
-    console.log(app.lsr_sleet_rain);
-    map.addLayer({
-        'id': 'sleet',
-        'type': 'circle',
-        'source': {
-            "type": "geojson",
-            "data": app.lsr_sleet_rain
-        },
 
-        'layout': {
-            'visibility': 'none',
-        },
-        'paint': {
-            'circle-color': {
-                property: 'event_id',
-                stops: lsr_list
-            },
-            'circle-radius': {
-                'base': 1.75,
-                'stops': [
-                    [1, 2],
-                    [4, 3],
-                    [6, 5],
-                    [10, 10],
-                    [14, 25]
-                ]
-            },
-        },
-    });
+    $.each(lsr_layers, (i,v)=>{
+        createLSRLayer(i,v)
+    })
 
-    // extreme cold LSR ************************************************************************************************************************************
-    var features = $.grep(data.features, function (element, index) {
-        return element.properties.event_id == 4
-    });
-    app.lsr_extreme_cold = {
-        "type": "FeatureCollection",
-        features
+    function createLSRLayer(lyrName, v) {
+        var features = $.grep(data.features, function (element, index) {
+            // console.log(element)
+            return element.properties.event_id == v.eventNum;
+        });
+        features = {"type":"FeatureCollection", features }
+        console.log( lyrName, features.features.length)
+
+        map.addLayer({
+            'id': lyrName,
+            'type': 'circle',
+            'source': {
+                "type": "geojson",
+                "data": features
+            },
+
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'circle-color': {
+                    property: 'event_id',
+                    stops: lsr_list
+                },
+                'circle-radius': {
+                    'base': 1.25,
+                    'stops': [
+                        [1, 1.5],
+                        [4, 3],
+                        [6, 4],
+                        [10, 6],
+                        [14, 8]
+                    ]
+                },
+            },
+        });
     }
-    console.log(app.lsr_extreme_cold);
-    map.addLayer({
-        'id': 'extreme-cold',
-        'type': 'circle',
-        'source': {
-            "type": "geojson",
-            "data": app.lsr_extreme_cold
-        },
 
-        'layout': {
-            'visibility': 'none',
-        },
-        'paint': {
-            'circle-color': {
-                property: 'event_id',
-                stops: lsr_list
-            },
-            'circle-radius': {
-                'base': 1.75,
-                'stops': [
-                    [1, 2],
-                    [4, 3],
-                    [6, 5],
-                    [10, 10],
-                    [14, 25]
-                ]
-            },
-        },
-    });
+    // // heavy snow LSR ************************************************************************************************************************************************************************
+    // var features = $.grep(data.features, function(element, index){
+    //       return element.properties.event_id == 1
+    // });
+    // app.lsr_heavy_snow = {"type":"FeatureCollection", features }
+
+    // // add the Heavy snow layer 
+    // map.addLayer({
+    //     'id': 'heavy_snow_labels',
+    //     'type': 'symbol',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_heavy_snow
+    //     },
+    //     'layout': {
+    //         'visibility': 'none',
+
+    //         'text-field': '{magnitude}',
+    //         "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+    //         "text-offset": [1, -3],
+    //         "text-anchor": "top",
+    //         "text-size": 10
+    //     },
+    //     'paint': {
+    //          "text-color": "white",
+    //     },
+    // });
+    // map.addLayer({
+    //     'id': 'heavy_snow',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_heavy_snow
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
+
+    // // blizzard LSR ************************************************************************************************************************************
+    // var features = $.grep(data.features, function(element, index){
+    //       return element.properties.event_id == 2
+    // });
+    // app.lsr_blizzard = {"type":"FeatureCollection", features }
+    // map.addLayer({
+    //     'id': 'blizzard',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_blizzard
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
+
+    // // sleet/freezing rain LSR ************************************************************************************************************************************
+    // var features = $.grep(data.features, function (element, index) {
+    //     return element.properties.event_id == 3
+    // });
+    // app.lsr_sleet_rain = {
+    //     "type": "FeatureCollection",
+    //     features
+    // }
+    // console.log(app.lsr_sleet_rain);
+    // map.addLayer({
+    //     'id': 'sleet',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_sleet_rain
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
+
+    // // extreme cold LSR ************************************************************************************************************************************
+    // var features = $.grep(data.features, function (element, index) {
+    //     return element.properties.event_id == 4
+    // });
+    // app.lsr_extreme_cold = {
+    //     "type": "FeatureCollection",
+    //     features
+    // }
+    // console.log(app.lsr_extreme_cold);
+    // map.addLayer({
+    //     'id': 'extreme-cold',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_extreme_cold
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
+
+    // // Heavy Rain ************************************************************************************************************************************
+    // var features = $.grep(data.features, function (element, index) {
+    //     return element.properties.event_id == 11
+    // });
+    // app.lsr_heavy_rain = {
+    //     "type": "FeatureCollection",
+    //     features
+    // }
+    // console.log(app.lsr_heavy_rain);
+    // map.addLayer({
+    //     'id': 'heavy-rain',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_heavy_rain
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
+
+    // // flood ************************************************************************************************************************************
+    // var features = $.grep(data.features, function (element, index) {
+    //     return element.properties.event_id == 12
+    // });
+    // app.lsr_flood = {
+    //     "type": "FeatureCollection",
+    //     features
+    // }
+    // console.log('Flood:',app.lsr_flood);
+    // map.addLayer({
+    //     'id': 'flood',
+    //     'type': 'circle',
+    //     'source': {
+    //         "type": "geojson",
+    //         "data": app.lsr_flood
+    //     },
+
+    //     'layout': {
+    //         'visibility': 'none',
+    //     },
+    //     'paint': {
+    //         'circle-color': {
+    //             property: 'event_id',
+    //             stops: lsr_list
+    //         },
+    //         'circle-radius': {
+    //             'base': 1.75,
+    //             'stops': [
+    //                 [1, 2],
+    //                 [4, 3],
+    //                 [6, 5],
+    //                 [10, 10],
+    //                 [14, 25]
+    //             ]
+    //         },
+    //     },
+    // });
     
+}
+
+function loadEarthquakeLayers(data){
+    console.log(data)
+    var features = $.grep(data.features, function(element, index){
+        return element.properties.mag >0
+    });
+    features = {"type":"FeatureCollection", features }
+    console.log(features)
+    map.addLayer({
+        'id': 'earthquake',
+        'type': 'circle',
+        'source': {
+            "type": "geojson",
+            "data": features,
+        },
+
+        'layout': {
+            'visibility': 'none',
+        },
+        'paint': {
+            'circle-color': {
+                property: 'mag',
+                stops: earthquake_list
+            },
+            'circle-radius': {
+                property: 'mag',
+                stops: earthquake_size_list
+                // 'base': 1.75,
+                // 'stops': [
+                //     [1, 2],
+                //     [4, 3],
+                //     [6, 5],
+                //     [10, 10],
+                //     [14, 25]
+                // ]
+            },
+        },
+    });
+}
+
+function loadDroughtLayers(data){
+    var features = $.grep(data.features, function(element, index){
+        return element.properties.DM >= 0
+    });
+    features = {"type":"FeatureCollection", features }
+    map.addLayer({
+        'id': 'drought',
+        'type': 'fill',
+        'source': {
+            "type": "geojson",
+            "data": features,
+        },
+
+        'layout': {
+            'visibility': 'none',
+        },
+        'paint': {
+            'fill-color': {
+                property: 'DM',
+                stops: drought_list
+            },
+            'fill-opacity': .5,
+        },
+    });
 }
 
 function loadCurrentObs(){

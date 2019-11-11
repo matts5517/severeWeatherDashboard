@@ -40,24 +40,43 @@ rootPath = '/Users/Matts_Home/Documents/Box Sync/WeatherApp_WebsiteBackup/severe
 # storm reports url
 url24 = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=86400&justcsv=1'
 url72 = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=259200&justcsv=1'
+urlWeek = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=ALL&recent=1000000&justcsv=1'
+
 # other vars
 local_storm_report_path = rootPath + 'severeWeatherData/csv/local_storm_report_24.csv'
 jsonYearPath = rootPath + 'severeWeatherData/geoJson/local_storm_report_24.json'
-urllib.urlretrieve(url72, local_storm_report_path)
+urllib.urlretrieve(urlWeek, local_storm_report_path)
 jsonData = []
 
 eventNum = {
+    # winter events
     'SNOW': 1,
     'HEAVY SNOW': 1,
     'BLIZZARD': 2,
     'FREEZING RAIN': 3,
     'SLEET': 3,
-    # 'AVALANCHE':4,
     'EXTR WIND CHILL':4,
     'EXTREME COLD':4,
-    
-    'NON-TSTM WND GST':9,
 
+    # wind events
+    'NON-TSTM WND GST':5,
+    'NON-TSTM WND DMG': 6,
+    'HIGH SUST WINDS': 7,
+    'TSTM WND GST': 8,
+    'MARINE TSTM WIND': 9,
+    'WATER SPOUT': 10,
+    
+    # rain/flood events
+    'HEAVY RAIN': 11,
+    'FLOOD': 12,
+    'FLASH FLOOD': 13,
+    'COASTAL FLOOD':14,
+    'LAKESHORE FLOOD': 14,
+
+    # tropical
+    'TROPICAL STORM': 100,
+    'HURRICANE':100,
+    'STORM SURGE': 100,
 }
 
 # read through csv and convert to geoJSON

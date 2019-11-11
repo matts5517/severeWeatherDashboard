@@ -44,6 +44,18 @@ map.on('style.load', function(){
 		app.lsr_data = jsonData; // set global var to carry over severe storm json to entire app
 		loadLSRLayers(app.lsr_data);
 	})
+
+	// load the earthquake layer
+	$.getJSON("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week.geojson", function (jsonData) {
+		app.earthquake_data = jsonData; // set global var to carry over severe storm json to entire app
+		loadEarthquakeLayers(app.earthquake_data);
+	})
+
+	// load the drought data
+	$.getJSON("https://www1.ncdc.noaa.gov/pub/data/nidis/geojson/us/usdm/USDM_lastweek.geojson", function (jsonData) {
+		app.drought_data = jsonData; // set global var to carry over severe storm json to entire app
+		loadDroughtLayers(app.drought_data);
+	})
 })
 
 

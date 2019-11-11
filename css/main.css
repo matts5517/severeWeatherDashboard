@@ -2,11 +2,11 @@
 
 /* main sty;es of site *********************/
 body{ 
-	margin: 0px; padding: 0px;  font-family: sans-serif; height: 100% width: 100%;
+	margin: 0px; padding: 0px;  font-family: sans-serif; height: 100%; width: 100%;
 	/*font-family: colfax, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;*/
 }
 html{
-	width: 100%; height: 100%;
+	width: 100%; height: 100%; overflow-y: hidden;
 }
 hr{
 	border: 0;
@@ -179,8 +179,16 @@ footer div{
 .layer-symbol{
 	height:8px; width: 8px; border-radius: 100px; margin-right: 4px;
 }
+.lsr-count-wrapper {
+	 width: 200px; display: flex;
+}
+.lsr-storm-count{
+	right: 7px; position: absolute;
+
+}
+
 .pillCheckbox {
-    color: white; background-color: rgba(37,61,89,.7); border-radius: 5px; width: 180px;
+    color: white; background-color: rgba(37,61,89,.7); border-radius: 5px; width: 210px;
 }
 .pillCheckbox label {
     display: flex; padding: 1px; align-items: center; margin: 2px;
@@ -248,11 +256,11 @@ footer div{
 	height: 4px; margin: 10px 0 5px 0;
 }
 #radSlider .ui-slider-handle, #severeStormSlider .ui-slider-handle{
-	background-color: rgb(59,136,253); !important; height: 13px; width: 13px; border-radius: 10px;
+	background-color: rgb(59,136,253) !important; height: 13px; width: 13px; border-radius: 10px;
 	border-color: transparent; outline: none;
 }
 #satSlider .ui-slider-handle, #severeStormSlider .ui-slider-handle{
-	background-color: rgb(59,136,253); !important; height: 13px; width: 13px; border-radius: 10px;
+	background-color: rgb(59,136,253) !important; height: 13px; width: 13px; border-radius: 10px;
 	border-color: transparent; outline: none;
 }
 #radSlider .ui-slider-handle:hover{
@@ -278,7 +286,7 @@ footer div{
 	width: 50px; 
 }
 .stormCb-countWrapper{
-	width: 120px;
+	width: 165px;
 }
 .severeStormText{
 	float: left;

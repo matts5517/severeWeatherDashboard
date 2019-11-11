@@ -126,11 +126,7 @@ map.on('click', function(e) {
 		coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 	}
 	if(features.length > 0){
-		let date = features[0].properties.date
-		let date1 = date.slice(4,6)
-		let date2 = date.slice(2,4)
-		let date3 = date.slice(0,2)
-		date = date2 + '/' + date1 + '/' + date3
+		let date = features[0].properties.date.slice(2, 4) + '/' + features[0].properties.date.slice(4, 6) + '/' + features[0].properties.date.slice(0, 2)
 		let location = features[0].properties.location + ', ' + features[0].properties.state;
 		// build html for popup
 		description = '<div class="popupItemWrapper"><span class="popupHeader">Storm Type:</span><span> ' + features[0].properties.eventType + '</span></div>'

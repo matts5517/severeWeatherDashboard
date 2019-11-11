@@ -112,8 +112,12 @@
 			<div class="layerSelectorWrapper noselect">
 				<div class="pillCheckbox" id="">
 		            <div class="subStormsWrapper">
-						<h3 class="layer-header">Severe Reports</h3>
-						<div class="severeStormLayers">
+						 
+						<!-- <hr class="whiteHr"> -->
+						<h3 class="layer-header">Storm Reports</h3>
+						<div id="stormReportLayers">
+							<h4 class="h4LayerHeader">Severe Weather</h4>
+							<div class="severeStormLayers">
 							<label class="form-component mainCB" for="tornado-option">
 								<input checked="true" type="checkbox" id="tornado-option" name="" value="tornado">
 								<div class="check"></div>
@@ -148,47 +152,126 @@
 							</div>
 						</div>
 
+
 						<hr class="whiteHr">
-						<h3 class="layer-header">Local Storm Reports</h3>
-						<div id="stormReportLayers">
+
+
 							<h4 class="h4LayerHeader">Winter</h4>
 							<label class="form-component mainCB" for="snow-option">
-				              <input type="checkbox" id="snow-option" name="" value="heavy_snow">
-				              <div class="check"></div>
-				              <span class="form-text noselect"><div class="layer-symbol" style="background-color: #099ce6;"></div>Heavy Snow</span>
+				              <input type="checkbox" id="snow-option" name="" value="heavy-snow">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #099ce6;"></div>Heavy Snow</span>
+									<span id="heavy-snow-count" class="lsr-storm-count noselect">230</span>
+							  </div>
+				             
 							</label>
 							<label class="form-component mainCB" for="blizzard-option">
 				              <input type="checkbox" id="blizzard-option" name="" value="blizzard">
-				              <div class="check"></div>
-				              <span class="form-text noselect"><div class="layer-symbol" style="background-color: #2f2fbd;"></div>Blizzard</span>
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #2f2fbd;"></div>Blizzard</span>
+								<span id="blizzard-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+				              
 							</label>
 							<label class="form-component mainCB" for="sleet-option">
 				              <input type="checkbox" id="sleet-option" name="" value="sleet">
-				              <div class="check"></div>
-				              <span class="form-text noselect"><div class="layer-symbol" style="background-color: #a73bd9;"></div>Sleet/Freezing Rain</span>
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #a73bd9;"></div>Sleet/Frz. Rain</span>
+								<span id="sleet-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+				              
 				            </label>
 				            <label class="form-component mainCB" for="ex-temp-option">
 				              <input type="checkbox" id="ex-temp-option" name="" value="extreme-cold">
-				              <div class="check"></div>
-				              <span class="form-text noselect"><div class="layer-symbol" style="background-color: #de2ad8;"></div>Extreme Temps</span>
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #de2ad8;"></div>Extreme Temps</span>
+								<span id="extreme-cold-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+				              
 							</label>
 							<h4 class="h4LayerHeader">Rain/Flood</h4>
 							<label class="form-component mainCB" for="rain-option">
-				              <input type="checkbox" id="rain-option" name="" value="rain">
-				              <div class="check"></div>
-				              <span class="form-text noselect"><div class="layer-symbol" style="background-color: #2f2fbd;"></div>Heavy Rain</span>
+				              <input type="checkbox" id="rain-option" name="" value="heavy-rain">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #53c68c;"></div>Heavy Rain</span>
+								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+							  </div>
 							</label>
+							<label class="form-component mainCB" for="flood-option">
+				              <input type="checkbox" id="flood-option" name="" value="flood">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #00b300;"></div>Flood</span>
+								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+							<label class="form-component mainCB" for="flash-flood-option">
+				              <input type="checkbox" id="flash-flood-option" name="" value="flash-flood">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #008000;"></div>Flash Flood</span>
+								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+							<label class="form-component mainCB" for="coastal-flood-option">
+				              <input type="checkbox" id="coastal-flood-option" name="" value="coastal-flood">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Coastal Flood</span>
+								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+
+
+
 							<h4 class="h4LayerHeader">Wind</h4>
 							<label class="form-component mainCB" for="sus-wind-option">
-				              <input type="checkbox" id="sus-wind-option" name="" value="sus-wind">
-				              <div class="check"></div>
-				              <span class="form-text noselect">High Sustained Wind</span>
+				              <input type="checkbox" id="sus-wind-option" name="" value="wind-sus">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>High Sus. Wind</span></span>
+								<span id="sus-wind-count" class="lsr-storm-count noselect">12</span>
+							  </div>
 							</label>
 							<label class="form-component mainCB" for="gust-wind-option">
-				              <input type="checkbox" id="gust-wind-option" name="" value="gust-wind">
-				              <div class="check"></div>
-				              <span class="form-text noselect">High Wind Gust</span>
+				              <input type="checkbox" id="gust-wind-option" name="" value="wind-gust">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>High Wind Gust</span></span>
+								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+							  </div>
 							</label>
+							<label class="form-component mainCB" for="dmg-wind-option">
+				              <input type="checkbox" id="dmg-wind-option" name="" value="wind-dmg">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Wind Damage</span></span>
+								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+							<label class="form-component mainCB" for="marine-wind-option">
+				              <input type="checkbox" id="marine-wind-option" name="" value="marine-tstm-wind">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #ffff00;"></div>Marine Wind Gust</span></span>
+								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+							<label class="form-component mainCB" for="waterspout-option">
+				              <input type="checkbox" id="waterspout-option" name="" value="waterspout">
+							  <div class="check"></div>
+							  <div class="lsr-count-wrapper">
+								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #ff9900;"></div>Waterspout</span></span>
+								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+							  </div>
+							</label>
+
+
 							<!-- time filtering for severe storm reports -->
 							<div class="layerSelectorSubHeader">Filter days:</div>
 							<div class="severeTimeFilterBtnWrapper">
@@ -197,8 +280,52 @@
 							</div>
 						</div>
 
+
+
 						<hr class="whiteHr">
-						<h3 class="layer-header">Current Observations</h3>
+
+
+
+						<h3 class="layer-header">Natural Hazards</h3>
+						<div class="natural-hazard-layer-wrapper">
+							<label class="form-component mainCB" for="earthquake-option">
+								<input type="checkbox" id="earthquake-option" name="" value="earthquake">
+								<div class="check"></div>
+								<div class="lsr-count-wrapper">
+									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Earthquakes (Last 7d)</span></span>
+									<!-- <span id="gust-wind-count" class="lsr-storm-count noselect">23</span> -->
+								</div>
+							</label>
+							<label class="form-component mainCB" for="earthquake-option">
+								<input type="checkbox" id="earthquake-option" name="" value="earthquake">
+								<div class="check"></div>
+								<div class="lsr-count-wrapper">
+									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Wildfires</span></span>
+									<span id="gust-wind-count" class="lsr-storm-count noselect">23</span>
+								</div>
+							</label>
+							<label class="form-component mainCB" for="drought-option">
+								<input type="checkbox" id="drought-option" name="" value="drought">
+								<div class="check"></div>
+								<div class="lsr-count-wrapper">
+									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Drought</span></span>
+									<span id="gust-wind-count" class="lsr-storm-count noselect">23</span>
+								</div>
+							</label>
+							<label class="form-component mainCB" for="earthquake-option">
+								<input type="checkbox" id="earthquake-option" name="" value="earthquake">
+								<div class="check"></div>
+								<div class="lsr-count-wrapper">
+									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Volcano</span></span>
+									<span id="gust-wind-count" class="lsr-storm-count noselect">23</span>
+								</div>
+							</label>
+						</div>
+						
+
+
+						<hr class="whiteHr">
+						<h3 class="layer-header">Base Layers</h3>
 						<div class="current-observation-layers" style="display:none;">
 							<h4 class="h4LayerHeader">Temperature</h4>
 							<label class="form-component mainCB" for="temperature-option">
