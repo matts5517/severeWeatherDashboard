@@ -45,7 +45,7 @@ urlWeek = 'https://mesonet.agron.iastate.edu/cgi-bin/request/gis/lsr.py?wfo[]=AL
 # other vars
 local_storm_report_path = rootPath + 'severeWeatherData/csv/local_storm_report_24.csv'
 jsonYearPath = rootPath + 'severeWeatherData/geoJson/local_storm_report_24.json'
-urllib.urlretrieve(urlWeek, local_storm_report_path)
+urllib.urlretrieve(url72, local_storm_report_path)
 jsonData = []
 
 eventNum = {

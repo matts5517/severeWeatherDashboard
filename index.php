@@ -162,7 +162,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 									<span class="form-text noselect"><div class="layer-symbol" style="background-color: #099ce6;"></div>Heavy Snow</span>
-									<span id="heavy-snow-count" class="lsr-storm-count noselect">230</span>
+									<span id="heavy-snow-count" class="lsr-storm-count noselect"></span>
 							  </div>
 				             
 							</label>
@@ -171,7 +171,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #2f2fbd;"></div>Blizzard</span>
-								<span id="blizzard-count" class="lsr-storm-count noselect">12</span>
+								<span id="blizzard-count" class="lsr-storm-count noselect"></span>
 							  </div>
 				              
 							</label>
@@ -180,7 +180,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #a73bd9;"></div>Sleet/Frz. Rain</span>
-								<span id="sleet-count" class="lsr-storm-count noselect">12</span>
+								<span id="sleet-count" class="lsr-storm-count noselect"></span>
 							  </div>
 				              
 				            </label>
@@ -189,7 +189,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #de2ad8;"></div>Extreme Temps</span>
-								<span id="extreme-cold-count" class="lsr-storm-count noselect">12</span>
+								<span id="extreme-cold-count" class="lsr-storm-count noselect"></span>
 							  </div>
 				              
 							</label>
@@ -199,7 +199,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #53c68c;"></div>Heavy Rain</span>
-								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+								<span id="heavy-rain-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="flood-option">
@@ -207,7 +207,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #00b300;"></div>Flood</span>
-								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+								<span id="flood-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="flash-flood-option">
@@ -215,7 +215,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #008000;"></div>Flash Flood</span>
-								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+								<span id="flash-flood-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="coastal-flood-option">
@@ -223,7 +223,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Coastal Flood</span>
-								<span id="rain-count" class="lsr-storm-count noselect">12</span>
+								<span id="coastal-flood-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 
@@ -235,7 +235,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>High Sus. Wind</span></span>
-								<span id="sus-wind-count" class="lsr-storm-count noselect">12</span>
+								<span id="wind-sus-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="gust-wind-option">
@@ -243,7 +243,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>High Wind Gust</span></span>
-								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+								<span id="wind-gust-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="dmg-wind-option">
@@ -251,7 +251,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #c2f0c2;"></div>Wind Damage</span></span>
-								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+								<span id="wind-dmg-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="marine-wind-option">
@@ -259,7 +259,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #ffff00;"></div>Marine Wind Gust</span></span>
-								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+								<span id="marine-tstm-wind-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 							<label class="form-component mainCB" for="waterspout-option">
@@ -267,7 +267,7 @@
 							  <div class="check"></div>
 							  <div class="lsr-count-wrapper">
 								<span class="form-text noselect"><div class="layer-symbol" style="background-color: #ff9900;"></div>Waterspout</span></span>
-								<span id="gust-wind-count" class="lsr-storm-count noselect">12</span>
+								<span id="waterspout-count" class="lsr-storm-count noselect"></span>
 							  </div>
 							</label>
 
